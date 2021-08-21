@@ -1,7 +1,7 @@
 # :christmas_tree: **Advent of Code**
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
 [![forthebadge](https://forthebadge.com/images/badges/just-plain-nasty.svg)](https://forthebadge.com)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
 
 ## :gift: Solutions to the annual Advent of Code challenges written in various modern languages.
 
