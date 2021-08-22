@@ -43,27 +43,27 @@
 
   - ### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
 
-  - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
+  - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
 
   - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
 
-  - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
-
-  - ### :thought_balloon: [Learn Rust in 30 Minutes Blogpost by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
-
-  - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
-
-  - ### :globe_with_meridians: [Learning Rust Website by Dumindu Madunuwan](https://learning-rust.github.io/)
-
-  - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
+  - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
 
   - ### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
 
-  - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
+  - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
 
   - ### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
 
+  - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
+
+  - ### :thought_balloon: [Learn Rust in 30 Minutes Blogpost by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+
+  - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
+
   - ### :book: [The Little Book of Rust Macros by Daniel Keep](https://danielkeep.github.io/tlborm/book/index.html)
+
+  - ### :globe_with_meridians: [Learning Rust Website by Dumindu Madunuwan](https://learning-rust.github.io/)
 
   - ### :globe_with_meridians: [Rust Design Patterns Website by Rust Community](https://rust-unofficial.github.io/patterns/)
 
