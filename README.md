@@ -4,6 +4,14 @@
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
 
+<p align="center">
+    <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
+</p>
+
+<h4 align="center"> 
+    <p><a href="https://twitter.com/etiennejcb/">Animation by Étienne Jacob</a></p>
+</h4>
+
 ## :gift: Solutions to the annual Advent of Code challenges written in various modern languages.
 
 > ### _Any corrections or optimizations are much appreciated!_ :hugs:
