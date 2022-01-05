@@ -1,6 +1,7 @@
 # :christmas_tree: **Advent of Code**
 
-[![forthebadge](https://forthebadge.com/images/badges/just-plain-nasty.svg)](https://forthebadge.com)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=yellow) ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=yellow) ![Haskell](https://img.shields.io/badge/haskell-%234B275F.svg?style=for-the-badge&logo=haskell&logoColor=white)
+
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
 
 ## :gift: Solutions to the annual Advent of Code challenges written in various modern languages.
@@ -27,9 +28,13 @@
 
 > ### _Nim 1.0.0 was released on September 23, 2019 — 11 years after the first public release._
 
-## :crystal_ball: Haskell — [Advent of Code 2020](https://adventofcode.com/2020)
+## :infinity: Haskell — [Advent of Code 2020](https://adventofcode.com/2020)
 
 > ### _Haskell's next formal specification was due in 2020 — 10 years after the last major release._
+
+## :crystal_ball: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
+
+> ### _Crystal 1.0.0 was released on March 22, 2021, having been in development for 10 years._
 
 ## :man_teacher: Learning Resources
 
@@ -39,7 +44,7 @@
 
   - ### :tv: [Videos by Doug Milford](https://www.youtube.com/playlist?list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5)
 
-  - ### :man_teacher: [Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
+  - ### :film_projector: [Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
 
   - ### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
 
@@ -47,17 +52,23 @@
 
   - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
 
+  - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
+
   - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
 
   - ### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
 
   - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
 
+  - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
+
   - ### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
 
   - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
 
   - ### :thought_balloon: [Learn Rust in 30 Minutes Blogpost by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+
+  - ### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
 
   - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
 
@@ -66,6 +77,8 @@
   - ### :globe_with_meridians: [Learning Rust Website by Dumindu Madunuwan](https://learning-rust.github.io/)
 
   - ### :globe_with_meridians: [Rust Design Patterns Website by Rust Community](https://rust-unofficial.github.io/patterns/)
+
+  - ### :man_technologist: [Rust Ownership and Borrowing Interactive Visualization](https://github.com/rustviz/rustviz)
 
   - ### :globe_with_meridians: [A Gentle Introduction To Rust Website by Steve Donovan](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
 
@@ -82,3 +95,5 @@
   - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
 
   - ### :thought_balloon: [Learn Zig in 30 Minutes Blogpost](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
+
+  - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
