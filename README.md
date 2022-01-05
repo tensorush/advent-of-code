@@ -1,6 +1,6 @@
 # :christmas_tree: **Advent of Code**
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=yellow) ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=yellow) ![Haskell](https://img.shields.io/badge/haskell-%234B275F.svg?style=for-the-badge&logo=haskell&logoColor=white)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=yellow) ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=yellow) ![Haskell](https://img.shields.io/badge/haskell-%234B275F.svg?style=for-the-badge&logo=haskell&logoColor=white) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white)
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
 
@@ -32,7 +32,7 @@
 
 > ### _Haskell's next formal specification was due in 2020 — 10 years after the last major release._
 
-## :crystal_ball: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
+## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
 > ### _Crystal 1.0.0 was released on March 22, 2021, having been in development for 10 years._
 
@@ -50,9 +50,9 @@
 
   - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
 
-  - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
-
   - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
+
+  - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
 
   - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
 
@@ -60,11 +60,11 @@
 
   - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
 
-  - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
-
   - ### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
 
   - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
+
+  - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
 
   - ### :thought_balloon: [Learn Rust in 30 Minutes Blogpost by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 
