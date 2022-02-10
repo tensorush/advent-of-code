@@ -148,9 +148,9 @@
 
   - ### :thought_balloon: [Lenses in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-07-22-lenses-in-pictures.html)
 
-  - ### :thought_balloon: [Functors in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
-
   - ### :book: [Yet Another Haskell Tutorial by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
+
+  - ### :thought_balloon: [Functors in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
   - ### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
 
