@@ -130,25 +130,17 @@
 
   - ### :mag: [Hoogle - Haskell Search Engine](https://hoogle.haskell.org/)
 
-  - ### :thought_balloon: [Haskell Tutorial by Conrad Barski](http://www.lisperati.com/haskell/)
-
-  - ### :book: [Haskell Data Analysis by Nishant Shukla](http://haskelldata.com/)
-
   - ### :thought_balloon: [Functional Programming Jargon](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
 
+  - ### :thought_balloon: [Haskell Tutorial by Conrad Barski](http://www.lisperati.com/haskell/)
+
   - ### :black_joker: [Haskell Cheatsheet by Justin Bailey](http://cheatsheet.codeslower.com/)
+
+  - ### :book: [Haskell Data Analysis by Nishant Shukla](http://haskelldata.com/)
 
   - ### :card_file_box: [Haskell Must-Watch List by Oleh Kuchuk](https://github.com/hzlmn/haskell-must-watch)
 
   - ### :man_teacher: [Haskell via Sokoban by Joachim Breitner](https://haskell-via-sokoban.nomeata.de/)
-
-  - ### :book: [Yet Another Haskell Tutorial by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
-
-  - ### :man_teacher: [Functional Programming by Example by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
-
-  - ### :book: [Real World Haskell by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
-
-  - ### :tv: [Haskell for Imperative Programmers by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
 
   - ### :man_teacher: [Programming in Haskell by Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
 
@@ -158,13 +150,21 @@
 
   - ### :thought_balloon: [Functors in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
+  - ### :book: [Yet Another Haskell Tutorial by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
+
   - ### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
 
   - ### :man_teacher: [Functional Systems in Haskell by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
 
+  - ### :book: [Real World Haskell by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
+
   - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
   - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](http://learnyouahaskell.com/)
+
+  - ### :man_teacher: [Functional Programming by Example by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
+
+  - ### :tv: [Haskell for Imperative Programmers by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
 
   - ### :book: [What I Wish I Knew When Learning Haskell by Stephen Diehl](http://dev.stephendiehl.com/hask/)
 
