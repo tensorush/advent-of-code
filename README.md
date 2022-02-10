@@ -112,6 +112,8 @@
 
 - ## :infinity: Haskell
 
+  - ### :thought_balloon: [School of Haskell](https://www.schoolofhaskell.com/)
+
   - ### :man_teacher: [HSE Haskell Course](https://github.com/serokell/hse-haskell-course-src)
 
   - ### :man_teacher: [ITMO Haskell Course](https://github.com/jagajaga/FP-Course-ITMO)
@@ -122,19 +124,47 @@
 
   - ### :man_teacher: [Haskell Beginners Course](https://github.com/haskell-beginners-2022/course-plan)
 
+  - ### :book: [Happy Learn Haskell Tutorial](http://www.happylearnhaskelltutorial.com/contents.html)
+
   - ### :boom: [Bind the Gap Haskell Magazine](https://bindthegap.news/issues.html)
+
+  - ### :mag: [Hoogle - Haskell Search Engine](https://hoogle.haskell.org/)
+
+  - ### :thought_balloon: [Haskell Tutorial by Conrad Barski](http://www.lisperati.com/haskell/)
+
+  - ### :book: [Haskell Data Analysis by Nishant Shukla](http://haskelldata.com/)
 
   - ### :thought_balloon: [Functional Programming Jargon](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
 
+  - ### :black_joker: [Haskell Cheatsheet by Justin Bailey](http://cheatsheet.codeslower.com/)
+
   - ### :card_file_box: [Haskell Must-Watch List by Oleh Kuchuk](https://github.com/hzlmn/haskell-must-watch)
 
+  - ### :man_teacher: [Haskell via Sokoban by Joachim Breitner](https://haskell-via-sokoban.nomeata.de/)
+
+  - ### :book: [Yet Another Haskell Tutorial by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
+
+  - ### :man_teacher: [Functional Programming by Example by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
+
+  - ### :book: [Real World Haskell by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
+
+  - ### :tv: [Haskell for Imperative Programmers by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
+
+  - ### :man_teacher: [Programming in Haskell by Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
+
   - ### :man_teacher: [Beginning Practical Haskell by Richard Cook](https://blog.rcook.org/beginning-practical-haskell/)
+
+  - ### :thought_balloon: [Lenses in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-07-22-lenses-in-pictures.html)
+
+  - ### :thought_balloon: [Functors in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
+
+  - ### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
 
   - ### :man_teacher: [Functional Systems in Haskell by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
 
   - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
-  - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](https://learnyouahaskell.github.io/chapters.html)
+  - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](http://learnyouahaskell.com/)
 
   - ### :book: [What I Wish I Knew When Learning Haskell by Stephen Diehl](http://dev.stephendiehl.com/hask/)
 
