@@ -56,6 +56,8 @@
 
   - ### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
 
+  - ### :globe_with_meridians: [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
+
   - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
 
   - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
@@ -79,6 +81,8 @@
   - ### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
 
   - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
+
+  - ### :man_teacher: [Ultimate Rust Crash Course by Nathan Stocks](https://github.com/CleanCut/ultimate_rust_crash_course)
 
   - ### :book: [The Little Book of Rust Macros by Daniel Keep](https://danielkeep.github.io/tlborm/book/index.html)
 
@@ -105,3 +109,33 @@
   - ### :thought_balloon: [Learn Zig in 30 Minutes Blogpost](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
   - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
+
+- ## :infinity: Haskell
+
+  - ### :man_teacher: [HSE Haskell Course](https://github.com/serokell/hse-haskell-course-src)
+
+  - ### :man_teacher: [ITMO Haskell Course](https://github.com/jagajaga/FP-Course-ITMO)
+
+  - ### :man_teacher: [UCSD Haskell Course](https://github.com/ucsd-cse130/wi21)
+
+  - ### :man_teacher: [UPenn Haskell Course](https://github.com/byorgey/haskell-course)
+
+  - ### :man_teacher: [Haskell Beginners Course](https://github.com/haskell-beginners-2022/course-plan)
+
+  - ### :boom: [Bind the Gap Haskell Magazine](https://bindthegap.news/issues.html)
+
+  - ### :thought_balloon: [Functional Programming Jargon](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
+
+  - ### :card_file_box: [Haskell Must-Watch List by Oleh Kuchuk](https://github.com/hzlmn/haskell-must-watch)
+
+  - ### :man_teacher: [Beginning Practical Haskell by Richard Cook](https://blog.rcook.org/beginning-practical-haskell/)
+
+  - ### :man_teacher: [Functional Systems in Haskell by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
+
+  - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
+
+  - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](https://learnyouahaskell.github.io/chapters.html)
+
+  - ### :book: [What I Wish I Knew When Learning Haskell by Stephen Diehl](http://dev.stephendiehl.com/hask/)
+
+  - ### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
