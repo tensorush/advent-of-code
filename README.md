@@ -96,6 +96,8 @@
 
   - ### :black_joker: [Rust Ownership and Borrowing Cheatsheet by Phil Ruffwind](https://rufflewind.com/img/rust-move-copy-borrow.png)
 
+  - ### :book: [The Rust Performance Book by Nicholas Nethercote and others](https://nnethercote.github.io/perf-book/)
+
   - ### :black_joker: [The Periodic Table of Rust Types Cheatsheet by Kang Seonghoon](http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/)
 
   - ### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
