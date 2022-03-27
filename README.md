@@ -2,8 +2,6 @@
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Kotlin](https://img.shields.io/badge/kotlin-%23000000.svg?style=for-the-badge&logo=kotlin&logoColor=white&color=8d37d4) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=a754ff) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tensorush/Advent-of-Code)
-
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
 </p>
