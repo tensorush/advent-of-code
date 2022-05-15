@@ -42,9 +42,15 @@
 
 > ### _Crystal 1.0.0 was released on March 22, 2021, 10 years since the start of the development._
 
-## :man_teacher: Learning Resources
+# :man_teacher: Learning Resources
 
-- ## :crab: Rust
+## Table of Contents
+
+- [:crab: Rust](#crab-rust)
+- [:zap: Zig](#zap-zig)
+- [:infinity: Haskell](#infinity-haskell)
+
+## :crab: Rust
 
   - ### :tv: [Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
 
@@ -74,7 +80,7 @@
 
   - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
 
-  - ### :thought_balloon: [Learn Rust in 30 Minutes Blogpost by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+  - ### :thought_balloon: [Learn Rust in 30 Minutes Blog Post by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 
   - ### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
 
@@ -100,21 +106,21 @@
 
   - ### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
 
-- ## :zap: Zig
+## :zap: Zig
 
   - ### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
 
   - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
 
-  - ### :thought_balloon: [Zig Blogposts by Nathan Michaels](https://www.nmichaels.org/zig/)
+  - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
 
-  - ### :thought_balloon: [Zig Blogposts by Mitchell Hashimoto](https://mitchellh.com/zig)
+  - ### :thought_balloon: [Zig Blog Posts by Mitchell Hashimoto](https://mitchellh.com/zig)
 
   - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
 
-  - ### :thought_balloon: [Learn Zig in 30 Minutes Blogpost by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
+  - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
-- ## :infinity: Haskell
+## :infinity: Haskell
 
   - ### :thought_balloon: [School of Haskell](https://www.schoolofhaskell.com/)
 
@@ -150,11 +156,11 @@
 
   - ### :man_teacher: [Beginning Practical Haskell by Richard Cook](https://blog.rcook.org/beginning-practical-haskell/)
 
-  - ### :thought_balloon: [Lenses in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-07-22-lenses-in-pictures.html)
+  - ### :thought_balloon: [Lenses in Pictures Blog Post by Adit Bhargava](https://adit.io/posts/2013-07-22-lenses-in-pictures.html)
 
   - ### :book: [Yet Another Haskell Tutorial by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
 
-  - ### :thought_balloon: [Functors in Pictures Blogpost by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
+  - ### :thought_balloon: [Functors in Pictures Blog Post by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
   - ### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
 
