@@ -158,6 +158,8 @@
 
   - ### :book: [Real World Haskell by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
 
+  - ### :man_teacher: [Introduction to Haskell Course by Joachim Breitner](https://www.seas.upenn.edu/~cis194/fall16/)
+
   - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
   - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](http://learnyouahaskell.com/)
