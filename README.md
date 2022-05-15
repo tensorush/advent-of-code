@@ -10,7 +10,7 @@
     <p><a href="https://twitter.com/etiennejcb/">Animation by Étienne Jacob</a></p>
 </h4>
 
-## :gift: Solutions to the annual Advent of Code challenges written in various modern languages.
+## :gift: Learning various modern languages by solving annual Advent of Code challenges.
 
 > ### _Any corrections or optimizations are much appreciated!_ :hugs:
 
@@ -18,7 +18,7 @@
 
 > ### _Rust 1.0.0, the first stable release, was released on May 15, 2015._
 
-## :lizard: Zig — [Advent of Code 2016](https://adventofcode.com/2016)
+## :zap: Zig — [Advent of Code 2016](https://adventofcode.com/2016)
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
@@ -40,7 +40,7 @@
 
 ## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
-> ### _Crystal 1.0.0 was released on March 22, 2021, having been in development for 10 years._
+> ### _Crystal 1.0.0 was released on March 22, 2021, 10 years since the start of the development._
 
 ## :man_teacher: Learning Resources
 
@@ -106,9 +106,13 @@
 
   - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
 
-  - ### :thought_balloon: [Learn Zig in 30 Minutes Blogpost](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
+  - ### :thought_balloon: [Zig Blogposts by Nathan Michaels](https://www.nmichaels.org/zig/)
+
+  - ### :thought_balloon: [Zig Blogposts by Mitchell Hashimoto](https://mitchellh.com/zig)
 
   - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
+
+  - ### :thought_balloon: [Learn Zig in 30 Minutes Blogpost by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
 - ## :infinity: Haskell
 
