@@ -1,20 +1,27 @@
-# :christmas_tree: **Advent of Code**
+# :gift: **Awesome PL Learning**
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Kotlin](https://img.shields.io/badge/kotlin-%23000000.svg?style=for-the-badge&logo=kotlin&logoColor=white&color=8d37d4) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=a754ff) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tensorush/Awesome-PL-Learning/pulls)
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+[![License][license-shield]][license-url]
 
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
 </p>
 
-<h4 align="center"> 
+<h4 align="center">
     <p><a href="https://twitter.com/etiennejcb/">Animation by Étienne Jacob</a></p>
 </h4>
 
-## :gift: Learning various modern languages by solving annual Advent of Code challenges.
+## :christmas_tree: Learning various modern languages by solving annual Advent of Code challenges.
 
 > ### _Any corrections or optimizations are much appreciated!_ :hugs:
 
-## :crab: [Rust](https://github.com/tensorush/Advent-of-Code/blob/master/2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
+## :crab: [Rust](https://github.com/tensorush/Awesome-PL-Learning/blob/master/2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
 > ### _Rust 1.0.0, the first stable release, was released on May 15, 2015._
 
@@ -62,6 +69,8 @@
 
   - ### :globe_with_meridians: [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
 
+  - ### :film_projector: [Slides by Alexander Stanovoy](https://gitlab.com/alex.stanovoy/mipt-rust)
+
   - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
 
   - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
@@ -108,7 +117,11 @@
 
 ## :zap: Zig
 
+  - ### :tv: [Zig SHOWTIME Talks](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
+
   - ### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
+
+  - ### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
 
   - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
 
@@ -146,6 +159,8 @@
 
   - ### :black_joker: [Haskell Cheatsheet by Justin Bailey](http://cheatsheet.codeslower.com/)
 
+  - ### :book: [Haskell for Readers by Joachim Breitner](http://haskell-for-readers.nomeata.de/)
+
   - ### :book: [Haskell Data Analysis by Nishant Shukla](http://haskelldata.com/)
 
   - ### :card_file_box: [Haskell Must-Watch List by Oleh Kuchuk](https://github.com/hzlmn/haskell-must-watch)
@@ -172,6 +187,10 @@
 
   - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
+  - ### :film_projector: [Functional Programming Lectures by Peter Thiemann](https://github.com/proglang/FunctionalProgramming)
+
+  - ### :tv: [Functional Programming Fundamentals by Erik Meijer](https://docs.microsoft.com/en-us/shows/c9-lectures-erik-meijer-functional-programming-fundamentals/)
+
   - ### :book: [Learn You a Haskell for Great Good! by Miran Lipovača](http://learnyouahaskell.com/)
 
   - ### :man_teacher: [Functional Programming by Example by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
@@ -181,3 +200,16 @@
   - ### :book: [What I Wish I Knew When Learning Haskell by Stephen Diehl](http://dev.stephendiehl.com/hask/)
 
   - ### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
+
+<!-- MARKDOWN LINKS -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
+[contributors-url]: https://github.com/tensorush/Awesome-PL-Learning/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
+[issues-url]: https://github.com/tensorush/Awesome-PL-Learning/issues
+[stars-shield]: https://img.shields.io/github/stars/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
+[stars-url]: https://github.com/tensorush/Awesome-PL-Learning/stargazers
+[forks-shield]: https://img.shields.io/github/forks/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
+[forks-url]: https://github.com/tensorush/Awesome-PL-Learning/network/members
+[license-shield]: https://img.shields.io/github/license/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
+[license-url]: https://github.com/tensorush/Awesome-PL-Learning/blob/master/LICENSE.md
