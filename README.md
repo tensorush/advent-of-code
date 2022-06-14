@@ -53,85 +53,10 @@
 
 ## Table of Contents
 
+- [:infinity: Haskell](#infinity-haskell)
 - [:crab: Rust](#crab-rust)
 - [:zap: Zig](#zap-zig)
-- [:infinity: Haskell](#infinity-haskell)
 
-## :crab: Rust
-
-  - ### :tv: [Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
-
-  - ### :tv: [Videos by Doug Milford](https://www.youtube.com/playlist?list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5)
-
-  - ### :film_projector: [Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
-
-  - ### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
-
-  - ### :globe_with_meridians: [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
-
-  - ### :film_projector: [Slides by Alexander Stanovoy](https://gitlab.com/alex.stanovoy/mipt-rust)
-
-  - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
-
-  - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
-
-  - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
-
-  - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
-
-  - ### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
-
-  - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
-
-  - ### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
-
-  - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
-
-  - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
-
-  - ### :thought_balloon: [Learn Rust in 30 Minutes Blog Post by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
-
-  - ### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
-
-  - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
-
-  - ### :man_teacher: [Ultimate Rust Crash Course by Nathan Stocks](https://github.com/CleanCut/ultimate_rust_crash_course)
-
-  - ### :book: [The Little Book of Rust Macros by Daniel Keep](https://danielkeep.github.io/tlborm/book/index.html)
-
-  - ### :globe_with_meridians: [Learning Rust Website by Dumindu Madunuwan](https://learning-rust.github.io/)
-
-  - ### :globe_with_meridians: [Rust Design Patterns Website by Rust Community](https://rust-unofficial.github.io/patterns/)
-
-  - ### :man_technologist: [Rust Ownership and Borrowing Interactive Visualization](https://github.com/rustviz/rustviz)
-
-  - ### :globe_with_meridians: [A Gentle Introduction To Rust Website by Steve Donovan](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
-
-  - ### :black_joker: [Rust Ownership and Borrowing Cheatsheet by Phil Ruffwind](https://rufflewind.com/img/rust-move-copy-borrow.png)
-
-  - ### :book: [The Rust Performance Book by Nicholas Nethercote and others](https://nnethercote.github.io/perf-book/)
-
-  - ### :black_joker: [The Periodic Table of Rust Types Cheatsheet by Kang Seonghoon](http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/)
-
-  - ### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
-
-## :zap: Zig
-
-  - ### :tv: [Zig SHOWTIME Talks](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
-
-  - ### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
-
-  - ### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
-
-  - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
-
-  - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
-
-  - ### :thought_balloon: [Zig Blog Posts by Mitchell Hashimoto](https://mitchellh.com/zig)
-
-  - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
-
-  - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
 ## :infinity: Haskell
 
@@ -195,11 +120,101 @@
 
   - ### :man_teacher: [Functional Programming by Example by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
 
+  - ### :man_teacher: [Advanced Programming in Haskell by Stephanie Weirich](https://www.seas.upenn.edu/~cis552/current/index.html)
+
   - ### :tv: [Haskell for Imperative Programmers by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
 
   - ### :book: [What I Wish I Knew When Learning Haskell by Stephen Diehl](http://dev.stephendiehl.com/hask/)
 
   - ### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
+
+## :crab: Rust
+
+  - ### :tv: [Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
+
+  - ### :tv: [Videos by Doug Milford](https://www.youtube.com/playlist?list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5)
+
+  - ### :film_projector: [Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
+
+  - ### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
+
+  - ### :globe_with_meridians: [Guide to Rustc Development](https://rustc-dev-guide.rust-lang.org/)
+
+  - ### :film_projector: [Slides by Alexander Stanovoy](https://gitlab.com/alex.stanovoy/mipt-rust)
+
+  - ### :globe_with_meridians: [Rust 101 Website by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
+
+  - ### :globe_with_meridians: [Tour of Rust by Richard Anaya](https://tourofrust.com/)
+
+  - ### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
+
+  - ### :man_technologist: [Rustlings Repo by Rust Community](https://github.com/rust-lang/rustlings)
+
+  - ### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
+
+  - ### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
+
+  - ### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
+
+  - ### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
+
+  - ### :man_teacher: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
+
+  - ### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
+
+  - ### :thought_balloon: [Learn Rust in 30 Minutes Blog Post by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+
+  - ### :globe_with_meridians: [24 Days of Rust Website by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
+
+  - ### :man_teacher: [Ultimate Rust Crash Course by Nathan Stocks](https://github.com/CleanCut/ultimate_rust_crash_course)
+
+  - ### :book: [The Little Book of Rust Macros by Daniel Keep](https://danielkeep.github.io/tlborm/book/index.html)
+
+  - ### :globe_with_meridians: [Learning Rust Website by Dumindu Madunuwan](https://learning-rust.github.io/)
+
+  - ### :globe_with_meridians: [Rust Design Patterns Website by Rust Community](https://rust-unofficial.github.io/patterns/)
+
+  - ### :man_teacher: [Programming in Rust by Dongze He and Chase Kanipe](https://www.cs.umd.edu/class/fall2021/cmsc388Z/)
+
+  - ### :man_technologist: [Rust Ownership and Borrowing Interactive Visualization](https://github.com/rustviz/rustviz)
+
+  - ### :globe_with_meridians: [A Gentle Introduction To Rust Website by Steve Donovan](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
+
+  - ### :black_joker: [Rust Ownership and Borrowing Cheatsheet by Phil Ruffwind](https://rufflewind.com/img/rust-move-copy-borrow.png)
+
+  - ### :book: [The Rust Performance Book by Nicholas Nethercote and others](https://nnethercote.github.io/perf-book/)
+
+  - ### :black_joker: [The Periodic Table of Rust Types Cheatsheet by Kang Seonghoon](http://cosmic.mearie.org/2014/01/periodic-table-of-rust-types/)
+
+  - ### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
+
+## :zap: Zig
+
+  - ### :tv: [Zig SHOWTIME Talks](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
+
+  - ### :thought_balloon: [Zig News Blog Posts](https://zig.news/)
+
+  - ### :card_file_box: [Awesome Zig Coding Repos](https://github.com/stars/tensorush/lists/awesome-zig-coding)
+
+  - ### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
+
+  - ### :globe_with_meridians: [Ziglearn Website by Sobeston](https://ziglearn.org/)
+
+  - ### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
+
+  - ### :thought_balloon: [Allocgate Blog Post by pithlessly](https://pithlessly.github.io/allocgate.html)
+
+  - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
+
+  - ### :thought_balloon: [Zig Blog Posts by Mitchell Hashimoto](https://mitchellh.com/zig)
+
+  - ### :globe_with_meridians: [Zig By Example Website by Ali Chraghi](https://zig-by-example.github.io/)
+
+  - ### :thought_balloon: [Zig on RISC-V Blog Post by Lee Lup Yuen](https://lupyuen.github.io/articles/zig)
+
+  - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
+
+  - ### :thought_balloon: [How to Write My First Zig Program by Sylvain Leroux](https://www.yesik.it/blog/2022/intro-to-zig)
 
 <!-- MARKDOWN LINKS -->
 
