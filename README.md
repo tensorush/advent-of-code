@@ -208,15 +208,13 @@
 
   - ### :card_file_box: [Awesome Zig Coding Repos List](https://github.com/stars/tensorush/lists/awesome-zig-coding)
 
-  - ### :card_file_box: [Zig Package Manager Repos List](https://zpm.random-projects.net/)
-
   - ### :thought_balloon: [Allocgate Blog Post by pithlessly](https://pithlessly.github.io/allocgate.html)
 
-  - ### :card_file_box: [Gyro Package Manager Repos List](https://astrolabe.pm/)
+  - ### :thought_balloon: [Zig Blog Posts by Jamie Brandon](https://www.scattered-thoughts.net/)
 
   - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
 
-  - ### :card_file_box: [Zigmod Package Manager Repos List](https://aquila.red/)
+  - ### :card_file_box: [Zig Package Aggregator Repos List](https://zpm.random-projects.net/)
 
   - ### :thought_balloon: [Zig Blog Posts by Mitchell Hashimoto](https://mitchellh.com/zig)
 
