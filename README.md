@@ -198,31 +198,75 @@
 
   - ### :postbox: [Zig Monthly News Letters](https://zigmonthly.org/)
 
+  - ### :thought_balloon: [Zig Blog Posts by Loris Cro](https://kristoff.it/blog/)
+
+  - ### :thought_balloon: [DEV Community Blog Posts](https://dev.to/t/zig)
+
+  - ### :thought_balloon: [Zig Blog Posts by Lewis Gaul](https://www.lewisgaul.co.uk/blog)
+
+  - ### :thought_balloon: [Zig Blog Posts by Noah Ryan](https://itscomputersciencetime.netlify.app/)
+
   - ### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
 
-  - ### :thought_balloon: [Zig Blog Post by Eric Engheim](https://medium.com/swlh/zig-the-introduction-dcd173a86975)
+  - ### :thought_balloon: [Zig Blog Posts by Dave Gauer](http://ratfactor.com/zig/)
+
+  - ### :thought_balloon: [Zig Blog Posts by Jakub Konka](http://www.jakubkonka.com/)
 
   - ### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
 
   - ### :globe_with_meridians: [Ziglearn Web Site by Sobeston](https://ziglearn.org/)
 
+  - ### :thought_balloon: [Zig Blog Posts by Eric Engheim](https://medium.com/swlh/zig-the-introduction-dcd173a86975)
+
+  - ### :thought_balloon: [Zig Blog Posts by Garrett Squire](https://gsquire.github.io/static/)
+
   - ### :card_file_box: [Awesome Zig Coding Repos List](https://github.com/stars/tensorush/lists/awesome-zig-coding)
+
+  - ### :thought_balloon: [Zig Blog Posts by Andrew Kelley](https://andrewkelley.me/)
 
   - ### :thought_balloon: [Allocgate Blog Post by pithlessly](https://pithlessly.github.io/allocgate.html)
 
   - ### :thought_balloon: [Zig Blog Posts by Jamie Brandon](https://www.scattered-thoughts.net/)
 
+  - ### :thought_balloon: [Zig Blog Posts by Ikrima Elhassan](https://ikrima.dev/dev-notes/zig/zig-crash-course/)
+
+  - ### :thought_balloon: [Zig Blog Posts by Michał Ciesielski](https://ciesie.com/tags/zig/)
+
   - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
 
   - ### :card_file_box: [Zig Package Aggregator Repos List](https://zpm.random-projects.net/)
+
+  - ### :thought_balloon: [Zig Blog Posts by Stephen Gutekanst](https://devlog.hexops.com/archives/)
 
   - ### :thought_balloon: [Zig Blog Posts by Mitchell Hashimoto](https://mitchellh.com/zig)
 
   - ### :globe_with_meridians: [Zig By Example Web Site by Ali Chraghi](https://zig-by-example.github.io/)
 
+  - ### :tv: [The Road to Zig 1.0 Talk by Andrew Kelley](https://www.youtube.com/watch?v=Gv2I7qTux7g)
+
+  - ### :thought_balloon: [Zig In-depth Overview Blog Post by Andrew Kelley](https://ziglang.org/learn/overview/)
+
   - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
+  - ### :tv: [TigerBeetle Talks by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/channel/UC3TlyQ3h6lC_jSWust2leGg/playlists)
+
+  - ### :thought_balloon: [The Missing Zig Polymorphism Blog Post by Ralph Brorsen](https://revivalizer.xyz/post/the-missing-zig-polymorphism-reference/)
+
+  - ### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
+
+  - ### :thought_balloon: [Implementing a File Pager in Zig Blog Posts by Ayende Rahien](https://ayende.com/blog/posts/series/195587-B/implementing-a-file-pager-in-zig)
+
   - ### :thought_balloon: [How to Write My First Zig Program Blog Post by Sylvain Leroux](https://www.yesik.it/blog/2022/intro-to-zig)
+
+  - ### :headphones: [Zig with Andrew Kelley Podcast Episode by Rob Irving and Jason Turner](https://www.youtube.com/watch?v=AdP6seB4sp4)
+
+  - ### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://media.handmade-seattle.com/practical-data-oriented-design/)
+
+  - ### :tv: [Zig – a Programming Language Designed for Robustness, Optimality and Clarity Talk by Andrew Kelley](https://www.youtube.com/watch?v=Z4oYSByyRak&t)
+
+  - ### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
+
+  - ### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Mason Remaley Podcast Episode by Abner Coimbre](https://media.handmade-seattle.com/the-race-to-replace-c-and-cpp-2/)
 
 <!-- MARKDOWN LINKS -->
 
