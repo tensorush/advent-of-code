@@ -57,7 +57,6 @@
 - [:crab: Rust](#crab-rust)
 - [:zap: Zig](#zap-zig)
 
-
 ## :infinity: Haskell
 
   - ### :thought_balloon: [School of Haskell](https://www.schoolofhaskell.com/)
@@ -260,7 +259,11 @@
 
   - ### :headphones: [Zig with Andrew Kelley Podcast Episode by Rob Irving and Jason Turner](https://www.youtube.com/watch?v=AdP6seB4sp4)
 
+  - ### :headphones: [Full-Time Open Source with Andrew Kelley Podcast Episode by Adam Bell](https://corecursive.com/067-zig-with-andrew-kelley/)
+
   - ### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://media.handmade-seattle.com/practical-data-oriented-design/)
+
+  - ### :headphones: [Taking the Warts Of f C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
 
   - ### :tv: [Zig – a Programming Language Designed for Robustness, Optimality and Clarity Talk by Andrew Kelley](https://www.youtube.com/watch?v=Z4oYSByyRak&t)
 
