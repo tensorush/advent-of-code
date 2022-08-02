@@ -1,5 +1,11 @@
 use std::collections::HashMap;
 
+pub fn solve(instructions: &str) {
+    println!("--- Day 7: Some Assembly Required ---");
+    println!("Part 1: {}", part_1(instructions));
+    println!("Part 2: {}", part_2(instructions));
+}
+
 #[derive(Copy, Clone)]
 enum Operation<'a> {
     Put(&'a str),
@@ -25,39 +31,13 @@ impl<'a> Gate<'a> {
     }
 }
 
-fn pass_input(num_or_wire: &str, gates: &mut HashMap<&str, Gate>) -> Option<u16> {
-    num_or_wire
-        .parse()
-        .ok()
-        .or_else(|| find_output(num_or_wire, gates))
-}
-
-fn find_output(wire: &str, gates: &mut HashMap<&str, Gate>) -> Option<u16> {
-    let gate: &Gate = gates.get(wire).unwrap();
-    match gate.output {
-        Some(output) => Some(output),
-        None => {
-            let output: u16 = match gate.operation {
-                Operation::Put(input) => pass_input(input, gates)?,
-                Operation::Not(input) => !pass_input(input, gates)?,
-                Operation::Or(lhs, rhs) => pass_input(lhs, gates)? | pass_input(rhs, gates)?,
-                Operation::And(lhs, rhs) => pass_input(lhs, gates)? & pass_input(rhs, gates)?,
-                Operation::LShift(lhs, rhs) => pass_input(lhs, gates)? << pass_input(rhs, gates)?,
-                Operation::RShift(lhs, rhs) => pass_input(lhs, gates)? >> pass_input(rhs, gates)?,
-            };
-            gates.get_mut(wire).unwrap().output = Some(output);
-            Some(output)
-        }
-    }
-}
-
 fn part_1(instructions: &str) -> u16 {
-    let mut wire: &str;
-    let mut gate: Gate;
-    let mut input: &str;
-    let mut input_2: &str;
+    let mut wire;
+    let mut gate;
+    let mut input;
+    let mut input_2;
+    let mut operation;
     let mut words: Vec<&str>;
-    let mut operation: Operation;
     let mut gates = HashMap::new();
     for instruction in instructions.lines() {
         words = instruction.split(' ').collect();
@@ -91,17 +71,17 @@ fn part_1(instructions: &str) -> u16 {
             _ => panic!("Unknown number of words: {}", words.len()),
         }
     }
-    let output_at_wire_a: u16 = find_output("a", &mut gates).unwrap();
+    let output_at_wire_a = find_output("a", &mut gates).unwrap();
     output_at_wire_a
 }
 
 fn part_2(instructions: &str) -> u16 {
-    let mut wire: &str;
-    let mut gate: Gate;
-    let mut input: &str;
-    let mut input_2: &str;
+    let mut wire;
+    let mut gate;
+    let mut input;
+    let mut input_2;
+    let mut operation;
     let mut words: Vec<&str>;
-    let mut operation: Operation;
     let mut gates = HashMap::new();
     for instruction in instructions.lines() {
         words = instruction.split(' ').collect();
@@ -135,17 +115,37 @@ fn part_2(instructions: &str) -> u16 {
             _ => panic!("Unknown number of words: {}", words.len()),
         }
     }
-    let string_output_at_wire_a: String = find_output("a", &mut gates).unwrap().to_string();
+    let string_output_at_wire_a = find_output("a", &mut gates).unwrap().to_string();
     for (_key, value) in gates.iter_mut() {
         value.output = None;
     }
     gates.insert("b", Gate::new(Operation::Put(&string_output_at_wire_a)));
-    let output_at_wire_a: u16 = find_output("a", &mut gates).unwrap();
+    let output_at_wire_a = find_output("a", &mut gates).unwrap();
     output_at_wire_a
 }
 
-pub fn solve(instructions: &str) {
-    println!("--- Day 7: Some Assembly Required ---");
-    println!("Part 1: {}", part_1(instructions));
-    println!("Part 2: {}", part_2(instructions));
+fn find_output(wire: &str, gates: &mut HashMap<&str, Gate>) -> Option<u16> {
+    let gate: &Gate = gates.get(wire).unwrap();
+    match gate.output {
+        Some(output) => Some(output),
+        None => {
+            let output: u16 = match gate.operation {
+                Operation::Put(input) => parse_input(input, gates)?,
+                Operation::Not(input) => !parse_input(input, gates)?,
+                Operation::Or(lhs, rhs) => parse_input(lhs, gates)? | parse_input(rhs, gates)?,
+                Operation::And(lhs, rhs) => parse_input(lhs, gates)? & parse_input(rhs, gates)?,
+                Operation::LShift(lhs, rhs) => parse_input(lhs, gates)? << parse_input(rhs, gates)?,
+                Operation::RShift(lhs, rhs) => parse_input(lhs, gates)? >> parse_input(rhs, gates)?,
+            };
+            gates.get_mut(wire).unwrap().output = Some(output);
+            Some(output)
+        }
+    }
+}
+
+fn parse_input(num_or_wire: &str, gates: &mut HashMap<&str, Gate>) -> Option<u16> {
+    num_or_wire
+        .parse()
+        .ok()
+        .or_else(|| find_output(num_or_wire, gates))
 }

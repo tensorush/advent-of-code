@@ -1,7 +1,13 @@
 use std::collections::HashMap;
 
+pub fn solve(aunt_list: &str) {
+    println!("--- Day 16: Aunt Sue ---");
+    println!("Part 1: {}", part_1(aunt_list));
+    println!("Part 2: {}", part_2(aunt_list));
+}
+
 fn part_1(aunt_list: &str) -> usize {
-    let mut correct_aunt: HashMap<&str, u32> = HashMap::new();
+    let mut correct_aunt = HashMap::new();
     correct_aunt.insert("children", 3);
     correct_aunt.insert("cats", 7);
     correct_aunt.insert("samoyeds", 2);
@@ -12,11 +18,11 @@ fn part_1(aunt_list: &str) -> usize {
     correct_aunt.insert("trees", 3);
     correct_aunt.insert("cars", 2);
     correct_aunt.insert("perfumes", 1);
-    let mut item_name: &str;
+    let mut item_name;
+    let mut is_matching;
+    let mut correct_value;
     let mut item_value: u32;
     let mut words: Vec<&str>;
-    let mut is_matching: bool;
-    let mut correct_value: u32;
     let mut correct_aunt_number: usize = 0;
     'outer: for (i, aunt) in aunt_list.lines().enumerate() {
         words = aunt.split(' ').collect();
@@ -40,7 +46,7 @@ fn part_1(aunt_list: &str) -> usize {
 }
 
 fn part_2(aunt_list: &str) -> usize {
-    let mut correct_aunt: HashMap<&str, u32> = HashMap::new();
+    let mut correct_aunt = HashMap::new();
     correct_aunt.insert("children", 3);
     correct_aunt.insert("cats", 7);
     correct_aunt.insert("samoyeds", 2);
@@ -51,12 +57,12 @@ fn part_2(aunt_list: &str) -> usize {
     correct_aunt.insert("trees", 3);
     correct_aunt.insert("cars", 2);
     correct_aunt.insert("perfumes", 1);
-    let mut item_name: &str;
+    let mut item_name;
+    let mut is_matching;
+    let mut correct_value;
     let mut item_value: u32;
     let mut words: Vec<&str>;
-    let mut is_matching: bool;
-    let mut correct_value: u32;
-    let mut correct_aunt_number: usize = 0;
+    let mut correct_aunt_number = 0;
     'outer: for (i, aunt) in aunt_list.lines().enumerate() {
         words = aunt.split(' ').collect();
         for j in (2..words.len()).step_by(2) {
@@ -80,10 +86,4 @@ fn part_2(aunt_list: &str) -> usize {
         break;
     }
     correct_aunt_number
-}
-
-pub fn solve(aunt_list: &str) {
-    println!("--- Day 16: Aunt Sue ---");
-    println!("Part 1: {}", part_1(aunt_list));
-    println!("Part 2: {}", part_2(aunt_list));
 }

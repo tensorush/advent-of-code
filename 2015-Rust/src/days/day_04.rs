@@ -1,9 +1,15 @@
-use md5::{Context, Digest};
+use md5::Context;
+
+pub fn solve(secret_key: &str) {
+    println!("--- Day 4: The Ideal Stocking Stuffer ---");
+    println!("Part 1: {}", part_1(secret_key));
+    println!("Part 2: {}", part_2(secret_key));
+}
 
 fn part_1(secret_key: &str) -> u64 {
-    let mut number: u64 = 1;
-    let mut digest: Digest;
-    let mut context: Context;
+    let mut number = 1;
+    let mut digest;
+    let mut context;
     let mut starts_with_five_zeros: bool;
     loop {
         context = Context::new();
@@ -20,10 +26,10 @@ fn part_1(secret_key: &str) -> u64 {
 }
 
 fn part_2(secret_key: &str) -> u64 {
-    let mut number: u64 = 1;
-    let mut digest: Digest;
-    let mut context: Context;
-    let mut starts_with_six_zeros: bool;
+    let mut number = 1;
+    let mut digest;
+    let mut context;
+    let mut starts_with_six_zeros;
     loop {
         context = Context::new();
         context.consume(secret_key.as_bytes());
@@ -36,10 +42,4 @@ fn part_2(secret_key: &str) -> u64 {
         number += 1;
     }
     number
-}
-
-pub fn solve(secret_key: &str) {
-    println!("--- Day 4: The Ideal Stocking Stuffer ---");
-    println!("Part 1: {}", part_1(secret_key));
-    println!("Part 2: {}", part_2(secret_key));
 }

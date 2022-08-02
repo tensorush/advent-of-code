@@ -1,5 +1,11 @@
 use std::collections::HashMap;
 
+pub fn solve(input: &str) {
+    println!("--- Day 23: Opening the Turing Lock ---");
+    println!("Part 1: {}", part_1(input));
+    println!("Part 2: {}", part_2(input));
+}
+
 #[derive(Copy, Clone)]
 enum Instruction {
     Jump(i16),
@@ -11,10 +17,10 @@ enum Instruction {
 }
 
 fn part_1(input: &str) -> u32 {
-    let mut instructions: Vec<Instruction> = vec![];
+    let mut instructions = vec![];
     for line in input.lines() {
         let words: Vec<&str> = line.split(' ').collect();
-        let instruction: Instruction = match words[0] {
+        let instruction = match words[0] {
             "jmp" => Instruction::Jump(words[1].parse().unwrap()),
             "hlf" => Instruction::Half(words[1].chars().next().unwrap()),
             "tpl" => Instruction::Triple(words[1].chars().next().unwrap()),
@@ -29,10 +35,10 @@ fn part_1(input: &str) -> u32 {
         };
         instructions.push(instruction);
     }
-    let mut instruction: Instruction;
-    let mut instruction_pointer: i16 = 0;
-    let num_instructions: i16 = instructions.len() as i16;
-    let mut registers: HashMap<char, u32> = HashMap::new();
+    let mut instruction;
+    let mut instruction_pointer = 0;
+    let num_instructions = instructions.len() as i16;
+    let mut registers = HashMap::new();
     loop {
         instruction = instructions[instruction_pointer as usize];
         match instruction {
@@ -56,15 +62,15 @@ fn part_1(input: &str) -> u32 {
             break;
         }
     }
-    let register_b_value: u32 = *registers.get(&'b').unwrap();
+    let register_b_value = *registers.get(&'b').unwrap();
     register_b_value
 }
 
 fn part_2(input: &str) -> u32 {
-    let mut instructions: Vec<Instruction> = vec![];
+    let mut instructions = vec![];
     for line in input.lines() {
         let words: Vec<&str> = line.split(' ').collect();
-        let instruction: Instruction = match words[0] {
+        let instruction = match words[0] {
             "jmp" => Instruction::Jump(words[1].parse().unwrap()),
             "hlf" => Instruction::Half(words[1].chars().next().unwrap()),
             "tpl" => Instruction::Triple(words[1].chars().next().unwrap()),
@@ -79,10 +85,10 @@ fn part_2(input: &str) -> u32 {
         };
         instructions.push(instruction);
     }
-    let mut instruction: Instruction;
-    let mut instruction_pointer: i16 = 0;
-    let num_instructions: i16 = instructions.len() as i16;
-    let mut registers: HashMap<char, u32> = HashMap::new();
+    let mut instruction;
+    let mut instruction_pointer = 0;
+    let num_instructions = instructions.len() as i16;
+    let mut registers = HashMap::new();
     registers.insert('a', 1);
     loop {
         instruction = instructions[instruction_pointer as usize];
@@ -107,12 +113,6 @@ fn part_2(input: &str) -> u32 {
             break;
         }
     }
-    let register_b_value: u32 = *registers.get(&'b').unwrap();
+    let register_b_value = *registers.get(&'b').unwrap();
     register_b_value
-}
-
-pub fn solve(input: &str) {
-    println!("--- Day 23: Opening the Turing Lock ---");
-    println!("Part 1: {}", part_1(input));
-    println!("Part 2: {}", part_2(input));
 }

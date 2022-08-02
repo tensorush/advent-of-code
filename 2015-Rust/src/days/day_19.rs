@@ -1,8 +1,14 @@
 use std::collections::{HashMap, HashSet};
 
+pub fn solve(input: &str) {
+    println!("--- Day 19: Medicine for Rudolph ---");
+    println!("Part 1: {}", part_1(input));
+    println!("Part 2: {}", part_2(input));
+}
+
 fn part_1(input: &str) -> usize {
-    let mut medicine_molecule: String = String::new();
-    let mut replacements: HashMap<&str, Vec<&str>> = HashMap::new();
+    let mut medicine_molecule = String::new();
+    let mut replacements = HashMap::new();
     for line in input.lines() {
         if line.is_empty() {
             continue;
@@ -12,8 +18,8 @@ fn part_1(input: &str) -> usize {
             medicine_molecule = line.to_string();
         }
     }
-    let mut distinct_molecule: String;
-    let mut distinct_molecules: HashSet<String> = HashSet::new();
+    let mut distinct_molecule;
+    let mut distinct_molecules = HashSet::new();
     for (&from, to_options) in replacements.iter() {
         for (start_index, _) in medicine_molecule.match_indices(from) {
             for &to in to_options.iter() {
@@ -31,8 +37,8 @@ fn part_1(input: &str) -> usize {
 }
 
 fn part_2(input: &str) -> u32 {
-    let mut medicine_molecule: String = String::new();
-    let mut replacements: HashMap<&str, Vec<&str>> = HashMap::new();
+    let mut medicine_molecule = String::new();
+    let mut replacements = HashMap::new();
     for line in input.lines() {
         if line.is_empty() {
             continue;
@@ -42,7 +48,7 @@ fn part_2(input: &str) -> u32 {
             medicine_molecule = line.to_string();
         }
     }
-    let mut min_num_steps: u32 = 0;
+    let mut min_num_steps = 0;
     let mut reversed_molecule: String = medicine_molecule.chars().rev().collect();
     let reversed_replacements: Vec<(String, String)> = replacements
         .into_iter()
@@ -74,10 +80,4 @@ fn part_2(input: &str) -> u32 {
         }
     }
     min_num_steps
-}
-
-pub fn solve(input: &str) {
-    println!("--- Day 19: Medicine for Rudolph ---");
-    println!("Part 1: {}", part_1(input));
-    println!("Part 2: {}", part_2(input));
 }

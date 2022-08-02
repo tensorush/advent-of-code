@@ -1,17 +1,23 @@
+pub fn solve(configuration: &str) {
+    println!("--- Day 18: Like a GIF For Your Yard ---");
+    println!("Part 1: {}", part_1(configuration));
+    println!("Part 2: {}", part_2(configuration));
+}
+
 fn part_1(configuration: &str) -> usize {
     const NUM_SIDE_LIGHTS: i32 = 100;
     const NUM_TOTAL_LIGHTS: usize = (NUM_SIDE_LIGHTS * NUM_SIDE_LIGHTS) as usize;
-    let mut grid: [bool; NUM_TOTAL_LIGHTS] = [false; NUM_TOTAL_LIGHTS];
+    let mut grid = [false; NUM_TOTAL_LIGHTS];
     for (y, line) in configuration.lines().enumerate() {
         for (x, light) in line.chars().enumerate() {
             grid[x + y * 100] = light == '#';
         }
     }
-    let mut new_x: i32;
-    let mut new_y: i32;
+    let mut new_x;
+    let mut new_y;
+    let mut new_grid;
     const NUM_STEPS: i32 = 100;
-    let mut num_turned_on_neighbours: i32;
-    let mut new_grid: [bool; NUM_TOTAL_LIGHTS];
+    let mut num_turned_on_neighbours;
     for _step in 0..NUM_STEPS {
         new_grid = [false; NUM_TOTAL_LIGHTS];
         for x in 0..NUM_SIDE_LIGHTS {
@@ -40,24 +46,24 @@ fn part_1(configuration: &str) -> usize {
         }
         grid = new_grid;
     }
-    let num_turned_on_lights: usize = grid.iter().filter(|&&light| light).count();
+    let num_turned_on_lights = grid.iter().filter(|&&light| light).count();
     num_turned_on_lights
 }
 
 fn part_2(configuration: &str) -> usize {
     const NUM_SIDE_LIGHTS: i32 = 100;
     const NUM_TOTAL_LIGHTS: usize = (NUM_SIDE_LIGHTS * NUM_SIDE_LIGHTS) as usize;
-    let mut grid: [bool; NUM_TOTAL_LIGHTS] = [false; NUM_TOTAL_LIGHTS];
+    let mut grid = [false; NUM_TOTAL_LIGHTS];
     for (y, line) in configuration.lines().enumerate() {
         for (x, light) in line.chars().enumerate() {
             grid[x + y * 100] = light == '#';
         }
     }
-    let mut new_x: i32;
-    let mut new_y: i32;
+    let mut new_x;
+    let mut new_y;
+    let mut new_grid;
     const NUM_STEPS: i32 = 100;
-    let mut num_turned_on_neighbours: i32;
-    let mut new_grid: [bool; NUM_TOTAL_LIGHTS];
+    let mut num_turned_on_neighbours;
     for _step in 0..NUM_STEPS {
         new_grid = [false; NUM_TOTAL_LIGHTS];
         for x in 0..NUM_SIDE_LIGHTS {
@@ -96,12 +102,6 @@ fn part_2(configuration: &str) -> usize {
         }
         grid = new_grid;
     }
-    let num_turned_on_lights: usize = grid.iter().filter(|&&light| light).count();
+    let num_turned_on_lights = grid.iter().filter(|&&light| light).count();
     num_turned_on_lights
-}
-
-pub fn solve(configuration: &str) {
-    println!("--- Day 18: Like a GIF For Your Yard ---");
-    println!("Part 1: {}", part_1(configuration));
-    println!("Part 2: {}", part_2(configuration));
 }

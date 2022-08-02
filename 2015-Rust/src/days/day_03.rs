@@ -1,5 +1,11 @@
 use std::collections::HashSet;
 
+pub fn solve(directions: &str) {
+    println!("--- Day 3: Perfectly Spherical Houses in a Vacuum ---");
+    println!("Part 1: {}", part_1(directions));
+    println!("Part 2: {}", part_2(directions));
+}
+
 #[derive(Default, Copy, Clone, Eq, PartialEq, Hash)]
 struct Point {
     x: i32,
@@ -8,7 +14,7 @@ struct Point {
 
 fn part_1(directions: &str) -> usize {
     let mut santa: Point = Default::default();
-    let mut visited_houses: HashSet<Point> = HashSet::new();
+    let mut visited_houses = HashSet::new();
     visited_houses.insert(santa);
     for direction in directions.chars() {
         match direction {
@@ -26,7 +32,7 @@ fn part_1(directions: &str) -> usize {
 fn part_2(directions: &str) -> usize {
     let mut santa: Point = Default::default();
     let mut robo_santa: Point = Default::default();
-    let mut visited_houses: HashSet<Point> = HashSet::new();
+    let mut visited_houses = HashSet::new();
     visited_houses.insert(santa);
     let mut cur_santa: &mut Point;
     for (i, direction) in directions.chars().enumerate() {
@@ -45,10 +51,4 @@ fn part_2(directions: &str) -> usize {
         visited_houses.insert(cur_santa.clone());
     }
     visited_houses.len()
-}
-
-pub fn solve(directions: &str) {
-    println!("--- Day 3: Perfectly Spherical Houses in a Vacuum ---");
-    println!("Part 1: {}", part_1(directions));
-    println!("Part 2: {}", part_2(directions));
 }

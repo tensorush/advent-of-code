@@ -1,6 +1,12 @@
 use std::cmp::{max, Ordering};
 use std::collections::BinaryHeap;
 
+pub fn solve(boss_stats: &str) {
+    println!("--- Day 22: Wizard Simulator 20XX ---");
+    println!("Part 1: {}", part_1(boss_stats));
+    println!("Part 2: {}", part_2(boss_stats));
+}
+
 #[derive(Copy, Clone)]
 struct Effect {
     mana: u32,
@@ -60,25 +66,9 @@ impl PartialOrd for GameState {
     }
 }
 
-fn apply_effects(state: &mut GameState, effects: &[Effect]) -> Option<u32> {
-    let mut enhanced_armour: u32 = 0;
-    for (effect_index, effect) in effects.iter().enumerate() {
-        if state.effects_timers[effect_index] > 0 {
-            if effect.damage >= state.boss_hit_points {
-                return None;
-            }
-            state.remaining_mana += effect.mana;
-            enhanced_armour += effect.armour;
-            state.boss_hit_points -= effect.damage;
-            state.effects_timers[effect_index] -= 1;
-        }
-    }
-    Some(enhanced_armour)
-}
-
 fn part_1(boss_stats: &str) -> u32 {
-    let mut boss_damage: u32 = 0;
-    let mut boss_hit_points: u32 = 0;
+    let mut boss_damage = 0;
+    let mut boss_hit_points = 0;
     for boss_stat in boss_stats.lines() {
         if let Some(value) = boss_stat.strip_prefix("Hit Points: ") {
             boss_hit_points = value.parse().unwrap();
@@ -87,19 +77,19 @@ fn part_1(boss_stats: &str) -> u32 {
             boss_damage = value.parse().unwrap();
         }
     }
-    let effects: [Effect; 3] = [
+    let effects = [
         Effect::new(0, 6, 0, 7),
         Effect::new(0, 6, 3, 0),
         Effect::new(101, 5, 0, 0),
     ];
-    let spells: [Spell; 5] = [
+    let spells = [
         Spell::new(4, 53, 0, None),
         Spell::new(2, 73, 2, None),
         Spell::new(0, 113, 0, Some(0)),
         Spell::new(0, 173, 0, Some(1)),
         Spell::new(0, 229, 0, Some(2)),
     ];
-    let mut states: BinaryHeap<GameState> = BinaryHeap::new();
+    let mut states = BinaryHeap::new();
     states.push(GameState {
         spent_mana: 0,
         remaining_mana: 500,
@@ -107,10 +97,10 @@ fn part_1(boss_stats: &str) -> u32 {
         player_hit_points: 50,
         effects_timers: [0, 0, 0],
     });
-    let mut cur_state: GameState;
-    let mut damage_to_player: u32;
-    let mut min_mana_to_win: u32 = 0;
-    let mut cur_state_after_spell: GameState;
+    let mut cur_state;
+    let mut damage_to_player;
+    let mut min_mana_to_win = 0;
+    let mut cur_state_after_spell;
     'outer: while let Some(state) = states.pop() {
         cur_state = state.clone();
         if apply_effects(&mut cur_state, &effects).is_none() {
@@ -128,7 +118,8 @@ fn part_1(boss_stats: &str) -> u32 {
                 if cur_state_after_spell.effects_timers[effect_index] > 0 {
                     continue;
                 } else {
-                    cur_state_after_spell.effects_timers[effect_index] = effects[effect_index].turns;
+                    cur_state_after_spell.effects_timers[effect_index] =
+                        effects[effect_index].turns;
                 }
             }
             cur_state_after_spell.player_hit_points += spell.hit_points;
@@ -153,8 +144,8 @@ fn part_1(boss_stats: &str) -> u32 {
 }
 
 fn part_2(boss_stats: &str) -> u32 {
-    let mut boss_damage: u32 = 0;
-    let mut boss_hit_points: u32 = 0;
+    let mut boss_damage = 0;
+    let mut boss_hit_points = 0;
     for boss_stat in boss_stats.lines() {
         if let Some(value) = boss_stat.strip_prefix("Hit Points: ") {
             boss_hit_points = value.parse().unwrap();
@@ -163,19 +154,19 @@ fn part_2(boss_stats: &str) -> u32 {
             boss_damage = value.parse().unwrap();
         }
     }
-    let effects: [Effect; 3] = [
+    let effects = [
         Effect::new(0, 6, 0, 7),
         Effect::new(0, 6, 3, 0),
         Effect::new(101, 5, 0, 0),
     ];
-    let spells: [Spell; 5] = [
+    let spells = [
         Spell::new(4, 53, 0, None),
         Spell::new(2, 73, 2, None),
         Spell::new(0, 113, 0, Some(0)),
         Spell::new(0, 173, 0, Some(1)),
         Spell::new(0, 229, 0, Some(2)),
     ];
-    let mut states: BinaryHeap<GameState> = BinaryHeap::new();
+    let mut states = BinaryHeap::new();
     states.push(GameState {
         spent_mana: 0,
         remaining_mana: 500,
@@ -183,10 +174,10 @@ fn part_2(boss_stats: &str) -> u32 {
         player_hit_points: 50,
         effects_timers: [0, 0, 0],
     });
-    let mut cur_state: GameState;
-    let mut damage_to_player: u32;
-    let mut min_mana_to_win: u32 = 0;
-    let mut cur_state_after_spell: GameState;
+    let mut cur_state;
+    let mut damage_to_player;
+    let mut min_mana_to_win = 0;
+    let mut cur_state_after_spell;
     'outer: while let Some(state) = states.pop() {
         cur_state = state.clone();
         cur_state.player_hit_points -= 1;
@@ -208,7 +199,8 @@ fn part_2(boss_stats: &str) -> u32 {
                 if cur_state_after_spell.effects_timers[effect_index] > 0 {
                     continue;
                 } else {
-                    cur_state_after_spell.effects_timers[effect_index] = effects[effect_index].turns;
+                    cur_state_after_spell.effects_timers[effect_index] =
+                        effects[effect_index].turns;
                 }
             }
             cur_state_after_spell.player_hit_points += spell.hit_points;
@@ -232,8 +224,18 @@ fn part_2(boss_stats: &str) -> u32 {
     min_mana_to_win
 }
 
-pub fn solve(boss_stats: &str) {
-    println!("--- Day 22: Wizard Simulator 20XX ---");
-    println!("Part 1: {}", part_1(boss_stats));
-    println!("Part 2: {}", part_2(boss_stats));
+fn apply_effects(state: &mut GameState, effects: &[Effect]) -> Option<u32> {
+    let mut enhanced_armour: u32 = 0;
+    for (effect_index, effect) in effects.iter().enumerate() {
+        if state.effects_timers[effect_index] > 0 {
+            if effect.damage >= state.boss_hit_points {
+                return None;
+            }
+            state.remaining_mana += effect.mana;
+            enhanced_armour += effect.armour;
+            state.boss_hit_points -= effect.damage;
+            state.effects_timers[effect_index] -= 1;
+        }
+    }
+    Some(enhanced_armour)
 }

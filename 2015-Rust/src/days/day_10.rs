@@ -1,9 +1,15 @@
+pub fn solve(look_and_say_sequence: &str) {
+    println!("--- Day 10: Elves Look, Elves Say ---");
+    println!("Part 1: {}", part_1(look_and_say_sequence));
+    println!("Part 2: {}", part_2(look_and_say_sequence));
+}
+
 fn part_1(look_and_say_sequence: &str) -> usize {
-    let mut num_digits: u32;
-    let mut next_sequence: String;
+    let mut num_digits;
+    let mut next_sequence;
+    let mut last_digit;
     const NUM_ITERATIONS: i32 = 40;
-    let mut last_digit: Option<char>;
-    let mut cur_sequence: String = look_and_say_sequence.to_string().clone();
+    let mut cur_sequence = look_and_say_sequence.to_string().clone();
     for _iteration in 0..NUM_ITERATIONS {
         num_digits = 0;
         last_digit = None;
@@ -28,11 +34,11 @@ fn part_1(look_and_say_sequence: &str) -> usize {
 }
 
 fn part_2(look_and_say_sequence: &str) -> usize {
-    let mut num_digits: u32;
-    let mut next_sequence: String;
+    let mut num_digits;
+    let mut next_sequence;
+    let mut last_digit;
     const NUM_ITERATIONS: i32 = 50;
-    let mut last_digit: Option<char>;
-    let mut cur_sequence: String = look_and_say_sequence.to_string().clone();
+    let mut cur_sequence = look_and_say_sequence.to_string().clone();
     for _iteration in 0..NUM_ITERATIONS {
         num_digits = 0;
         last_digit = None;
@@ -54,10 +60,4 @@ fn part_2(look_and_say_sequence: &str) -> usize {
         cur_sequence = next_sequence;
     }
     cur_sequence.len()
-}
-
-pub fn solve(look_and_say_sequence: &str) {
-    println!("--- Day 10: Elves Look, Elves Say ---");
-    println!("Part 1: {}", part_1(look_and_say_sequence));
-    println!("Part 2: {}", part_2(look_and_say_sequence));
 }

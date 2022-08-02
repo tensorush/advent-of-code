@@ -1,13 +1,12 @@
-fn parse_range(range: &str) -> (usize, usize) {
-    range
-        .split_once(',')
-        .and_then(|(x, y)| Some((x.parse().unwrap(), y.parse().unwrap())))
-        .unwrap()
+pub fn solve(instructions: &str) {
+    println!("--- Day 6: Probably a Fire Hazard ---");
+    println!("Part 1: {}", part_1(instructions));
+    println!("Part 2: {}", part_2(instructions));
 }
 
 fn part_1(instructions: &str) -> u32 {
-    let mut index: usize;
-    let mut is_toggle: bool;
+    let mut index;
+    let mut is_toggle;
     let mut words: Vec<&str>;
     const NUM_LIGHTS: usize = 1_000_000;
     let mut grid: [u8; NUM_LIGHTS] = [0; NUM_LIGHTS];
@@ -43,8 +42,8 @@ fn part_1(instructions: &str) -> u32 {
 }
 
 fn part_2(instructions: &str) -> u32 {
-    let mut index: usize;
-    let mut is_toggle: bool;
+    let mut index;
+    let mut is_toggle;
     let mut words: Vec<&str>;
     const NUM_LIGHTS: usize = 1_000_000;
     let mut grid: [u8; NUM_LIGHTS] = [0; NUM_LIGHTS];
@@ -69,12 +68,13 @@ fn part_2(instructions: &str) -> u32 {
             }
         }
     }
-    let num_turned_on_lights: u32 = grid.iter().map(|&i| i as u32).sum();
+    let num_turned_on_lights = grid.iter().map(|&i| i as u32).sum();
     num_turned_on_lights
 }
 
-pub fn solve(instructions: &str) {
-    println!("--- Day 6: Probably a Fire Hazard ---");
-    println!("Part 1: {}", part_1(instructions));
-    println!("Part 2: {}", part_2(instructions));
+fn parse_range(range: &str) -> (usize, usize) {
+    range
+        .split_once(',')
+        .and_then(|(x, y)| Some((x.parse().unwrap(), y.parse().unwrap())))
+        .unwrap()
 }

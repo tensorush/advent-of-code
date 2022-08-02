@@ -1,8 +1,8 @@
-# :gift: **Awesome PL Learning**
+# :sunglasses: :christmas_tree: **Awesome Languages Learning**
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Kotlin](https://img.shields.io/badge/kotlin-%23000000.svg?style=for-the-badge&logo=kotlin&logoColor=white&color=8d37d4) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=a754ff) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Julia](https://img.shields.io/badge/julia-%23000000.svg?style=for-the-badge&logo=julia&logoColor=white&color=b65fe8) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=5d2d87) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tensorush/Awesome-PL-Learning/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tensorush/Awesome-Languages-Learning/pulls)
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -17,25 +17,25 @@
     <p><a href="https://twitter.com/etiennejcb/">Animation by Étienne Jacob</a></p>
 </h4>
 
-## :christmas_tree: Learning various modern languages by solving annual Advent of Code challenges.
+## :man_student: Collection of the most awesome learning resources on various modern languages accompanied by solutions to annual Advent of Code challenges.
 
 > ### _Any corrections or optimizations are much appreciated!_ :hugs:
 
-## :crab: [Rust](https://github.com/tensorush/Awesome-PL-Learning/blob/master/2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
+## :crab: [Rust](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
-> ### _Rust 1.0.0, the first stable release, was released on May 15, 2015._
+> ### _Rust 1.0.0 was released on May 15, 2015 — 11 years since the start of development._
 
-## :zap: Zig — [Advent of Code 2016](https://adventofcode.com/2016)
+## :zap: [Zig](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2016-Zig) — [Advent of Code 2016](https://adventofcode.com/2016)
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
-## :desert_island: Kotlin — [Advent of Code 2017](https://adventofcode.com/2017)
+## :eagle: Swift — [Advent of Code 2017](https://adventofcode.com/2017)
 
-> ### _Kotlin received a first-class Android support at the Google I/O keynote on May 17, 2017._
+> ### _Swift peaked in its core development on January 11, 2017 once Chris Lattner left Apple._
 
-## :eagle: Swift — [Advent of Code 2018](https://adventofcode.com/2018)
+## :juggling_person: Julia — [Advent of Code 2018](https://adventofcode.com/2018)
 
-> ### _Swift, for the very first time, surpassed Objective-C in popularity according to the RedMonk Programming Language Rankings for Q1 2018._
+> ### _Julia 1.0.0 was released on August 9, 2018 — 9 years since the start of development._
 
 ## :crown: Nim — [Advent of Code 2019](https://adventofcode.com/2019)
 
@@ -47,13 +47,14 @@
 
 ## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
-> ### _Crystal 1.0.0 was released on March 22, 2021, 10 years since the start of the development._
+> ### _Crystal 1.0.0 was released on March 22, 2021 — 10 years since the start of development._
 
 # :man_teacher: Learning Resources
 
 ## Table of Contents
 
 - [:infinity: Haskell](#infinity-haskell)
+- [:juggling_person: Julia](#juggling_man-julia)
 - [:crab: Rust](#crab-rust)
 - [:zap: Zig](#zap-zig)
 
@@ -126,6 +127,10 @@
   - ### :tv: [Haskell for Imperative Programmers Videos by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
 
   - ### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
+
+## :juggling_man: Julia
+
+  - ### :man_teacher: [Introduction to Computational Thinking Course by Alan Edelman and others](https://computationalthinking.mit.edu/Spring21/)
 
 ## :crab: Rust
 
@@ -243,6 +248,8 @@
 
   - ### :tv: [The Road to Zig 1.0 Talk by Andrew Kelley](https://www.youtube.com/watch?v=Gv2I7qTux7g)
 
+  - ### :thought_balloon: [Zig Common Tasks Blog Post by Renato Athaydes](https://renatoathaydes.github.io/zig-common-tasks/)
+
   - ### :thought_balloon: [Zig In-depth Overview Blog Post by Andrew Kelley](https://ziglang.org/learn/overview/)
 
   - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
@@ -250,6 +257,8 @@
   - ### :tv: [TigerBeetle Talks by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/channel/UC3TlyQ3h6lC_jSWust2leGg/playlists)
 
   - ### :thought_balloon: [The Missing Zig Polymorphism Blog Post by Ralph Brorsen](https://revivalizer.xyz/post/the-missing-zig-polymorphism-reference/)
+
+  - ### :tv: [Create an Android Application with Zig Talk by Felix Queißner](https://archive.fosdem.org/2021/schedule/event/zig_android/)
 
   - ### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
 
@@ -273,13 +282,13 @@
 
 <!-- MARKDOWN LINKS -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
-[contributors-url]: https://github.com/tensorush/Awesome-PL-Learning/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
-[issues-url]: https://github.com/tensorush/Awesome-PL-Learning/issues
-[stars-shield]: https://img.shields.io/github/stars/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
-[stars-url]: https://github.com/tensorush/Awesome-PL-Learning/stargazers
-[forks-shield]: https://img.shields.io/github/forks/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
-[forks-url]: https://github.com/tensorush/Awesome-PL-Learning/network/members
-[license-shield]: https://img.shields.io/github/license/tensorush/Awesome-PL-Learning.svg?style=for-the-badge
-[license-url]: https://github.com/tensorush/Awesome-PL-Learning/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
+[contributors-url]: https://github.com/tensorush/Awesome-Languages-Learning/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
+[issues-url]: https://github.com/tensorush/Awesome-Languages-Learning/issues
+[stars-shield]: https://img.shields.io/github/stars/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
+[stars-url]: https://github.com/tensorush/Awesome-Languages-Learning/stargazers
+[forks-shield]: https://img.shields.io/github/forks/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
+[forks-url]: https://github.com/tensorush/Awesome-Languages-Learning/network/members
+[license-shield]: https://img.shields.io/github/license/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
+[license-url]: https://github.com/tensorush/Awesome-Languages-Learning/blob/master/LICENSE.md

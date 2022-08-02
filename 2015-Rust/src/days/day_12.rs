@@ -1,7 +1,13 @@
 use serde_json::{from_str, json, Value};
 
+pub fn solve(document: &str) {
+    println!("--- Day 12: JSAbacusFramework.io ---");
+    println!("Part 1: {}", part_1(document));
+    println!("Part 2: {}", part_2(document));
+}
+
 fn part_1(document: &str) -> i64 {
-    let value: Value = from_str(&document).unwrap();
+    let value = from_str(&document).unwrap();
     fn sum_numbers(value: &Value) -> i64 {
         match value {
             Value::Number(number) => number.as_i64().unwrap(),
@@ -13,13 +19,13 @@ fn part_1(document: &str) -> i64 {
             _ => 0,
         }
     }
-    let numbers_sum: i64 = sum_numbers(&value);
+    let numbers_sum = sum_numbers(&value);
     numbers_sum
 }
 
 fn part_2(document: &str) -> i64 {
-    let red: Value = json!("red");
-    let value: Value = from_str(&document).unwrap();
+    let red = json!("red");
+    let value = from_str(&document).unwrap();
     fn sum_numbers(value: &Value, red: &Value) -> i64 {
         match value {
             Value::Number(number) => number.as_i64().unwrap(),
@@ -40,12 +46,6 @@ fn part_2(document: &str) -> i64 {
             _ => 0,
         }
     }
-    let numbers_sum: i64 = sum_numbers(&value, &red);
+    let numbers_sum = sum_numbers(&value, &red);
     numbers_sum
-}
-
-pub fn solve(document: &str) {
-    println!("--- Day 12: JSAbacusFramework.io ---");
-    println!("Part 1: {}", part_1(document));
-    println!("Part 2: {}", part_2(document));
 }

@@ -1,10 +1,16 @@
+pub fn solve(strings: &str) {
+    println!("--- Day 8: Matchsticks ---");
+    println!("Part 1: {}", part_1(strings));
+    println!("Part 2: {}", part_2(strings));
+}
+
 fn part_1(strings: &str) -> usize {
-    let mut index: usize;
-    let mut length: usize;
+    let mut index;
+    let mut length;
+    let mut num_code_letters;
+    let mut num_memory_letters;
     let mut letters: Vec<char>;
-    let mut num_code_letters: usize;
-    let mut num_memory_letters: usize;
-    let mut num_code_minus_memory_letters: usize = 0;
+    let mut num_code_minus_memory_letters = 0;
     for string in strings.lines() {
         index = 0;
         num_memory_letters = 0;
@@ -29,12 +35,12 @@ fn part_1(strings: &str) -> usize {
 }
 
 fn part_2(strings: &str) -> usize {
-    let mut index: usize;
-    let mut length: usize;
+    let mut index;
+    let mut length;
+    let mut num_code_letters;
+    let mut num_memory_letters;
     let mut letters: Vec<char>;
-    let mut num_code_letters: usize;
-    let mut num_memory_letters: usize;
-    let mut num_code_minus_memory_letters: usize = 0;
+    let mut num_code_minus_memory_letters = 0;
     for string in strings.lines() {
         index = 0;
         num_memory_letters = 6;
@@ -58,10 +64,4 @@ fn part_2(strings: &str) -> usize {
         num_code_minus_memory_letters += num_memory_letters - num_code_letters;
     }
     num_code_minus_memory_letters
-}
-
-pub fn solve(strings: &str) {
-    println!("--- Day 8: Matchsticks ---");
-    println!("Part 1: {}", part_1(strings));
-    println!("Part 2: {}", part_2(strings));
 }
