@@ -222,6 +222,8 @@
 
   - ### :thought_balloon: [Zig Blog Posts by Eric Engheim](https://medium.com/swlh/zig-the-introduction-dcd173a86975)
 
+  - ### :globe_with_meridians: [Zig Embedded Group Web Site](https://zeg.random-projects.net/)
+
   - ### :thought_balloon: [Zig Blog Posts by Garrett Squire](https://gsquire.github.io/static/)
 
   - ### :card_file_box: [Awesome Zig Coding Repos List](https://github.com/stars/tensorush/lists/awesome-zig-coding)
