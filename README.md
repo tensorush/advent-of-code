@@ -54,7 +54,7 @@
 ## Table of Contents
 
 - [:infinity: Haskell](#infinity-haskell)
-- [:juggling_person: Julia](#juggling_man-julia)
+- [:juggling_person: Julia](#juggling_person-julia)
 - [:crab: Rust](#crab-rust)
 - [:zap: Zig](#zap-zig)
 
@@ -128,7 +128,7 @@
 
   - ### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
 
-## :juggling_man: Julia
+## :juggling_person: Julia
 
   - ### :man_teacher: [Introduction to Computational Thinking Course by Alan Edelman and others](https://computationalthinking.mit.edu/Spring21/)
 
