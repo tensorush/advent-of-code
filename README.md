@@ -272,7 +272,7 @@
 
   - ### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://media.handmade-seattle.com/practical-data-oriented-design/)
 
-  - ### :headphones: [Taking the Warts Of f C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
+  - ### :headphones: [Taking the Warts Off C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
 
   - ### :tv: [Zig – a Programming Language Designed for Robustness, Optimality and Clarity Talk by Andrew Kelley](https://www.youtube.com/watch?v=Z4oYSByyRak&t)
 
