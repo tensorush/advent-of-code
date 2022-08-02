@@ -25,7 +25,7 @@
 
 > ### _Rust 1.0.0 was released on May 15, 2015 — 11 years since the start of development._
 
-## :zap: [Zig](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2016-Zig) — [Advent of Code 2016](https://adventofcode.com/2016)
+## :zap: [Zig](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2016-Zig) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
