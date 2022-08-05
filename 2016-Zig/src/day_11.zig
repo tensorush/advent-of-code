@@ -13,6 +13,8 @@ pub fn main() std.mem.Allocator.Error!void {
     std.debug.print("Part 2: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 14, true)});
 }
 
+// Items are pairs of compatible generators (even) and microchips (odd) in order of appearance.
+// First four are reserved for additions in part 2 and for test input.
 const Item = enum { @"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13" };
 
 fn Facility(comptime num_items: u4) type {
@@ -73,14 +75,15 @@ fn Facility(comptime num_items: u4) type {
 
         fn isSafe(self: *Facility(num_items)) bool {
             var floor_iter: ItemSet.Iterator = undefined;
-            var generator_idx_opt: ?u4 = null;
+            var has_unpaired_microchip: bool = false;
+            var last_generator_idx_opt: ?u4 = null;
             for (self.floors) |*floor| {
                 floor_iter = floor.iterator();
                 while (floor_iter.next()) |item| {
                     if (@enumToInt(item) % 2 == 0) {
-                        generator_idx_opt = @enumToInt(item);
-                    } else if (generator_idx_opt) |generator_idx| {
-                        if (generator_idx < @enumToInt(item) - 1) return false;
+                        if (has_unpaired_microchip) return false else last_generator_idx_opt = @enumToInt(item);
+                    } else if (last_generator_idx_opt == null or last_generator_idx_opt.? < @enumToInt(item) - 1) {
+                        has_unpaired_microchip = true;
                     }
                 }
             }
@@ -92,7 +95,7 @@ fn Facility(comptime num_items: u4) type {
             for (self.floors) |floor, i| {
                 heuristic_cost += floor.count() * (NUM_FLOORS - i - 1);
             }
-            return @intCast(u32, heuristic_cost);
+            return @intCast(u32, heuristic_cost / 2);
         }
 
         fn bringItemPair(self: *Facility(num_items), item_pair: []const Item, from_floor_idx: u2, to_floor_idx: u2) void {
@@ -171,8 +174,8 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
                     }
                 }
             }
-            _ = f_scores.remove(facility);
-            _ = g_scores.remove(facility);
+            // _ = f_scores.remove(facility);
+            // _ = g_scores.remove(facility);
         }
         unreachable;
     };
