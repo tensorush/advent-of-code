@@ -1,7 +1,7 @@
 const std = @import("std");
 
 pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_09.txt");
+    const input = @embedFile("inputs/day_09.txt");
     std.debug.print("--- Day 9: Explosives in Cyberspace ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try parseAndDecompressFile(input, true)});
     std.debug.print("Part 2: {d}\n", .{try parseAndDecompressFile(input, false)});

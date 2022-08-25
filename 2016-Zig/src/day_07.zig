@@ -5,7 +5,7 @@ const ThreeCharArray = std.BoundedArray([]const u8, 1 << 4);
 pub fn main() error{Overflow}!void {
     var tls_count: u16 = 0;
     var ssl_count: u16 = 0;
-    const input = @embedFile("../inputs/day_07.txt");
+    const input = @embedFile("inputs/day_07.txt");
     var ip_iter = std.mem.tokenize(u8, input, "\n");
     while (ip_iter.next()) |ip| {
         if (doesSupportTls(ip)) tls_count += 1;

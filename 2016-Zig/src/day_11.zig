@@ -7,7 +7,7 @@ const MAX_NUM_STATES: usize = 1 << 19;
 const ItemSet = std.enums.EnumSet(Item);
 
 pub fn main() std.mem.Allocator.Error!void {
-    const input = @embedFile("../inputs/day_11.txt");
+    const input = @embedFile("aoc/inputs/day_11.txt");
     std.debug.print("--- Day 11: Radioisotope Thermoelectric Generators ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 10, false)});
     std.debug.print("Part 2: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 14, true)});
@@ -124,20 +124,20 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
         const arena_allocator = arena.allocator();
         var f_scores = std.AutoHashMapUnmanaged(Facility(num_items), u32){};
         try f_scores.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        f_scores.putAssumeCapacity(initial_facility, initial_facility.estimateHeuristicCost());
+        f_scores.putAssumeCapacityNoClobber(initial_facility, initial_facility.estimateHeuristicCost());
         var g_scores = std.AutoHashMapUnmanaged(Facility(num_items), u32){};
         try g_scores.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        g_scores.putAssumeCapacity(initial_facility, 0);
+        g_scores.putAssumeCapacityNoClobber(initial_facility, 0);
         var closed_set = std.AutoHashMapUnmanaged(Facility(num_items), void){};
         try closed_set.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
         var open_set = std.AutoHashMapUnmanaged(Facility(num_items), void){};
         try open_set.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        open_set.putAssumeCapacity(initial_facility, {});
+        open_set.putAssumeCapacityNoClobber(initial_facility, {});
         var open_min_heap = std.PriorityQueue(Facility(num_items), *const std.AutoHashMapUnmanaged(Facility(num_items), u32), Facility(num_items).lessThan).init(arena_allocator, &f_scores);
         try open_min_heap.add(initial_facility);
         while (open_min_heap.removeOrNull()) |facility| {
             if (facility.isLast()) break :blk g_scores.get(facility).?;
-            closed_set.putAssumeCapacity(facility, {});
+            closed_set.putAssumeCapacityNoClobber(facility, {});
             _ = open_set.remove(facility);
             var from_floor_idx = facility.elevator_idx;
             var to_floor_idxs = switch (from_floor_idx) {
@@ -158,7 +158,7 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
                         if (closed_set.contains(next_facility) or !next_facility.isSafe()) continue;
                         var tentative_g_score = g_scores.get(facility).? + 1;
                         if (!open_set.contains(next_facility)) {
-                            open_set.putAssumeCapacity(next_facility, {});
+                            open_set.putAssumeCapacityNoClobber(next_facility, {});
                         } else if (tentative_g_score >= g_scores.get(next_facility) orelse std.math.maxInt(u32)) {
                             continue;
                         } else {
@@ -168,14 +168,14 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
                             }
                             _ = open_min_heap.removeIndex(open_min_heap_iter.count - 1);
                         }
-                        f_scores.putAssumeCapacity(next_facility, tentative_g_score + next_facility.estimateHeuristicCost());
-                        g_scores.putAssumeCapacity(next_facility, tentative_g_score);
+                        f_scores.putAssumeCapacityNoClobber(next_facility, tentative_g_score + next_facility.estimateHeuristicCost());
+                        g_scores.putAssumeCapacityNoClobber(next_facility, tentative_g_score);
                         try open_min_heap.add(next_facility);
                     }
                 }
             }
-            // _ = f_scores.remove(facility);
-            // _ = g_scores.remove(facility);
+            _ = f_scores.remove(facility);
+            _ = g_scores.remove(facility);
         }
         unreachable;
     };
@@ -183,5 +183,5 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
 
 test "Day 11" {
     const input = "The first floor contains a hydrogen-compatible microchip and a lithium-compatible microchip.\nThe second floor contains a hydrogen generator.\nThe third floor contains a lithium generator.\nThe fourth floor contains nothing relevant.";
-    try std.testing.expect(11 == try findShortestPathLen(std.heap.page_allocator, input, 4, null));
+    try std.testing.expect(11 == try findShortestPathLen(std.testing.allocator, input, 4, null));
 }

@@ -3,7 +3,7 @@ const std = @import("std");
 const OperationArray = std.BoundedArray(Operation, 1 << 7);
 
 pub fn main() error{Overflow}!void {
-    const input = @embedFile("../inputs/day_21.txt");
+    const input = @embedFile("inputs/day_21.txt");
     var scrambler = Scrambler{};
     try scrambler.parseOperations(input);
     var scrambled_password = "fbgdceah".*;
@@ -28,22 +28,22 @@ const Scrambler = struct {
             self.operations.appendAssumeCapacity(blk: {
                 if (str_operation[0] == 's') {
                     if (str_operation[5] == 'p') {
-                        break :blk .{ .swap = .{ .x = str_operation[14] - '0', .y = str_operation[30] - '0' } };
+                        break :blk Operation{ .swap = .{ .x = str_operation[14] - '0', .y = str_operation[30] - '0' } };
                     } else {
-                        break :blk .{ .swap = .{ .x = str_operation[12], .y = str_operation[26] } };
+                        break :blk Operation{ .swap = .{ .x = str_operation[12], .y = str_operation[26] } };
                     }
                 } else if (str_operation[2] == 't') {
                     if (str_operation[7] == 'l') {
-                        break :blk .{ .rotate = .{ .x = str_operation[12] - '0', .y = 'l' } };
+                        break :blk Operation{ .rotate = .{ .x = str_operation[12] - '0', .y = 'l' } };
                     } else if (str_operation[7] == 'r') {
-                        break :blk .{ .rotate = .{ .x = str_operation[13] - '0', .y = 'r' } };
+                        break :blk Operation{ .rotate = .{ .x = str_operation[13] - '0', .y = 'r' } };
                     } else {
-                        break :blk .{ .rotate = .{ .x = str_operation[35], .y = 'b' } };
+                        break :blk Operation{ .rotate = .{ .x = str_operation[35], .y = 'b' } };
                     }
                 } else if (str_operation[0] == 'r') {
-                    break :blk .{ .reverse = .{ .x = str_operation[18] - '0', .y = str_operation[28] - '0' } };
+                    break :blk Operation{ .reverse = .{ .x = str_operation[18] - '0', .y = str_operation[28] - '0' } };
                 } else {
-                    break :blk .{ .move = .{ .x = str_operation[14] - '0', .y = str_operation[28] - '0' } };
+                    break :blk Operation{ .move = .{ .x = str_operation[14] - '0', .y = str_operation[28] - '0' } };
                 }
             });
         }

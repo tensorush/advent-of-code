@@ -4,7 +4,7 @@ const MAX_NUM_OUTS = 1 << 5;
 const MAX_NUM_BOTS = 1 << 8;
 
 pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_10.txt");
+    const input = @embedFile("inputs/day_10.txt");
     var state1 = State{ .is_part1 = true };
     var state2 = State{ .is_part1 = false };
     std.debug.print("--- Day 10: Balance Bots ---\n", .{});

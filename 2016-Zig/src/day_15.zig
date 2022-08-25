@@ -3,7 +3,7 @@ const std = @import("std");
 const DiscArray = std.BoundedArray(Disc, 1 << 3);
 
 pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_15.txt");
+    const input = @embedFile("inputs/day_15.txt");
     var discs = try parseDiscs(input);
     std.debug.print("--- Day 15: Timing is Everything ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{findStartTime(&discs, false)});

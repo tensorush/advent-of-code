@@ -5,7 +5,7 @@ const MAX_SIGNAL_LEN: u4 = 1 << 3;
 const InstructionArray = std.BoundedArray(Instruction, 1 << 5);
 
 pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_25.txt");
+    const input = @embedFile("inputs/day_25.txt");
     const instructions = try parseInstructions(input);
     std.debug.print("--- Day 25: Clock Signal ---\n", .{});
     std.debug.print("Final Part: {d}\n", .{executeInstructions(instructions)});

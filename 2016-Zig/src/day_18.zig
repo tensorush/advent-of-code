@@ -1,7 +1,7 @@
 const std = @import("std");
 
 pub fn main() void {
-    const input = @embedFile("../inputs/day_18.txt");
+    const input = @embedFile("inputs/day_18.txt");
     const row = parseRow(input);
     std.debug.print("--- Day 18: Like a Rogue ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{countSafeTiles(input.len, row, 40)});

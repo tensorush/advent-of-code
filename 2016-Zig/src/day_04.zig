@@ -5,7 +5,7 @@ const MAX_NAME_LEN: u8 = 1 << 7;
 const RoomArray = std.BoundedArray(Room, 1 << 10);
 
 pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_04.txt");
+    const input = @embedFile("inputs/day_04.txt");
     const real_rooms = try parseAndFindRealRooms(input);
     std.debug.print("--- Day 4: Security Through Obscurity ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{findSectorIdSum(real_rooms)});
