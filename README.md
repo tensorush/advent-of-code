@@ -196,6 +196,8 @@
 
 ## :zap: Zig
 
+  - ### :card_file_box: [Zig Community](https://github.com/ziglang/zig/wiki/Community)
+
   - ### :thought_balloon: [Zig News Blog Posts](https://zig.news/)
 
   - ### :tv: [Zig SHOWTIME Talks](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
