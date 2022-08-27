@@ -16,7 +16,7 @@
 
 > ### _Rust 1.0.0 was released on May 15, 2015 — 11 years since the start of development._
 
-## :zap: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
+## :lizard: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
@@ -47,7 +47,7 @@
 - [:infinity: Haskell](#infinity-haskell)
 - [:juggling_person: Julia](#juggling_person-julia)
 - [:crab: Rust](#crab-rust)
-- [:zap: Zig](#zap-zig)
+- [:lizard: Zig](#zap-zig)
 
 ## :infinity: Haskell
 
@@ -185,7 +185,7 @@
 
   - ### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
 
-## :zap: Zig
+## :lizard: Zig
 
   - ### :card_file_box: [Zig Community](https://github.com/ziglang/zig/wiki/Community)
 
