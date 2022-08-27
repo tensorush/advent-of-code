@@ -2,13 +2,6 @@
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Julia](https://img.shields.io/badge/julia-%23000000.svg?style=for-the-badge&logo=julia&logoColor=white&color=b65fe8) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=5d2d87) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/tensorush/Awesome-Languages-Learning/pulls)
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Forks][forks-shield]][forks-url]
-[![License][license-shield]][license-url]
-
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
 </p>
@@ -19,13 +12,11 @@
 
 ## :man_student: Collection of the most awesome learning resources on various modern languages accompanied by solutions to annual Advent of Code challenges.
 
-> ### _Any corrections or optimizations are much appreciated!_ :hugs:
-
-## :crab: [Rust](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
+## :crab: [Rust](2015-Rust/) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
 > ### _Rust 1.0.0 was released on May 15, 2015 — 11 years since the start of development._
 
-## :zap: [Zig](https://github.com/tensorush/Awesome-Languages-Learning/blob/master/2016-Zig) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
+## :zap: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
@@ -283,16 +274,3 @@
   - ### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
   - ### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Mason Remaley Podcast Episode by Abner Coimbre](https://media.handmade-seattle.com/the-race-to-replace-c-and-cpp-2/)
-
-<!-- MARKDOWN LINKS -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
-[contributors-url]: https://github.com/tensorush/Awesome-Languages-Learning/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
-[issues-url]: https://github.com/tensorush/Awesome-Languages-Learning/issues
-[stars-shield]: https://img.shields.io/github/stars/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
-[stars-url]: https://github.com/tensorush/Awesome-Languages-Learning/stargazers
-[forks-shield]: https://img.shields.io/github/forks/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
-[forks-url]: https://github.com/tensorush/Awesome-Languages-Learning/network/members
-[license-shield]: https://img.shields.io/github/license/tensorush/Awesome-Languages-Learning.svg?style=for-the-badge
-[license-url]: https://github.com/tensorush/Awesome-Languages-Learning/blob/master/LICENSE.md

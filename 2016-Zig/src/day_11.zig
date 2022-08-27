@@ -2,12 +2,12 @@ const std = @import("std");
 
 const MAX_ISOTOPE_LEN: u2 = 3;
 const NUM_FLOORS: usize = 1 << 2;
-const MAX_NUM_STATES: usize = 1 << 19;
+const MAX_NUM_STATES: usize = 1 << 22;
 
 const ItemSet = std.enums.EnumSet(Item);
 
 pub fn main() std.mem.Allocator.Error!void {
-    const input = @embedFile("aoc/inputs/day_11.txt");
+    const input = @embedFile("inputs/day_11.txt");
     std.debug.print("--- Day 11: Radioisotope Thermoelectric Generators ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 10, false)});
     std.debug.print("Part 2: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 14, true)});
@@ -74,16 +74,22 @@ fn Facility(comptime num_items: u4) type {
         }
 
         fn isSafe(self: *Facility(num_items)) bool {
-            var floor_iter: ItemSet.Iterator = undefined;
-            var has_unpaired_microchip: bool = false;
-            var last_generator_idx_opt: ?u4 = null;
+            var has_unpaired_microchip: bool = undefined;
+            var last_generator_idx_opt: ?u4 = undefined;
+            var item_iter: ItemSet.Iterator = undefined;
             for (self.floors) |*floor| {
-                floor_iter = floor.iterator();
-                while (floor_iter.next()) |item| {
+                has_unpaired_microchip = false;
+                last_generator_idx_opt = null;
+                item_iter = floor.iterator();
+                while (item_iter.next()) |item| {
                     if (@enumToInt(item) % 2 == 0) {
                         if (has_unpaired_microchip) return false else last_generator_idx_opt = @enumToInt(item);
-                    } else if (last_generator_idx_opt == null or last_generator_idx_opt.? < @enumToInt(item) - 1) {
-                        has_unpaired_microchip = true;
+                    } else {
+                        if (last_generator_idx_opt) |last_generator_idx| {
+                            if (last_generator_idx != @enumToInt(item) - 1) return false;
+                        } else {
+                            if (!has_unpaired_microchip) has_unpaired_microchip = true;
+                        }
                     }
                 }
             }
@@ -124,20 +130,20 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
         const arena_allocator = arena.allocator();
         var f_scores = std.AutoHashMapUnmanaged(Facility(num_items), u32){};
         try f_scores.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        f_scores.putAssumeCapacityNoClobber(initial_facility, initial_facility.estimateHeuristicCost());
+        f_scores.putAssumeCapacity(initial_facility, initial_facility.estimateHeuristicCost());
         var g_scores = std.AutoHashMapUnmanaged(Facility(num_items), u32){};
         try g_scores.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        g_scores.putAssumeCapacityNoClobber(initial_facility, 0);
+        g_scores.putAssumeCapacity(initial_facility, 0);
         var closed_set = std.AutoHashMapUnmanaged(Facility(num_items), void){};
         try closed_set.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
         var open_set = std.AutoHashMapUnmanaged(Facility(num_items), void){};
         try open_set.ensureTotalCapacity(arena_allocator, MAX_NUM_STATES);
-        open_set.putAssumeCapacityNoClobber(initial_facility, {});
+        open_set.putAssumeCapacity(initial_facility, {});
         var open_min_heap = std.PriorityQueue(Facility(num_items), *const std.AutoHashMapUnmanaged(Facility(num_items), u32), Facility(num_items).lessThan).init(arena_allocator, &f_scores);
         try open_min_heap.add(initial_facility);
         while (open_min_heap.removeOrNull()) |facility| {
             if (facility.isLast()) break :blk g_scores.get(facility).?;
-            closed_set.putAssumeCapacityNoClobber(facility, {});
+            closed_set.putAssumeCapacity(facility, {});
             _ = open_set.remove(facility);
             var from_floor_idx = facility.elevator_idx;
             var to_floor_idxs = switch (from_floor_idx) {
@@ -158,7 +164,7 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
                         if (closed_set.contains(next_facility) or !next_facility.isSafe()) continue;
                         var tentative_g_score = g_scores.get(facility).? + 1;
                         if (!open_set.contains(next_facility)) {
-                            open_set.putAssumeCapacityNoClobber(next_facility, {});
+                            open_set.putAssumeCapacity(next_facility, {});
                         } else if (tentative_g_score >= g_scores.get(next_facility) orelse std.math.maxInt(u32)) {
                             continue;
                         } else {
@@ -168,8 +174,8 @@ fn findShortestPathLen(allocator: std.mem.Allocator, input: []const u8, comptime
                             }
                             _ = open_min_heap.removeIndex(open_min_heap_iter.count - 1);
                         }
-                        f_scores.putAssumeCapacityNoClobber(next_facility, tentative_g_score + next_facility.estimateHeuristicCost());
-                        g_scores.putAssumeCapacityNoClobber(next_facility, tentative_g_score);
+                        f_scores.putAssumeCapacity(next_facility, tentative_g_score + next_facility.estimateHeuristicCost());
+                        g_scores.putAssumeCapacity(next_facility, tentative_g_score);
                         try open_min_heap.add(next_facility);
                     }
                 }

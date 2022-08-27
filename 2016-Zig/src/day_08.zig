@@ -104,7 +104,7 @@ test "Day 8" {
     var screen = Screen(7, 3){};
     try screen.parseAndExecuteInstructions(input);
     try std.testing.expect(6 == screen.countLitPixels());
-    try std.testing.expectEqualSlices(bool, &[_]bool{ false, true, false, false, true, false, true }, screen.pixels[0][0..7]);
-    try std.testing.expectEqualSlices(bool, &[_]bool{ true, false, true, false, false, false, false }, screen.pixels[1][0..7]);
-    try std.testing.expectEqualSlices(bool, &[_]bool{ false, true, false, false, false, false, false }, screen.pixels[2][0..7]);
+    try std.testing.expectEqualSlices(bool, &[7]bool{ false, true, false, false, true, false, true }, screen.pixels[0][0..7]);
+    try std.testing.expectEqualSlices(bool, &[7]bool{ true, false, true, false, false, false, false }, screen.pixels[1][0..7]);
+    try std.testing.expectEqualSlices(bool, &[7]bool{ false, true, false, false, false, false, false }, screen.pixels[2][0..7]);
 }
