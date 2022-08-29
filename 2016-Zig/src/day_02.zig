@@ -7,8 +7,8 @@ const ACTUAL_KEYPAD = [5][5]?Key{ .{ null, null, .@"1", null, null }, .{ null, .
 const MoveArray = std.BoundedArray(Move, 1 << 10);
 const KeyMovesArray = std.BoundedArray(MoveArray, MAX_CODE_LEN);
 
-pub fn main() error{Overflow}!void {
-    const input = @embedFile("inputs/day_02.txt");
+pub fn solve() error{Overflow}!void {
+    const input = @embedFile("../inputs/day_02.txt");
     const key_moves = try parseKeyMoves(input);
     var code: [MAX_CODE_LEN]u8 = undefined;
     std.debug.print("--- Day 2: Bathroom Security ---\n", .{});

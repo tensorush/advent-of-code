@@ -5,7 +5,7 @@ const MAX_BUF_LEN: u8 = 1 << 5;
 const KeyArray = std.BoundedArray(CharSequence, 1 << 7);
 const TripletArray = std.BoundedArray(CharSequence, 1 << 11);
 
-pub fn main() (std.fmt.BufPrintError || error{Overflow})!void {
+pub fn solve() (std.fmt.BufPrintError || error{Overflow})!void {
     const salt = "ahsbgdzn";
     std.debug.print("--- Day 14: One-Time Pad ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try find64thKeyIndex(salt, false)});

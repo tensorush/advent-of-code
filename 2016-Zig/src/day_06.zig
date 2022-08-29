@@ -1,9 +1,9 @@
 const std = @import("std");
 
-pub fn main() void {
+pub fn solve() void {
     const message_len: u4 = 8;
     var message = [1]u8{0} ** message_len;
-    const input = @embedFile("inputs/day_06.txt");
+    const input = @embedFile("../inputs/day_06.txt");
     const corrupt_char_counts = parseAndCountCorruptChars(input, message_len);
     std.debug.print("--- Day 6: Signals and Noise ---\n", .{});
     std.debug.print("Part 1: {s}\n", .{correctMessage(corrupt_char_counts[0..], message[0..], true)});

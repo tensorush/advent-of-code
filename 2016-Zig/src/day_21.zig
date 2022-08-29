@@ -2,8 +2,8 @@ const std = @import("std");
 
 const OperationArray = std.BoundedArray(Operation, 1 << 7);
 
-pub fn main() error{Overflow}!void {
-    const input = @embedFile("inputs/day_21.txt");
+pub fn solve() error{Overflow}!void {
+    const input = @embedFile("../inputs/day_21.txt");
     var scrambler = Scrambler{};
     try scrambler.parseOperations(input);
     var scrambled_password = "fbgdceah".*;

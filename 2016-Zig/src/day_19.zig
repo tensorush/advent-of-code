@@ -2,7 +2,7 @@ const std = @import("std");
 
 const ElfList = std.SinglyLinkedList(u32);
 
-pub fn main() std.mem.Allocator.Error!void {
+pub fn solve() std.mem.Allocator.Error!void {
     std.debug.print("--- Day 19: An Elephant Named Joseph ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try findWinner(std.heap.page_allocator, 3_017_957, false)});
     std.debug.print("Part 2: {d}\n", .{try findWinner(std.heap.page_allocator, 3_017_957, true)});

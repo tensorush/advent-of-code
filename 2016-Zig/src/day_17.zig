@@ -5,7 +5,7 @@ const MAX_PATH_LEN: u16 = 1 << 10;
 
 const StateMinHeap = std.PriorityQueue(State, void, State.lessThan);
 
-pub fn main() (std.mem.Allocator.Error || std.fmt.BufPrintError)!void {
+pub fn solve() (std.mem.Allocator.Error || std.fmt.BufPrintError)!void {
     const input = "gdjjyniy";
     var path: [MAX_PATH_LEN]u8 = undefined;
     std.debug.print("--- Day 17: Two Steps Forward ---\n", .{});

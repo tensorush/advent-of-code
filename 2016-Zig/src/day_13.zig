@@ -5,7 +5,7 @@ const MAX_SIDE_LEN: u16 = 1 << 6;
 
 const PointQueue = std.TailQueue(Point);
 
-pub fn main() std.mem.Allocator.Error!void {
+pub fn solve() std.mem.Allocator.Error!void {
     var start = Point{};
     var favorite_number: u16 = 1362;
     var end = Point{ .x = 31, .y = 39 };

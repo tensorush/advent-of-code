@@ -3,7 +3,7 @@ const std = @import("std");
 const MAX_BUF_LEN: u8 = 1 << 7;
 const PASSWORD_LEN: u4 = 1 << 3;
 
-pub fn main() std.fmt.BufPrintError!void {
+pub fn solve() std.fmt.BufPrintError!void {
     const door_id = "reyedfim";
     std.debug.print("--- Day 5: How About a Nice Game of Chess? ---\n", .{});
     std.debug.print("Part 1: {s}\n", .{try findPassword(door_id, true)});

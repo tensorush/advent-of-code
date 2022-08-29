@@ -20,7 +20,7 @@
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
-## :eagle: Swift — [Advent of Code 2017](https://adventofcode.com/2017)
+## :eagle: [Swift](2017-Swift) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
 
 > ### _Swift peaked in its core development on January 11, 2017 once Chris Lattner left Apple._
 
@@ -47,7 +47,7 @@
 - [:infinity: Haskell](#infinity-haskell)
 - [:juggling_person: Julia](#juggling_person-julia)
 - [:crab: Rust](#crab-rust)
-- [:lizard: Zig](#zap-zig)
+- [:lizard: Zig](#lizard-zig)
 
 ## :infinity: Haskell
 

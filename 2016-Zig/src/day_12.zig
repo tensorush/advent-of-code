@@ -2,8 +2,8 @@ const std = @import("std");
 
 const InstructionArray = std.BoundedArray(Instruction, 1 << 5);
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_12.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_12.txt");
     const instructions = try parseInstructions(input);
     std.debug.print("--- Day 12: Leonardo's Monorail ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{executeInstructions(instructions, false)});

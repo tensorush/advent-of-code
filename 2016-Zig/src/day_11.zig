@@ -6,8 +6,8 @@ const MAX_NUM_STATES: usize = 1 << 22;
 
 const ItemSet = std.enums.EnumSet(Item);
 
-pub fn main() std.mem.Allocator.Error!void {
-    const input = @embedFile("inputs/day_11.txt");
+pub fn solve() std.mem.Allocator.Error!void {
+    const input = @embedFile("../inputs/day_11.txt");
     std.debug.print("--- Day 11: Radioisotope Thermoelectric Generators ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 10, false)});
     std.debug.print("Part 2: {d}\n", .{try findShortestPathLen(std.heap.page_allocator, input, 14, true)});

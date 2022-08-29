@@ -2,8 +2,8 @@ const std = @import("std");
 
 const PointMinHeap = std.PriorityQueue(Point, void, Point.lessThan);
 
-pub fn main() std.mem.Allocator.Error!void {
-    const input = @embedFile("inputs/day_24.txt");
+pub fn solve() std.mem.Allocator.Error!void {
+    const input = @embedFile("../inputs/day_24.txt");
     var map = Map(183, 39, 8){};
     map.parseLocations(input);
     try map.findShortestPathLens(std.heap.page_allocator);

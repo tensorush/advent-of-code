@@ -1,7 +1,7 @@
 const std = @import("std");
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_08.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_08.txt");
     var screen = Screen(50, 6){};
     try screen.parseAndExecuteInstructions(input);
     std.debug.print("--- Day 8: Two-Factor Authentication ---\n", .{});

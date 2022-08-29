@@ -1,6 +1,6 @@
 const std = @import("std");
 
-pub fn main() std.mem.Allocator.Error!void {
+pub fn solve() std.mem.Allocator.Error!void {
     const initial_state = "11110010111001001";
     var checksum = Checksum{ .allocator = std.heap.page_allocator };
     defer checksum.deinit();

@@ -1,7 +1,7 @@
 const std = @import("std");
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_03.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_03.txt");
     std.debug.print("--- Day 3: Squares With Three Sides ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try parseAndCountRowTriangles(input)});
     std.debug.print("Part 2: {d}\n", .{try parseAndCountColumnTriangles(input)});

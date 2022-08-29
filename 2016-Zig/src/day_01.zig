@@ -3,8 +3,8 @@ const std = @import("std");
 const PointArray = std.BoundedArray(Point, 1 << 11);
 const InstructionArray = std.BoundedArray(Instruction, 1 << 8);
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_01.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_01.txt");
     var path = try makePath(input);
     std.debug.print("--- Day 1: No Time for a Taxicab ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{computeManhattanDistance(.{}, path.pop())});

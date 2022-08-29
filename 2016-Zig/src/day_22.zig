@@ -2,8 +2,8 @@ const std = @import("std");
 
 const NodeArray = std.BoundedArray(Node, 1 << 10);
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_22.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_22.txt");
     var grid = Grid(32, 31){};
     try grid.parseGrid(input);
     const nodes = try parseNodes(input);

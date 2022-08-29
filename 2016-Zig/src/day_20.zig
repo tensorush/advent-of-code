@@ -2,8 +2,8 @@ const std = @import("std");
 
 const RangeArray = std.BoundedArray(Range, 1 << 11);
 
-pub fn main() std.fmt.ParseIntError!void {
-    const input = @embedFile("inputs/day_20.txt");
+pub fn solve() std.fmt.ParseIntError!void {
+    const input = @embedFile("../inputs/day_20.txt");
     const solution = try findLowestAllowedIpAndCountAllowedIps(input, std.math.maxInt(u32));
     std.debug.print("--- Day 20: Firewall Rules ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{solution.lowest_allowed_ip});
