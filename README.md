@@ -1,6 +1,6 @@
 # :sunglasses: :christmas_tree: **Awesome Languages Learning**
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=black&color=ffbf75) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=black&color=ffac26) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=white&color=ff5e29) ![Julia](https://img.shields.io/badge/julia-%23000000.svg?style=for-the-badge&logo=julia&logoColor=white&color=b65fe8) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=black&color=ffc400) ![Haskell](https://img.shields.io/badge/haskell-%23000000.svg?style=for-the-badge&logo=haskell&logoColor=white&color=5d2d87) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=161517)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=7c5642&color=black) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=f6a516&color=black) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=ff5e2e&color=black) ![Julia](https://img.shields.io/badge/julia-%23000000.svg?style=for-the-badge&logo=julia&logoColor=a270ba&color=black) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=f2d401&color=black) ![Idris 2](https://img.shields.io/badge/2-%23000000.svg?style=for-the-badge&label=idris&labelColor=black&color=ac0404) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=black)
 
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
@@ -20,21 +20,21 @@
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
-## :eagle: [Swift](2017-Swift) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
+## :eagle: [Swift](2017-Swift/) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
 
-> ### _Swift peaked in its core development on January 11, 2017 once Chris Lattner left Apple._
+> ### _Swift peaked in its core development on January 11, 2017 when Chris Lattner left Apple._
 
-## :juggling_person: Julia — [Advent of Code 2018](https://adventofcode.com/2018)
+## :juggling_person: [Julia](2018-Julia/) — [Advent of Code 2018](https://adventofcode.com/2018)
 
 > ### _Julia 1.0.0 was released on August 9, 2018 — 9 years since the start of development._
 
 ## :crown: Nim — [Advent of Code 2019](https://adventofcode.com/2019)
 
-> ### _Nim 1.0.0 was released on September 23, 2019 — 11 years after the first public release._
+> ### _Nim 1.0.0 was released on September 23, 2019 — 11 years since the first public release._
 
-## :infinity: Haskell — [Advent of Code 2020](https://adventofcode.com/2020)
+## :hotsprings: Idris 2 — [Advent of Code 2020](https://adventofcode.com/2020)
 
-> ### _Haskell's next formal specification was due in 2020 — 10 years after the last major release._
+> ### _Idris 2 was released on February 27, 2020 — 13 years since the first version's conception._
 
 ## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
