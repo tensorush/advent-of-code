@@ -19,7 +19,6 @@ mutable struct Marble
     end
 end
 
-
 function findWinningScore(num_players, last_marble_worth, is_part1)
     score = zeros(Int, num_players)
     cur_marble = Marble(0)

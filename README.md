@@ -1,6 +1,12 @@
 # :sunglasses: :christmas_tree: **Awesome Languages Learning**
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=7c5642&color=black) ![Zig](https://img.shields.io/badge/zig-%23000000.svg?style=for-the-badge&logo=zig&logoColor=f6a516&color=black) ![Swift](https://img.shields.io/badge/swift-%23000000.svg?style=for-the-badge&logo=swift&logoColor=ff5e2e&color=black) ![Julia](https://img.shields.io/badge/julia-%23000000.svg?style=for-the-badge&logo=julia&logoColor=a270ba&color=black) ![Nim](https://img.shields.io/badge/nim-%23000000.svg?style=for-the-badge&logo=nim&logoColor=f2d401&color=black) ![Idris 2](https://img.shields.io/badge/2-%23000000.svg?style=for-the-badge&label=idris&labelColor=black&color=ac0404) ![Crystal](https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white&color=black)
+![Rust](https://img.shields.io/badge/rust-black.svg?style=for-the-badge&logo=rust&logoColor=7C5642)
+![Zig](https://img.shields.io/badge/zig-black.svg?style=for-the-badge&logo=zig&logoColor=F6A516)
+![Swift](https://img.shields.io/badge/swift-black.svg?style=for-the-badge&logo=swift&logoColor=FF5E2E)
+![Julia](https://img.shields.io/badge/julia-black.svg?style=for-the-badge&logo=julia&logoColor=A270BA)
+![Nim](https://img.shields.io/badge/nim-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401)
+![Idris](https://img.shields.io/badge/idris-black.svg?style=for-the-badge&logo=idris&logoColor=AC0404)
+![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=white)
 
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
@@ -32,7 +38,7 @@
 
 > ### _Nim 1.0.0 was released on September 23, 2019 — 11 years since the first public release._
 
-## :hotsprings: Idris 2 — [Advent of Code 2020](https://adventofcode.com/2020)
+## :hotsprings: Idris — [Advent of Code 2020](https://adventofcode.com/2020)
 
 > ### _Idris 2 was released on February 27, 2020 — 13 years since the first version's conception._
 
