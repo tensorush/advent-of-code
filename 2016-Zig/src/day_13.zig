@@ -19,7 +19,7 @@ const Point = struct {
     y: u16 = 1,
 
     fn isOpen(self: Point, favorite_number: u16) bool {
-        return @popCount(u16, self.x * self.x + 3 * self.x + 2 * self.x * self.y + self.y + self.y * self.y + favorite_number) % 2 == 0;
+        return @popCount(self.x * self.x + 3 * self.x + 2 * self.x * self.y + self.y + self.y * self.y + favorite_number) % 2 == 0;
     }
 };
 

@@ -26,31 +26,31 @@ const day_24 = @import("src/day_24.zig");
 const day_25 = @import("src/day_25.zig");
 
 pub fn main() (std.fmt.BufPrintError || std.mem.Allocator.Error || std.fmt.ParseIntError || error{Overflow})!void {
-    _ = try @import("src/day_01.zig").solve();
-    _ = try @import("src/day_02.zig").solve();
-    _ = try @import("src/day_03.zig").solve();
-    _ = try @import("src/day_04.zig").solve();
-    _ = try @import("src/day_05.zig").solve();
-    _ = @import("src/day_06.zig").solve();
-    _ = try @import("src/day_07.zig").solve();
-    _ = try @import("src/day_08.zig").solve();
-    _ = try @import("src/day_09.zig").solve();
-    _ = try @import("src/day_10.zig").solve();
-    _ = try @import("src/day_11.zig").solve();
-    _ = try @import("src/day_12.zig").solve();
-    _ = try @import("src/day_13.zig").solve();
-    _ = try @import("src/day_14.zig").solve();
-    _ = try @import("src/day_15.zig").solve();
-    _ = try @import("src/day_16.zig").solve();
-    _ = try @import("src/day_17.zig").solve();
-    _ = @import("src/day_18.zig").solve();
-    _ = try @import("src/day_19.zig").solve();
-    _ = try @import("src/day_20.zig").solve();
-    _ = try @import("src/day_21.zig").solve();
-    _ = try @import("src/day_22.zig").solve();
-    _ = try @import("src/day_23.zig").solve();
-    _ = try @import("src/day_24.zig").solve();
-    _ = try @import("src/day_25.zig").solve();
+    try day_01.solve();
+    try day_02.solve();
+    try day_03.solve();
+    try day_04.solve();
+    try day_05.solve();
+    day_06.solve();
+    try day_07.solve();
+    try day_08.solve();
+    try day_09.solve();
+    try day_10.solve();
+    try day_11.solve();
+    try day_12.solve();
+    try day_13.solve();
+    try day_14.solve();
+    try day_15.solve();
+    try day_16.solve();
+    try day_17.solve();
+    day_18.solve();
+    try day_19.solve();
+    try day_20.solve();
+    try day_21.solve();
+    try day_22.solve();
+    try day_23.solve();
+    try day_24.solve();
+    try day_25.solve();
 }
 
 test {
