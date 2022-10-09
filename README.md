@@ -247,7 +247,11 @@
 
   - ### :globe_with_meridians: [Zig By Example Web Site by Ali Chraghi](https://zig-by-example.github.io/)
 
+  - ### :tv: [Zig Roadmap 2023 Talk by Andrew Kelley](https://www.youtube.com/watch?v=AqDdWEiSwMM)
+
   - ### :tv: [The Road to Zig 1.0 Talk by Andrew Kelley](https://www.youtube.com/watch?v=Gv2I7qTux7g)
+
+  - ### :thought_balloon: [Writing an OS in Zig Blog Posts by knarkzel](https://knarkzel.srht.site/)
 
   - ### :thought_balloon: [Zig Common Tasks Blog Post by Renato Athaydes](https://renatoathaydes.github.io/zig-common-tasks/)
 
