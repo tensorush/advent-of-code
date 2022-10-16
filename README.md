@@ -193,11 +193,15 @@
 
 ## :lizard: Zig
 
+  - ### :card_file_box: [Zig Jobs](https://www.zigjobs.org/)
+
   - ### :card_file_box: [Zig Community](https://github.com/ziglang/zig/wiki/Community)
 
   - ### :thought_balloon: [Zig News Blog Posts](https://zig.news/)
 
-  - ### :tv: [Zig SHOWTIME Talks](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
+  - ### :thought_balloon: [TigerBeetle Blog Posts](https://tigerbeetle.com/blog/)
+
+  - ### :tv: [Zig SHOWTIME Videos](https://www.youtube.com/playlist?list=PL5AY2Vv6EsfTfNuUvdkFOxSFY4L1LVN8N)
 
   - ### :postbox: [Zig Monthly News Letters](https://zigmonthly.org/)
 
@@ -239,6 +243,8 @@
 
   - ### :thought_balloon: [Zig Blog Posts by Nathan Michaels](https://www.nmichaels.org/zig/)
 
+  - ### :thought_balloon: [Buffer Pool Blog Post by Gavin Ray](https://gavinray97.github.io/blog/io-uring-fixed-bufferpool-zig)
+
   - ### :card_file_box: [Zig Package Aggregator Repos List](https://zpm.random-projects.net/)
 
   - ### :thought_balloon: [Zig Blog Posts by Stephen Gutekanst](https://devlog.hexops.com/archives/)
@@ -259,7 +265,7 @@
 
   - ### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
-  - ### :tv: [TigerBeetle Talks by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/channel/UC3TlyQ3h6lC_jSWust2leGg/playlists)
+  - ### :tv: [TigerBeetle Videos by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/channel/UC3TlyQ3h6lC_jSWust2leGg/playlists)
 
   - ### :thought_balloon: [The Missing Zig Polymorphism Blog Post by Ralph Brorsen](https://revivalizer.xyz/post/the-missing-zig-polymorphism-reference/)
 
