@@ -7,6 +7,7 @@
 ![Nim](https://img.shields.io/badge/nim-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401)
 ![Idris](https://img.shields.io/badge/idris-black.svg?style=for-the-badge&logo=idris&logoColor=AC0404)
 ![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=white)
+![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=roc&logoColor=)
 
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
@@ -45,6 +46,10 @@
 ## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
 > ### _Crystal 1.0.0 was released on March 22, 2021 — 10 years since the start of development._
+
+## :dove: Roc — [Advent of Code 2022](https://adventofcode.com/2022)
+
+> ### _Roc's codebase was made public on October 1, 2022 — 2 years since the start of development._
 
 # :man_teacher: Learning Resources
 
