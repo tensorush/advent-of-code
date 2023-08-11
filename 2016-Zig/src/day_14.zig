@@ -23,30 +23,24 @@ const CharSequence = struct {
 
 fn find64thKeyIndex(salt: []const u8, is_part2: bool) (std.fmt.BufPrintError || error{Overflow})!u16 {
     var hash: [std.crypto.hash.Md5.digest_length]u8 = undefined;
-    var hash_hex_input: []const u8 = undefined;
     var hash_buf: [MAX_BUF_LEN]u8 = undefined;
     var triplets = try TripletArray.init(0);
-    var hash_input: []const u8 = undefined;
-    var triplet: CharSequence = undefined;
-    var hex_hash: []const u8 = undefined;
-    var triplet_idx: usize = undefined;
     var keys = try KeyArray.init(0);
-    var idx2: u16 = undefined;
     var idx1: u16 = 0;
     while (true) : (idx1 += 1) {
-        hash_input = try std.fmt.bufPrint(hash_buf[0..], "{s}{d}", .{ salt, idx1 });
+        var hash_input = try std.fmt.bufPrint(hash_buf[0..], "{s}{d}", .{ salt, idx1 });
         std.crypto.hash.Md5.hash(hash_input, &hash, .{});
         if (is_part2) {
-            idx2 = 0;
+            var idx2: u16 = 0;
             while (idx2 < 2016) : (idx2 += 1) {
-                hash_hex_input = try std.fmt.bufPrint(hash_buf[0..], "{x}", .{std.fmt.fmtSliceHexLower(hash[0..])});
+                const hash_hex_input = try std.fmt.bufPrint(hash_buf[0..], "{}", .{std.fmt.fmtSliceHexLower(hash[0..])});
                 std.crypto.hash.Md5.hash(hash_hex_input, &hash, .{});
             }
         }
-        hex_hash = try std.fmt.bufPrint(hash_buf[0..], "{x}", .{std.fmt.fmtSliceHexLower(hash[0..])});
+        const hex_hash = try std.fmt.bufPrint(hash_buf[0..], "{}", .{std.fmt.fmtSliceHexLower(hash[0..])});
         if (findRepeatedChar(5, hex_hash)) |char| {
-            triplet = undefined;
-            triplet_idx = 0;
+            var triplet: CharSequence = undefined;
+            var triplet_idx: usize = 0;
             while (triplet_idx < triplets.len) {
                 triplet = triplets.get(triplet_idx);
                 if (idx1 > triplet.start_idx + 1000) {
@@ -60,7 +54,7 @@ fn find64thKeyIndex(salt: []const u8, is_part2: bool) (std.fmt.BufPrintError || 
             }
         }
         if (keys.len > 63) {
-            std.sort.sort(CharSequence, keys.slice(), {}, CharSequence.lessThan);
+            std.sort.block(CharSequence, keys.slice(), {}, CharSequence.lessThan);
             return keys.get(63).start_idx;
         }
         if (findRepeatedChar(3, hex_hash)) |char| triplets.appendAssumeCapacity(.{ .start_idx = idx1, .char = char });

@@ -3,7 +3,7 @@ const std = @import("std");
 const InstructionArray = std.BoundedArray(Instruction, 1 << 5);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_23.txt");
+    const input = @embedFile("inputs/day_23.txt");
     const instructions = try parseInstructions(input);
     std.debug.print("--- Day 23: Safe Cracking ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{executeInstructions(instructions, 7)});
@@ -29,11 +29,10 @@ const Value = union(enum) {
 fn parseInstructions(input: []const u8) std.fmt.ParseIntError!InstructionArray {
     var str_instruction_iter = std.mem.tokenize(u8, input, "\n");
     var instructions = try InstructionArray.init(0);
-    var lhs_rhs_split_idx: usize = undefined;
     while (str_instruction_iter.next()) |str_instruction| {
         instructions.appendAssumeCapacity(switch (str_instruction[0]) {
             'c' => blk: {
-                lhs_rhs_split_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
+                const lhs_rhs_split_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
                 break :blk .{
                     .cpy = .{
                         .lhs = if (std.fmt.parseInt(i32, str_instruction[4..lhs_rhs_split_idx], 10)) |integer| .{ .integer = integer } else |_| .{ .register_idx = str_instruction[4] - 'a' },
@@ -58,11 +57,10 @@ fn parseInstructions(input: []const u8) std.fmt.ParseIntError!InstructionArray {
 fn executeInstructions(instructions: InstructionArray, comptime initial_value: i32) i32 {
     var registers = [1]i32{initial_value} ++ [1]i32{0} ** 3;
     var instructions_copy = instructions;
-    var tgl_idx: usize = undefined;
     var instruction_idx: i32 = 0;
     while (instruction_idx < instructions_copy.len) {
         instruction_idx = blk: {
-            switch (instructions_copy.get(@intCast(usize, instruction_idx))) {
+            switch (instructions_copy.get(@as(usize, @intCast(instruction_idx)))) {
                 .cpy => |cpy| {
                     switch (cpy.rhs) {
                         .register_idx => |register_idx| registers[register_idx] = cpy.lhs.resolve(registers),
@@ -85,7 +83,7 @@ fn executeInstructions(instructions: InstructionArray, comptime initial_value: i
                     if (jnz.lhs.resolve(registers) != 0) break :blk instruction_idx + jnz.rhs.resolve(registers);
                 },
                 .tgl => |tgl| {
-                    tgl_idx = @intCast(usize, instruction_idx + tgl.resolve(registers));
+                    const tgl_idx = @as(usize, @intCast(instruction_idx + tgl.resolve(registers)));
                     if (tgl_idx >= 0 and tgl_idx < instructions_copy.len) {
                         instructions_copy.set(tgl_idx, switch (instructions_copy.get(tgl_idx)) {
                             .inc => |value| .{ .dec = value },

@@ -3,7 +3,7 @@ const std = @import("std");
 const InstructionArray = std.BoundedArray(Instruction, 1 << 5);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_12.txt");
+    const input = @embedFile("inputs/day_12.txt");
     const instructions = try parseInstructions(input);
     std.debug.print("--- Day 12: Leonardo's Monorail ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{executeInstructions(instructions, false)});
@@ -53,7 +53,7 @@ fn executeInstructions(instructions: InstructionArray, comptime is_part2: bool) 
     var instruction_idx: i32 = 0;
     while (instruction_idx < instructions.len) {
         instruction_idx = blk: {
-            switch (instructions.get(@intCast(usize, instruction_idx))) {
+            switch (instructions.get(@as(usize, @intCast(instruction_idx)))) {
                 .cpy => |cpy| {
                     registers[cpy.to] = cpy.from.resolve(registers);
                 },

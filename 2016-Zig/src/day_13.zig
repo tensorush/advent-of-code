@@ -27,12 +27,6 @@ fn findShortestPathLen(allocator: std.mem.Allocator, start: Point, end: Point, f
     var shortest_path_lens = [1][MAX_SIDE_LEN]u8{[1]u8{std.math.maxInt(u8)} ** MAX_SIDE_LEN} ** MAX_SIDE_LEN;
     shortest_path_lens[start.y][start.x] = 0;
     var reachable_point_count: u8 = 1;
-    var next_point: Point = undefined;
-    var left_opt: ?Point = undefined;
-    var up_opt: ?Point = undefined;
-    var point: Point = undefined;
-    var right: Point = undefined;
-    var down: Point = undefined;
     var arena = std.heap.ArenaAllocator.init(allocator);
     defer arena.deinit();
     const arena_allocator = arena.allocator();
@@ -41,18 +35,18 @@ fn findShortestPathLen(allocator: std.mem.Allocator, start: Point, end: Point, f
     next_node.* = .{ .data = start };
     point_queue.prepend(next_node);
     while (point_queue.pop()) |node| {
-        point = node.data;
+        const point = node.data;
         if (is_part2) {
             if (shortest_path_lens[point.y][point.x] > MAX_PATH_LEN) continue;
         } else if (std.meta.eql(point, end)) {
             return shortest_path_lens[point.y][point.x];
         }
-        left_opt = if (point.x > 0) Point{ .x = point.x - 1, .y = point.y } else null;
-        up_opt = if (point.y > 0) Point{ .x = point.x, .y = point.y - 1 } else null;
-        right = Point{ .x = point.x + 1, .y = point.y };
-        down = Point{ .x = point.x, .y = point.y + 1 };
+        const left_opt = if (point.x > 0) Point{ .x = point.x - 1, .y = point.y } else null;
+        const up_opt = if (point.y > 0) Point{ .x = point.x, .y = point.y - 1 } else null;
+        const right = Point{ .x = point.x + 1, .y = point.y };
+        const down = Point{ .x = point.x, .y = point.y + 1 };
         for ([4]?Point{ down, right, up_opt, left_opt }) |next_opt| {
-            next_point = next_opt orelse continue;
+            const next_point = next_opt orelse continue;
             if (shortest_path_lens[next_point.y][next_point.x] == std.math.maxInt(u8) and next_point.isOpen(favorite_number)) {
                 shortest_path_lens[next_point.y][next_point.x] = shortest_path_lens[point.y][point.x] + 1;
                 next_node = try arena_allocator.create(PointQueue.Node);

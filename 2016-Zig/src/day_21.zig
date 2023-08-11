@@ -3,7 +3,7 @@ const std = @import("std");
 const OperationArray = std.BoundedArray(Operation, 1 << 7);
 
 pub fn solve() error{Overflow}!void {
-    const input = @embedFile("../inputs/day_21.txt");
+    const input = @embedFile("inputs/day_21.txt");
     var scrambler = Scrambler{};
     try scrambler.parseOperations(input);
     var scrambled_password = "fbgdceah".*;
@@ -54,7 +54,7 @@ const Scrambler = struct {
         if (is_part1) {
             for (self.operations.constSlice()) |operation| {
                 switch (operation) {
-                    .swap => |operand_pair| if (std.ascii.isAlpha(operand_pair.x)) self.swapLetters(operand_pair.x, operand_pair.y) else self.swapDigits(operand_pair.x, operand_pair.y),
+                    .swap => |operand_pair| if (std.ascii.isAlphabetic(operand_pair.x)) self.swapLetters(operand_pair.x, operand_pair.y) else self.swapDigits(operand_pair.x, operand_pair.y),
                     .rotate => |operand_pair| if (operand_pair.y == 'b') self.rotateBased(operand_pair, is_part1) else self.rotateLeftRight(operand_pair, is_part1),
                     .reverse => |operand_pair| self.reverse(operand_pair),
                     .move => |operand_pair| self.move(operand_pair.x, operand_pair.y),
@@ -63,7 +63,7 @@ const Scrambler = struct {
         } else {
             while (self.operations.popOrNull()) |operation| {
                 switch (operation) {
-                    .swap => |operand_pair| if (std.ascii.isAlpha(operand_pair.x)) self.swapLetters(operand_pair.x, operand_pair.y) else self.swapDigits(operand_pair.x, operand_pair.y),
+                    .swap => |operand_pair| if (std.ascii.isAlphabetic(operand_pair.x)) self.swapLetters(operand_pair.x, operand_pair.y) else self.swapDigits(operand_pair.x, operand_pair.y),
                     .rotate => |operand_pair| if (operand_pair.y == 'b') self.rotateBased(operand_pair, is_part1) else self.rotateLeftRight(operand_pair, is_part1),
                     .reverse => |operand_pair| self.reverse(operand_pair),
                     .move => |operand_pair| self.move(operand_pair.y, operand_pair.x),
@@ -74,7 +74,7 @@ const Scrambler = struct {
     }
 
     fn swapLetters(self: *Scrambler, from: u8, to: u8) void {
-        self.swapDigits(@intCast(u8, std.mem.indexOfScalar(u8, self.password, from).?), @intCast(u8, std.mem.indexOfScalar(u8, self.password, to).?));
+        self.swapDigits(@as(u8, @intCast(std.mem.indexOfScalar(u8, self.password, from).?)), @as(u8, @intCast(std.mem.indexOfScalar(u8, self.password, to).?)));
     }
 
     fn swapDigits(self: *Scrambler, from_idx: u8, to_idx: u8) void {
@@ -82,7 +82,7 @@ const Scrambler = struct {
     }
 
     fn rotateBased(self: *Scrambler, operand_pair: OperandPair, is_part1: bool) void {
-        var rotation_count = @intCast(u8, std.mem.indexOfScalar(u8, self.password, operand_pair.x).?);
+        var rotation_count = @as(u8, @intCast(std.mem.indexOfScalar(u8, self.password, operand_pair.x).?));
         if (is_part1) {
             if (rotation_count > 3) rotation_count += 2 else rotation_count += 1;
         } else {

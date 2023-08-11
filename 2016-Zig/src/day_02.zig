@@ -8,7 +8,7 @@ const MoveArray = std.BoundedArray(Move, 1 << 10);
 const KeyMovesArray = std.BoundedArray(MoveArray, MAX_CODE_LEN);
 
 pub fn solve() error{Overflow}!void {
-    const input = @embedFile("../inputs/day_02.txt");
+    const input = @embedFile("inputs/day_02.txt");
     const key_moves = try parseKeyMoves(input);
     var code: [MAX_CODE_LEN]u8 = undefined;
     std.debug.print("--- Day 2: Bathroom Security ---\n", .{});
@@ -25,9 +25,8 @@ const Move = enum { Up, Left, Down, Right };
 fn parseKeyMoves(input: []const u8) error{Overflow}!KeyMovesArray {
     var str_key_move_iter = std.mem.tokenize(u8, input, "\n");
     var key_moves = try KeyMovesArray.init(0);
-    var moves: MoveArray = undefined;
     while (str_key_move_iter.next()) |str_moves| {
-        moves = try MoveArray.init(0);
+        var moves = try MoveArray.init(0);
         for (str_moves) |char_move| {
             moves.appendAssumeCapacity(switch (char_move) {
                 'U' => .Up,

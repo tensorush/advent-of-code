@@ -5,7 +5,7 @@ const ThreeCharArray = std.BoundedArray([]const u8, 1 << 4);
 pub fn solve() error{Overflow}!void {
     var tls_count: u16 = 0;
     var ssl_count: u16 = 0;
-    const input = @embedFile("../inputs/day_07.txt");
+    const input = @embedFile("inputs/day_07.txt");
     var ip_iter = std.mem.tokenize(u8, input, "\n");
     while (ip_iter.next()) |ip| {
         if (doesSupportTls(ip)) tls_count += 1;
@@ -18,18 +18,17 @@ pub fn solve() error{Overflow}!void {
 
 fn doesSupportTls(ip: []const u8) bool {
     var sequence_iter = std.mem.tokenize(u8, ip, "[]");
-    var hypernet: []const u8 = undefined;
     var hasSupernetAbba = false;
     while (sequence_iter.next()) |supernet| {
         if (!hasSupernetAbba) hasSupernetAbba = hasAbba(supernet);
-        hypernet = sequence_iter.next() orelse break;
+        const hypernet = sequence_iter.next() orelse break;
         if (hasAbba(hypernet)) return false;
     }
     return hasSupernetAbba;
 }
 
 fn hasAbba(sequence: []const u8) bool {
-    for (sequence[2..]) |_, i| {
+    for (sequence[2..], 0..) |_, i| {
         if (i > sequence.len - 4) break;
         if (sequence[i] == sequence[i + 3] and sequence[i + 1] == sequence[i + 2] and sequence[i] != sequence[i + 1]) return true;
     }
@@ -41,15 +40,14 @@ fn doesSupportSsl(ip: []const u8) error{Overflow}!bool {
     var three_chars: []const u8 = undefined;
     var abas = try ThreeCharArray.init(0);
     var babs = try ThreeCharArray.init(0);
-    var hypernet: []const u8 = undefined;
     while (sequence_iter.next()) |supernet| {
-        for (supernet) |_, i| {
+        for (supernet, 0..) |_, i| {
             if (i > supernet.len - 3) break;
             three_chars = supernet[i .. i + 3];
             if (three_chars[0] == three_chars[2] and three_chars[0] != three_chars[1]) abas.appendAssumeCapacity(three_chars);
         }
-        hypernet = sequence_iter.next() orelse break;
-        for (hypernet) |_, i| {
+        var hypernet = sequence_iter.next() orelse break;
+        for (hypernet, 0..) |_, i| {
             if (i > hypernet.len - 3) break;
             three_chars = hypernet[i .. i + 3];
             if (three_chars[0] == three_chars[2] and three_chars[0] != three_chars[1]) babs.appendAssumeCapacity(three_chars);

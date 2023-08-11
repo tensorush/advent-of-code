@@ -1,28 +1,23 @@
 const std = @import("std");
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_09.txt");
+    const input = @embedFile("inputs/day_09.txt");
     std.debug.print("--- Day 9: Explosives in Cyberspace ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{try parseAndDecompressFile(input, true)});
     std.debug.print("Part 2: {d}\n", .{try parseAndDecompressFile(input, false)});
 }
 
 fn parseAndDecompressFile(input: []const u8, is_part1: bool) std.fmt.ParseIntError!usize {
-    var marker_iter: std.mem.TokenIterator(u8) = undefined;
-    var marker_end_idx: usize = undefined;
-    var num_chars: usize = undefined;
-    var num_reps: usize = undefined;
-    var first_char: u8 = undefined;
     var file_len: usize = 0;
     var rest = input;
     while (rest.len > 0) {
-        first_char = rest[0];
+        const first_char = rest[0];
         rest = rest[1..];
         if (first_char == '(') {
-            marker_end_idx = std.mem.indexOfScalar(u8, rest, ')').?;
-            marker_iter = std.mem.tokenize(u8, rest[0..marker_end_idx], "x");
-            num_chars = try std.fmt.parseUnsigned(usize, marker_iter.next().?, 10);
-            num_reps = try std.fmt.parseUnsigned(usize, marker_iter.next().?, 10);
+            const marker_end_idx = std.mem.indexOfScalar(u8, rest, ')').?;
+            var marker_iter = std.mem.tokenize(u8, rest[0..marker_end_idx], "x");
+            const num_chars = try std.fmt.parseUnsigned(usize, marker_iter.next().?, 10);
+            const num_reps = try std.fmt.parseUnsigned(usize, marker_iter.next().?, 10);
             rest = rest[marker_end_idx + 1 ..];
             file_len += num_reps * if (is_part1) num_chars else try parseAndDecompressFile(rest[0..num_chars], false);
             rest = rest[num_chars..];

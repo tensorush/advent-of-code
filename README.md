@@ -5,9 +5,9 @@
 ![Swift](https://img.shields.io/badge/swift-black.svg?style=for-the-badge&logo=swift&logoColor=FF5E2E)
 ![Julia](https://img.shields.io/badge/julia-black.svg?style=for-the-badge&logo=julia&logoColor=A270BA)
 ![Nim](https://img.shields.io/badge/nim-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401)
-![Idris](https://img.shields.io/badge/idris-black.svg?style=for-the-badge&logo=idris&logoColor=AC0404)
-![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=white)
-![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=roc&logoColor=)
+![Haskell](https://img.shields.io/badge/haskell-black.svg?style=for-the-badge&logo=haskell&logoColor=5E5086)
+![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=FFFFFF)
+![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA)
 
 <p align="center">
     <img src="https://bleuje.github.io/gifset/2018/gifs/2018_60_digitstunnel.gif">
@@ -26,6 +26,7 @@
 ## :lizard: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > ### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
+> ### _Uses Zig version 0.11.0_
 
 ## :eagle: [Swift](2017-Swift/) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
 
@@ -39,9 +40,9 @@
 
 > ### _Nim 1.0.0 was released on September 23, 2019 — 11 years since the first public release._
 
-## :hotsprings: Idris — [Advent of Code 2020](https://adventofcode.com/2020)
+## :crystal_ball: Haskell — [Advent of Code 2020](https://adventofcode.com/2020)
 
-> ### _Idris 2 was released on February 27, 2020 — 13 years since the first version's conception._
+> ### _Haskell's next formal specification was due in 2020 — 10 years after the last major release._
 
 ## :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 

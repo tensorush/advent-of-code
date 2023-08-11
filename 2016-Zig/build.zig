@@ -1,21 +1,41 @@
-const Builder = @import("std").build.Builder;
+const std = @import("std");
 
-pub fn build(b: *Builder) void {
-    const target = b.standardTargetOptions(.{});
-    const mode = b.standardReleaseOptions();
+pub fn build(b: *std.Build) void {
+    const root_source_file = std.Build.FileSource.relative("src/main.zig");
 
-    const exe = b.addExecutable("aoc_2016", "main.zig");
-    const run_cmd = exe.run();
-    exe.setBuildMode(mode);
-    exe.setTarget(target);
+    // Executable
+    const exe_step = b.step("exe", "Run Advent of Code 2016 solutions");
 
-    const run_step = b.step("run", "Run all days");
-    run_step.dependOn(&run_cmd.step);
+    const exe = b.addExecutable(.{
+        .name = "aoc_2016",
+        .root_source_file = root_source_file,
+        .target = b.standardTargetOptions(.{}),
+        .optimize = .ReleaseFast,
+    });
 
-    const test_cmd = b.addTest("main.zig");
-    test_cmd.setBuildMode(mode);
-    test_cmd.setTarget(target);
+    const exe_run = b.addRunArtifact(exe);
+    exe_step.dependOn(&exe_run.step);
+    b.default_step.dependOn(exe_step);
 
-    const test_step = b.step("test", "Test all days");
-    test_step.dependOn(&test_cmd.step);
+    // Tests
+    const tests_step = b.step("test", "Run tests");
+
+    const tests = b.addTest(.{
+        .root_source_file = root_source_file,
+    });
+
+    const tests_run = b.addRunArtifact(tests);
+    tests_step.dependOn(&tests_run.step);
+    b.default_step.dependOn(tests_step);
+
+    // Lints
+    const lints_step = b.step("lint", "Run lints");
+
+    const lints = b.addFmt(.{
+        .paths = &.{ "src", "build.zig" },
+        .check = true,
+    });
+
+    lints_step.dependOn(&lints.step);
+    b.default_step.dependOn(lints_step);
 }

@@ -4,7 +4,7 @@ const MAX_NUM_OUTS = 1 << 5;
 const MAX_NUM_BOTS = 1 << 8;
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_10.txt");
+    const input = @embedFile("inputs/day_10.txt");
     var state1 = State{ .is_part1 = true };
     var state2 = State{ .is_part1 = false };
     std.debug.print("--- Day 10: Balance Bots ---\n", .{});
@@ -25,42 +25,30 @@ const State = struct {
     is_part1: bool,
 
     fn parseAndExecuteInstructions(self: *State, input: []const u8) std.fmt.ParseIntError!u16 {
-        return blk: {
-            var str_instruction_iter = std.mem.tokenize(u8, input, "\n");
-            var bot_number_end_idx: usize = undefined;
-            var high_start_idx: usize = undefined;
-            var low_start_idx: usize = undefined;
-            var low_end_idx: usize = undefined;
-            var high_number: u16 = undefined;
-            var bot_number: u16 = undefined;
-            var low_number: u16 = undefined;
-            var high_to: To = undefined;
-            var low_to: To = undefined;
-            var chip: u8 = undefined;
-            while (str_instruction_iter.next()) |str_instruction| {
-                if (str_instruction[0] == 'b') {
-                    bot_number_end_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
-                    bot_number = try std.fmt.parseUnsigned(u16, str_instruction[4..bot_number_end_idx], 10);
-                    low_to = if (str_instruction[bot_number_end_idx + 14] == 'b') .Bot else .Out;
-                    low_start_idx = std.mem.indexOfScalarPos(u8, str_instruction, bot_number_end_idx + 14, ' ').? + 1;
-                    low_end_idx = std.mem.indexOfScalarPos(u8, str_instruction, low_start_idx, ' ').?;
-                    low_number = try std.fmt.parseUnsigned(u16, str_instruction[low_start_idx..low_end_idx], 10);
-                    high_to = if (str_instruction[low_end_idx + 13] == 'b') .Bot else .Out;
-                    high_start_idx = std.mem.indexOfScalarPos(u8, str_instruction, low_end_idx + 13, ' ').? + 1;
-                    high_number = try std.fmt.parseUnsigned(u16, str_instruction[high_start_idx..], 10);
-                    self.bot_instructions[bot_number] = .{ .low_to = low_to, .low_number = low_number, .high_to = high_to, .high_number = high_number };
-                }
+        var str_instruction_iter = std.mem.tokenize(u8, input, "\n");
+        while (str_instruction_iter.next()) |str_instruction| {
+            if (str_instruction[0] == 'b') {
+                const bot_number_end_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
+                const bot_number = try std.fmt.parseUnsigned(u16, str_instruction[4..bot_number_end_idx], 10);
+                const low_to: To = if (str_instruction[bot_number_end_idx + 14] == 'b') .Bot else .Out;
+                const low_start_idx = std.mem.indexOfScalarPos(u8, str_instruction, bot_number_end_idx + 14, ' ').? + 1;
+                const low_end_idx = std.mem.indexOfScalarPos(u8, str_instruction, low_start_idx, ' ').?;
+                const low_number = try std.fmt.parseUnsigned(u16, str_instruction[low_start_idx..low_end_idx], 10);
+                const high_to: To = if (str_instruction[low_end_idx + 13] == 'b') .Bot else .Out;
+                const high_start_idx = std.mem.indexOfScalarPos(u8, str_instruction, low_end_idx + 13, ' ').? + 1;
+                const high_number = try std.fmt.parseUnsigned(u16, str_instruction[high_start_idx..], 10);
+                self.bot_instructions[bot_number] = .{ .low_to = low_to, .low_number = low_number, .high_to = high_to, .high_number = high_number };
             }
-            str_instruction_iter.reset();
-            while (str_instruction_iter.next()) |str_instruction| {
-                if (str_instruction[0] == 'v') {
-                    chip = try std.fmt.parseUnsigned(u8, std.mem.trimRight(u8, str_instruction[6..8], " "), 10);
-                    bot_number = try std.fmt.parseUnsigned(u16, std.mem.trimLeft(u8, str_instruction[20..], " "), 10);
-                    if (self.bots[bot_number].executeInstruction(self, chip, bot_number)) |result| break :blk result;
-                }
+        }
+        str_instruction_iter.reset();
+        while (str_instruction_iter.next()) |str_instruction| {
+            if (str_instruction[0] == 'v') {
+                const chip = try std.fmt.parseUnsigned(u8, std.mem.trimRight(u8, str_instruction[6..8], " "), 10);
+                const bot_number = try std.fmt.parseUnsigned(u16, std.mem.trimLeft(u8, str_instruction[20..], " "), 10);
+                if (self.bots[bot_number].executeInstruction(self, chip, bot_number)) |result| return result;
             }
-            unreachable;
-        };
+        }
+        unreachable;
     }
 };
 

@@ -20,7 +20,7 @@ const Checksum = struct {
 
     fn generateChecksum(self: *Checksum, initial_state: []const u8, comptime disk_len: usize) std.mem.Allocator.Error!*const Checksum {
         self.bit_set = try std.bit_set.DynamicBitSetUnmanaged.initEmpty(self.allocator, disk_len);
-        for (initial_state) |char, i| {
+        for (initial_state, 0..) |char, i| {
             self.bit_set.setValue(i, char == '1');
         }
         var checksum_idx = initial_state.len;
@@ -32,10 +32,9 @@ const Checksum = struct {
                 checksum_idx += 1;
             }
         }
-        var checksum_pair_idx: usize = undefined;
         var checksum_len = disk_len;
         while (checksum_len % 2 == 0) : (checksum_len /= 2) {
-            checksum_pair_idx = 0;
+            var checksum_pair_idx: usize = 0;
             checksum_idx = 0;
             while (checksum_pair_idx < checksum_len) : (checksum_pair_idx += 2) {
                 self.bit_set.setValue(checksum_idx, self.bit_set.isSet(checksum_pair_idx) == self.bit_set.isSet(checksum_pair_idx + 1));

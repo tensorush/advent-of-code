@@ -3,7 +3,7 @@ const std = @import("std");
 const RangeArray = std.BoundedArray(Range, 1 << 11);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_20.txt");
+    const input = @embedFile("inputs/day_20.txt");
     const solution = try findLowestAllowedIpAndCountAllowedIps(input, std.math.maxInt(u32));
     std.debug.print("--- Day 20: Firewall Rules ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{solution.lowest_allowed_ip});
@@ -23,16 +23,15 @@ const Range = struct {
 
 fn findLowestAllowedIpAndCountAllowedIps(input: []const u8, max_ip: u32) std.fmt.ParseIntError!Solution {
     var str_range_iter = std.mem.tokenize(u8, input, "\n");
-    var str_range_split_idx: usize = undefined;
     var ranges = try RangeArray.init(0);
     while (str_range_iter.next()) |str_range| {
-        str_range_split_idx = std.mem.indexOfScalar(u8, str_range, '-').?;
+        const str_range_split_idx = std.mem.indexOfScalar(u8, str_range, '-').?;
         ranges.appendAssumeCapacity(Range{
             .min = try std.fmt.parseUnsigned(u32, str_range[0..str_range_split_idx], 10),
             .max = try std.fmt.parseUnsigned(u32, str_range[str_range_split_idx + 1 ..], 10),
         });
     }
-    std.sort.sort(Range, ranges.slice(), {}, Range.lessThan);
+    std.sort.block(Range, ranges.slice(), {}, Range.lessThan);
     var lowest_allowed_ip_opt: ?u32 = null;
     var allowed_ip_count: u32 = 0;
     var ip: u32 = 0;

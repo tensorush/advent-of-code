@@ -3,7 +3,7 @@ const std = @import("std");
 const DiscArray = std.BoundedArray(Disc, 1 << 3);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_15.txt");
+    const input = @embedFile("inputs/day_15.txt");
     var discs = try parseDiscs(input);
     std.debug.print("--- Day 15: Timing is Everything ---\n", .{});
     std.debug.print("Part 1: {d}\n", .{findStartTime(&discs, false)});
@@ -26,10 +26,9 @@ fn parseDiscs(input: []const u8) std.fmt.ParseIntError!DiscArray {
 
 fn findStartTime(discs: *DiscArray, is_part2: bool) u32 {
     if (is_part2) discs.appendAssumeCapacity(.{ .num_positions = 11, .start_position = 0 });
-    var time: u32 = undefined;
     var start_time: u32 = 0;
     time_loop: while (true) : (start_time += 1) {
-        time = start_time + 1;
+        var time = start_time + 1;
         for (discs.constSlice()) |disc| {
             if ((disc.start_position + time) % disc.num_positions != 0) continue :time_loop;
             time += 1;

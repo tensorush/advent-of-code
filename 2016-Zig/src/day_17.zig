@@ -27,16 +27,12 @@ const State = struct {
         var hash_buf: [MAX_PATH_LEN + input.len]u8 = undefined;
         var next_states = [1]?State{null} ** moves.len;
         var path: [MAX_PATH_LEN]u8 = undefined;
-        var hash_input: []const u8 = undefined;
-        var hex_hash: []const u8 = undefined;
-        var x: u2 = undefined;
-        var y: u2 = undefined;
-        hash_input = try std.fmt.bufPrint(hash_buf[0..], "{s}{s}", .{ input, self.path[0..self.path_len] });
+        const hash_input = try std.fmt.bufPrint(hash_buf[0..], "{s}{s}", .{ input, self.path[0..self.path_len] });
         std.crypto.hash.Md5.hash(hash_input, &hash, .{});
-        hex_hash = try std.fmt.bufPrint(hash_buf[0..], "{x}", .{std.fmt.fmtSliceHexLower(hash[0..])});
-        for (moves) |move, i| {
-            x = self.x;
-            y = self.y;
+        const hex_hash = try std.fmt.bufPrint(hash_buf[0..], "{}", .{std.fmt.fmtSliceHexLower(hash[0..])});
+        for (moves, 0..) |move, i| {
+            var x = self.x;
+            var y = self.y;
             switch (move) {
                 .Down => {
                     if (y < MAX_SIDE_IDX) y += 1 else continue;
@@ -51,7 +47,7 @@ const State = struct {
                     if (x > 0) x -= 1 else continue;
                 },
             }
-            if (std.mem.indexOfScalar(u8, "bcdef", hex_hash[@enumToInt(move)])) |_| {
+            if (std.mem.indexOfScalar(u8, "bcdef", hex_hash[@intFromEnum(move)])) |_| {
                 path[self.path_len] = @tagName(move)[0];
                 std.mem.copy(u8, path[0..], self.path[0..self.path_len]);
                 next_states[i] = .{ .path = path, .f_score = 2 * MAX_SIDE_IDX + self.path_len - x - y + 1, .path_len = self.path_len + 1, .x = x, .y = y };
@@ -70,28 +66,29 @@ const State = struct {
 };
 
 fn findShortestPath(allocator: std.mem.Allocator, comptime input: []const u8, shortest_path: []u8) (std.mem.Allocator.Error || std.fmt.BufPrintError)![]u8 {
-    return blk: {
-        var open_min_heap = StateMinHeap.init(allocator, {});
-        defer open_min_heap.deinit();
-        try open_min_heap.add(.{});
-        while (open_min_heap.removeOrNull()) |state| {
-            if (state.isLast()) {
-                std.mem.copy(u8, shortest_path, state.path[0..state.path_len]);
-                break :blk shortest_path[0..state.path_len];
-            }
-            for (try state.nextStates(input, &[4]Move{ .Down, .Right, .Up, .Left })) |next_state_opt| {
-                if (next_state_opt) |next_state| try open_min_heap.add(next_state);
-            }
+    var arena = std.heap.ArenaAllocator.init(allocator);
+    defer arena.deinit();
+    const arena_allocator = arena.allocator();
+    var open_min_heap = StateMinHeap.init(arena_allocator, {});
+    defer open_min_heap.deinit();
+    try open_min_heap.add(.{});
+    while (open_min_heap.removeOrNull()) |state| {
+        if (state.isLast()) {
+            std.mem.copy(u8, shortest_path, state.path[0..state.path_len]);
+            return shortest_path[0..state.path_len];
         }
-        unreachable;
-    };
+        for (try state.nextStates(input, &[4]Move{ .Down, .Right, .Up, .Left })) |next_state_opt| {
+            if (next_state_opt) |next_state| try open_min_heap.add(next_state);
+        }
+    }
+    unreachable;
 }
 
 fn findLongestPathLen(comptime input: []const u8, state: State) std.fmt.BufPrintError!u16 {
     var longest_path_len: u16 = 0;
     if (state.isLast()) return state.path_len;
     for (try state.nextStates(input, &[4]Move{ .Left, .Up, .Right, .Down })) |next_state_opt| {
-        if (next_state_opt) |next_state| longest_path_len = std.math.max(longest_path_len, try findLongestPathLen(input, next_state));
+        if (next_state_opt) |next_state| longest_path_len = @max(longest_path_len, try findLongestPathLen(input, next_state));
     }
     return longest_path_len;
 }

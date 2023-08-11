@@ -5,7 +5,7 @@ const MAX_SIGNAL_LEN: u4 = 1 << 3;
 const InstructionArray = std.BoundedArray(Instruction, 1 << 5);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_25.txt");
+    const input = @embedFile("inputs/day_25.txt");
     const instructions = try parseInstructions(input);
     std.debug.print("--- Day 25: Clock Signal ---\n", .{});
     std.debug.print("Final Part: {d}\n", .{executeInstructions(instructions)});
@@ -30,11 +30,10 @@ const Value = union(enum) {
 fn parseInstructions(input: []const u8) std.fmt.ParseIntError!InstructionArray {
     var str_instruction_iter = std.mem.tokenize(u8, input, "\n");
     var instructions = try InstructionArray.init(0);
-    var from_to_split_idx: usize = undefined;
     while (str_instruction_iter.next()) |str_instruction| {
         instructions.appendAssumeCapacity(switch (str_instruction[0]) {
             'c' => blk: {
-                from_to_split_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
+                const from_to_split_idx = std.mem.indexOfScalarPos(u8, str_instruction, 4, ' ').?;
                 break :blk .{
                     .cpy = .{
                         .from = if (std.fmt.parseInt(i32, str_instruction[4..from_to_split_idx], 10)) |integer| .{ .integer = integer } else |_| .{ .register_idx = str_instruction[4] - 'a' },
@@ -57,20 +56,16 @@ fn parseInstructions(input: []const u8) std.fmt.ParseIntError!InstructionArray {
 }
 
 fn executeInstructions(instructions: InstructionArray) i32 {
-    var signal: [MAX_SIGNAL_LEN]bool = undefined;
-    var registers: [4]i32 = undefined;
-    var signal_idx: u4 = undefined;
-    var instruction_idx: i32 = 0;
     var initial_value: i32 = 1;
     initial_value_loop: while (true) : (initial_value += 1) {
-        registers = [1]i32{0} ** 4;
-        instruction_idx = 0;
-        signal = undefined;
-        signal_idx = 0;
+        var signal: [MAX_SIGNAL_LEN]bool = undefined;
+        var registers = [1]i32{0} ** 4;
+        var instruction_idx: i32 = 0;
+        var signal_idx: u4 = 0;
         registers[0] = initial_value;
         while (instruction_idx < instructions.len) {
             instruction_idx = blk: {
-                switch (instructions.get(@intCast(usize, instruction_idx))) {
+                switch (instructions.get(@as(usize, @intCast(instruction_idx)))) {
                     .cpy => |cpy| {
                         registers[cpy.to] = cpy.from.resolve(registers);
                     },

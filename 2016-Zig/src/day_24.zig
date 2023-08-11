@@ -3,7 +3,7 @@ const std = @import("std");
 const PointMinHeap = std.PriorityQueue(Point, void, Point.lessThan);
 
 pub fn solve() std.mem.Allocator.Error!void {
-    const input = @embedFile("../inputs/day_24.txt");
+    const input = @embedFile("inputs/day_24.txt");
     var map = Map(183, 39, 8){};
     map.parseLocations(input);
     try map.findShortestPathLens(std.heap.page_allocator);
@@ -41,41 +41,33 @@ fn Map(comptime width: u8, comptime height: u8, comptime num_points: u4) type {
 
         fn parseLocations(self: *Self, input: []const u8) void {
             var str_row_iter = std.mem.tokenize(u8, input, "\n");
-            var str_row: []const u8 = undefined;
-            for (self.locations) |*row, y| {
-                str_row = str_row_iter.next().?;
-                for (str_row) |str_location, x| {
+            for (&self.locations, 0..) |*row, y| {
+                const str_row = str_row_iter.next().?;
+                for (str_row, 0..) |str_location, x| {
                     if (str_location == '.') {
                         row[x] = .{ .NonDigit = .Passage };
                     } else if (str_location == '#') {
                         row[x] = .{ .NonDigit = .Wall };
                     } else {
-                        row[x] = .{ .Digit = @intToEnum(std.meta.TagPayload(Location, .Digit), str_location - '0') };
-                        self.points[str_location - '0'] = .{ .x = @intCast(u8, x), .y = @intCast(u8, y) };
+                        row[x] = .{ .Digit = @as(std.meta.TagPayload(Location, .Digit), @enumFromInt(str_location - '0')) };
+                        self.points[str_location - '0'] = .{ .x = @as(u8, @intCast(x)), .y = @as(u8, @intCast(y)) };
                     }
                 }
             }
         }
 
         fn findShortestPathLens(self: *Self, allocator: std.mem.Allocator) std.mem.Allocator.Error!void {
-            var closed_set: [height][width]bool = undefined;
-            var open_set: [height][width]bool = undefined;
-            var open_min_heap: PointMinHeap = undefined;
-            var does_move_left: bool = undefined;
-            var does_move_up: bool = undefined;
-            var start_point: Point = undefined;
-            var end_point: Point = undefined;
             var point_combination = [2]u4{ 0, 1 };
             var combination_opt: ?[]u4 = point_combination[0..];
             while (combination_opt) |combination| : (combination_opt = nextCombination(u4, num_points, combination)) {
-                closed_set = [1][width]bool{[1]bool{false} ** width} ** height;
-                open_set = [1][width]bool{[1]bool{false} ** width} ** height;
-                start_point = self.points[combination[0]];
-                end_point = self.points[combination[1]];
-                does_move_left = start_point.x > end_point.x;
-                does_move_up = start_point.y > end_point.y;
+                var closed_set = [1][width]bool{[1]bool{false} ** width} ** height;
+                var open_set = [1][width]bool{[1]bool{false} ** width} ** height;
+                var start_point = self.points[combination[0]];
+                const end_point = self.points[combination[1]];
+                const does_move_left = start_point.x > end_point.x;
+                const does_move_up = start_point.y > end_point.y;
                 start_point.f_score = if (does_move_left) start_point.x - end_point.x else end_point.x - start_point.x + if (does_move_up) start_point.y - end_point.y else end_point.y - start_point.y;
-                open_min_heap = PointMinHeap.init(allocator, {});
+                var open_min_heap = PointMinHeap.init(allocator, {});
                 defer open_min_heap.deinit();
                 try open_min_heap.add(start_point);
                 while (open_min_heap.removeOrNull()) |point| {
@@ -120,9 +112,8 @@ fn Map(comptime width: u8, comptime height: u8, comptime num_points: u4) type {
                 point_permutation[point_idx - 1] = point_idx;
             }
             var permutation_opt: ?[]u4 = point_permutation[0..];
-            var shortest_path_len: u16 = undefined;
             while (permutation_opt) |permutation| : (permutation_opt = nextPermutation(u4, permutation)) {
-                shortest_path_len = self.shortest_path_lens[0][permutation[0]];
+                var shortest_path_len = self.shortest_path_lens[0][permutation[0]];
                 point_idx = 1;
                 while (point_idx < permutation.len) : (point_idx += 1) {
                     shortest_path_len += self.shortest_path_lens[permutation[point_idx - 1]][permutation[point_idx]];
@@ -137,7 +128,7 @@ fn Map(comptime width: u8, comptime height: u8, comptime num_points: u4) type {
 
 fn nextCombination(comptime T: type, num_elements: usize, combination: []T) ?[]T {
     std.debug.assert(num_elements > 1 and combination.len < num_elements);
-    var i = @intCast(T, combination.len - 1);
+    var i = @as(T, @intCast(combination.len - 1));
     while (combination[i] > num_elements - combination.len + i - 1) : (i -= 1) {
         if (i == 0) return null;
     }

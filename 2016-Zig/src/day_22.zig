@@ -3,7 +3,7 @@ const std = @import("std");
 const NodeArray = std.BoundedArray(Node, 1 << 10);
 
 pub fn solve() std.fmt.ParseIntError!void {
-    const input = @embedFile("../inputs/day_22.txt");
+    const input = @embedFile("inputs/day_22.txt");
     var grid = Grid(32, 31){};
     try grid.parseGrid(input);
     const nodes = try parseNodes(input);
@@ -32,21 +32,15 @@ fn Grid(comptime width: u8, comptime height: u8) type {
         nodes: [height][width]Node = undefined,
 
         fn parseGrid(self: *Self, input: []const u8) std.fmt.ParseIntError!void {
-            var str_column_iter: std.mem.TokenIterator(u8) = undefined;
             var str_node_iter = std.mem.tokenize(u8, input, "\n");
-            var str_column: []const u8 = undefined;
-            var x_y_split_idx: usize = undefined;
-            var used: u16 = undefined;
-            var x: u16 = undefined;
-            var y: u16 = undefined;
             while (str_node_iter.next()) |str_node| {
-                str_column_iter = std.mem.tokenize(u8, str_node, " T");
-                str_column = str_column_iter.next().?;
-                x_y_split_idx = std.mem.indexOfScalarPos(u8, str_column, 16, '-').?;
-                x = try std.fmt.parseUnsigned(u8, str_column[16..x_y_split_idx], 10);
-                y = try std.fmt.parseUnsigned(u8, str_column[x_y_split_idx + 2 ..], 10);
+                var str_column_iter = std.mem.tokenize(u8, str_node, " T");
+                const str_column = str_column_iter.next().?;
+                const x_y_split_idx = std.mem.indexOfScalarPos(u8, str_column, 16, '-').?;
+                const x = try std.fmt.parseUnsigned(u8, str_column[16..x_y_split_idx], 10);
+                const y = try std.fmt.parseUnsigned(u8, str_column[x_y_split_idx + 2 ..], 10);
                 _ = str_column_iter.next();
-                used = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
+                const used = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
                 _ = str_column_iter.next();
                 self.nodes[y][x] = .{ .used = used };
             }
@@ -54,9 +48,9 @@ fn Grid(comptime width: u8, comptime height: u8) type {
 
         pub fn format(self: Self, comptime _: []const u8, _: std.fmt.FormatOptions, writer: anytype) @TypeOf(writer).Error!void {
             var str_node: []const u8 = undefined;
-            for (self.nodes) |row, y| {
+            for (self.nodes, 0..) |row, y| {
                 if (y >= height) continue;
-                for (row) |node, x| {
+                for (row, 0..) |node, x| {
                     if (x >= width) continue;
                     if (node.used > 100) {
                         str_node = " # ";
@@ -78,17 +72,14 @@ fn Grid(comptime width: u8, comptime height: u8) type {
 }
 
 fn parseNodes(input: []const u8) std.fmt.ParseIntError!NodeArray {
-    var str_column_iter: std.mem.TokenIterator(u8) = undefined;
     var str_node_iter = std.mem.tokenize(u8, input, "\n");
     var nodes = try NodeArray.init(0);
-    var avail: u16 = undefined;
-    var used: u16 = undefined;
     while (str_node_iter.next()) |str_node| {
-        str_column_iter = std.mem.tokenize(u8, str_node, " T");
+        var str_column_iter = std.mem.tokenize(u8, str_node, " T");
         _ = str_column_iter.next();
         _ = str_column_iter.next();
-        used = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
-        avail = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
+        const used = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
+        const avail = try std.fmt.parseUnsigned(u16, str_column_iter.next().?, 10);
         nodes.appendAssumeCapacity(.{ .used = used, .avail = avail });
     }
     return nodes;
@@ -98,11 +89,11 @@ fn countViableNodePairs(nodes: NodeArray) usize {
     var viable_node_pair_count: usize = 0;
     var avail_nodes = nodes;
     var used_nodes = nodes;
-    std.sort.sort(Node, used_nodes.slice(), {}, Node.usedLessThan);
-    std.sort.sort(Node, avail_nodes.slice(), {}, Node.availLessThan);
+    std.sort.block(Node, used_nodes.slice(), {}, Node.usedLessThan);
+    std.sort.block(Node, avail_nodes.slice(), {}, Node.availLessThan);
     for (used_nodes.constSlice()) |used_node| {
         if (used_node.used > 100 or used_node.used == 0) continue;
-        for (avail_nodes.constSlice()) |avail_node, i| {
+        for (avail_nodes.constSlice(), 0..) |avail_node, i| {
             if (avail_node.avail < used_node.used) {
                 viable_node_pair_count += i;
                 break;
