@@ -203,8 +203,6 @@
 
 ## :lizard: Zig
 
-  - ### :card_file_box: [Zig Jobs](https://www.zigjobs.org/)
-
   - ### :card_file_box: [Zig Community](https://github.com/ziglang/zig/wiki/Community)
 
   - ### :thought_balloon: [Zig News Blog Posts](https://zig.news/)
