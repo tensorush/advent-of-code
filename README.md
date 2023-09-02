@@ -52,6 +52,10 @@
 
 > ### _Roc's codebase was made public on October 1, 2022 — 2 years since the start of development._
 
+## :fire: Mojo — [Advent of Code 2023](https://adventofcode.com/2023)
+
+> ### _Mojo's codebase was made public on September ???, 2023 — 1 year since the first internal release._
+
 # :man_teacher: Learning Resources
 
 ## Table of Contents
@@ -227,7 +231,7 @@
 
   - ### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
 
-  - ### :globe_with_meridians: [Ziglearn Web Site by Sobeston](https://ziglearn.org/)
+  - ### :globe_with_meridians: [Zig Learn Web Site by Sobeston](https://ziglearn.org/)
 
   - ### :thought_balloon: [Zig Blog Posts by Eric Engheim](https://medium.com/swlh/zig-the-introduction-dcd173a86975)
 
@@ -252,6 +256,8 @@
   - ### :thought_balloon: [Buffer Pool Blog Post by Gavin Ray](https://gavinray97.github.io/blog/io-uring-fixed-bufferpool-zig)
 
   - ### :card_file_box: [Zig Package Aggregator Repos List](https://zpm.random-projects.net/)
+
+  - ### :globe_with_meridians: [Zig Help Web Site by Roman Frołow](https://zighelp.org/)
 
   - ### :thought_balloon: [Zig Blog Posts by Stephen Gutekanst](https://devlog.hexops.com/archives/)
 
