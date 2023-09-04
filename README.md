@@ -99,6 +99,8 @@
 
   - ### :book: [Haskell Data Analysis Book by Nishant Shukla](http://haskelldata.com/)
 
+  - ### :man_technologist: [Learn Haskell Basics in 4 Pull Requests Tutorial](https://github.com/kowainik/learn4haskell)
+
   - ### :thought_balloon: [Functors in Pictures Blog Post by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
   - ### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
@@ -118,6 +120,8 @@
   - ### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
   - ### :book: [Real World Haskell Book by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
+
+  - ### :thought_balloon: [Haskell Mini-Patterns Handbook by Veronika Romashkina](https://kowainik.github.io/posts/haskell-mini-patterns)
 
   - ### :man_teacher: [Functional Systems in Haskell Course by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
 
