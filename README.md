@@ -12,19 +12,19 @@
 
 ### Solutions to annual Advent of Code challenges written in modern programming languages.
 
-### :crab: [Rust](2015-Rust/) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
+### :crab: [Rust](2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
 > #### _Rust 1.0.0 was released on May 15, 2015 — 11 years since the start of development._
 
-### :lizard: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
+### :lizard: [Zig](2016-Zig) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > #### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
 
-### :eagle: [Swift](2017-Swift/) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
+### :eagle: [Swift](2017-Swift) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
 
 > #### _Swift peaked in its core development on January 11, 2017 when Chris Lattner left Apple._
 
-### :juggling_person: [Julia](2018-Julia/) — [Advent of Code 2018](https://adventofcode.com/2018)
+### :juggling_person: [Julia](2018-Julia) — [Advent of Code 2018](https://adventofcode.com/2018)
 
 > #### _Julia 1.0.0 was released on August 9, 2018 — 9 years since the start of development._
 
@@ -134,35 +134,37 @@
 
   - #### :technologist: [Rustlings Tutorial](https://github.com/rust-lang/rustlings)
 
-  - #### :tv: [Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
-
-  - #### :tv: [Videos by Doug Milford](https://www.youtube.com/playlist?list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5)
-
-  - #### :film_projector: [Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
-
-  - #### :tv: [Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
-
-  - #### :film_projector: [Slides by Alexander Stanovoy](https://gitlab.com/alex.stanovoy/mipt-rust)
+  - #### :joystick: [Rust Quiz by David Tolnay](https://dtolnay.github.io/rust-quiz/)
 
   - #### :globe_with_meridians: [Rust 101 Web Site by Ralf Jung](https://www.ralfj.de/projects/rust-101/main.html)
 
-  - #### :tv: [Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
+  - #### :tv: [Rust Tutorial Videos by Doug Milford](https://www.youtube.com/playlist?list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5)
+
+  - #### :tv: [Crust of Rust Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
 
   - #### :globe_with_meridians: [Rust by Practice Web Site by Sunface](https://practice.rs/why-exercise.html)
 
+  - #### :film_projector: [Rust Course Slides by Aleksey Kladov](https://github.com/matklad/rust-course)
+
   - #### :globe_with_meridians: [Guide to Rustc Development Web Site](https://rustc-dev-guide.rust-lang.org/)
 
-  - #### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
+  - #### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
 
   - #### :globe_with_meridians: [Tour of Rust Web Site by Richard Anaya](https://tourofrust.com/)
 
-  - #### :book: [Rust Cookbook by the Rust Community](https://rust-lang-nursery.github.io/rust-cookbook/)
+  - #### :black_joker: [Rust Basics Cheatsheet by Xidorn Quan](https://upsuper.github.io/rust-cheatsheet/)
+
+  - #### :tv: [Rust Tutorial Videos by Danilo Chiarlone](https://www.youtube.com/playlist?list=PLK_g1a_cAfaaAO6io1Tluy7EZXhAAK1lC)
+
+  - #### :film_projector: [Rust Course Slides by Alexander Stanovoy](https://gitlab.com/alex.stanovoy/mipt-rust)
 
   - #### :black_joker: [Rust Language Cheatsheet by Ralf Biedert](https://cheats.rs/)
 
   - #### :black_joker: [Rust Container Cheatsheet by Raph Levien](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit)
 
   - #### :thought_balloon: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
+
+  - #### :tv: [Intro to Rust Videos by Tensor Programming](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW)
 
   - #### :teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
 
