@@ -49,28 +49,23 @@
 
 > #### _Mojo's codebase was made public on September ???, 2023 — 1 year since the first internal release._
 
-## :man_teacher: Learning Resources
+## :teacher: Learning Resources
 
-### Table of Contents
+<details>
 
-- #### [:infinity: Haskell](#infinity-haskell)
-- #### [:juggling_person: Julia](#juggling_person-julia)
-- #### [:crab: Rust](#crab-rust)
-- #### [:lizard: Zig](#lizard-zig)
-
-### :infinity: Haskell
+<summary><h3>🔮 Haskell</h3></summary>
 
   - #### :thought_balloon: [School of Haskell](https://www.schoolofhaskell.com/)
 
-  - #### :man_teacher: [HSE Haskell Course](https://github.com/serokell/hse-haskell-course-src)
+  - #### :teacher: [HSE Haskell Course](https://github.com/serokell/hse-haskell-course-src)
 
-  - #### :man_teacher: [ITMO Haskell Course](https://github.com/jagajaga/FP-Course-ITMO)
+  - #### :teacher: [ITMO Haskell Course](https://github.com/jagajaga/FP-Course-ITMO)
 
-  - #### :man_teacher: [UCSD Haskell Course](https://github.com/ucsd-cse130/wi21)
+  - #### :teacher: [UCSD Haskell Course](https://github.com/ucsd-cse130/wi21)
 
-  - #### :man_teacher: [UPenn Haskell Course](https://github.com/byorgey/haskell-course)
+  - #### :teacher: [UPenn Haskell Course](https://github.com/byorgey/haskell-course)
 
-  - #### :man_teacher: [Haskell Beginners Course](https://github.com/haskell-beginners-2022/course-plan)
+  - #### :teacher: [Haskell Beginners Course](https://github.com/haskell-beginners-2022/course-plan)
 
   - #### :book: [Happy Learn Haskell Tutorial](http://www.happylearnhaskelltutorial.com/contents.html)
 
@@ -92,53 +87,53 @@
 
   - #### :book: [Haskell Data Analysis Book by Nishant Shukla](http://haskelldata.com/)
 
-  - #### :man_technologist: [Learn Haskell Basics in 4 Pull Requests Tutorial](https://github.com/kowainik/learn4haskell)
+  - #### :technologist: [Learn Haskell Basics in 4 Pull Requests Tutorial](https://github.com/kowainik/learn4haskell)
 
   - #### :thought_balloon: [Functors in Pictures Blog Post by Adit Bhargava](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
-  - #### :man_teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
+  - #### :teacher: [Haskell Beginners Crash Course by Type Classes](https://typeclasses.com/beginner-crash-course)
 
-  - #### :man_teacher: [Haskell via Sokoban Course by Joachim Breitner](https://haskell-via-sokoban.nomeata.de/)
+  - #### :teacher: [Haskell via Sokoban Course by Joachim Breitner](https://haskell-via-sokoban.nomeata.de/)
 
   - #### :film_projector: [Functional Programming Slides by Peter Thiemann](https://github.com/proglang/FunctionalProgramming)
 
   - #### :book: [Yet Another Haskell Tutorial Book by Hal Daumé III](http://users.umiacs.umd.edu/~hal/docs/daume02yaht.pdf)
 
-  - #### :man_teacher: [Programming in Haskell Course by Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
+  - #### :teacher: [Programming in Haskell Course by Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
 
-  - #### :man_teacher: [Introduction to Haskell Course by Joachim Breitner](https://www.seas.upenn.edu/~cis194/fall16/)
+  - #### :teacher: [Introduction to Haskell Course by Joachim Breitner](https://www.seas.upenn.edu/~cis194/fall16/)
 
-  - #### :man_teacher: [Beginning Practical Haskell Course by Richard Cook](https://blog.rcook.org/beginning-practical-haskell/)
+  - #### :teacher: [Beginning Practical Haskell Course by Richard Cook](https://blog.rcook.org/beginning-practical-haskell/)
 
-  - #### :man_teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
+  - #### :teacher: [Learn Haskell Fast and Hard Course by Yann Esposito](https://yannesposito.com/Scratch/en/blog/Haskell-the-Hard-Way/)
 
   - #### :book: [Real World Haskell Book by Bryan O'Sullivan and others](http://book.realworldhaskell.org/)
 
   - #### :thought_balloon: [Haskell Mini-Patterns Handbook by Veronika Romashkina](https://kowainik.github.io/posts/haskell-mini-patterns)
 
-  - #### :man_teacher: [Functional Systems in Haskell Course by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
+  - #### :teacher: [Functional Systems in Haskell Course by Bryan O'Sullivan](https://github.com/bos/stanford-cs240h)
 
   - #### :book: [Learn You a Haskell for Great Good! Book by Miran Lipovača](http://learnyouahaskell.com/)
 
   - #### :tv: [Functional Programming Fundamentals Videos by Erik Meijer](https://docs.microsoft.com/en-us/shows/c9-lectures-erik-meijer-functional-programming-fundamentals/)
 
-  - #### :man_teacher: [Functional Programming by Example Course by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
+  - #### :teacher: [Functional Programming by Example Course by Caio Rodrigues](https://caiorss.github.io/Functional-Programming/)
 
-  - #### :man_teacher: [Advanced Programming in Haskell Course by Stephanie Weirich](https://www.seas.upenn.edu/~cis552/current/index.html)
+  - #### :teacher: [Advanced Programming in Haskell Course by Stephanie Weirich](https://www.seas.upenn.edu/~cis552/current/index.html)
 
   - #### :book: [What I Wish I Knew When Learning Haskell Book by Stephen Diehl](http://dev.stephendiehl.com/hask/)
 
   - #### :tv: [Haskell for Imperative Programmers Videos by Philipp Hagenlocher](https://www.youtube.com/playlist?list=PLe7Ei6viL6jGp1Rfu0dil1JH1SHk9bgDV)
 
-  - #### :man_teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
+  - #### :teacher: [Functional Programming in Haskell Course by Tony Morris and Mark Hibberd](https://github.com/system-f/fp-course)
 
-### :juggling_person: Julia
+</details>
 
-  - #### :man_teacher: [Introduction to Computational Thinking Course by Alan Edelman and others](https://computationalthinking.mit.edu/Spring21/)
+<details>
 
-### :crab: Rust
+<summary><h3>🦀 Rust</h3></summary>
 
-  - #### :man_technologist: [Rustlings Tutorial](https://github.com/rust-lang/rustlings)
+  - #### :technologist: [Rustlings Tutorial](https://github.com/rust-lang/rustlings)
 
   - #### :tv: [Videos by Jon Gjengset](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa)
 
@@ -170,13 +165,13 @@
 
   - #### :thought_balloon: [Rust Programming Tipz by Ferrous Systems](https://github.com/ferrous-systems/elements-of-rust)
 
-  - #### :man_teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
+  - #### :teacher: [Rust Teaching Materials by Ferrous Systems](https://ferrous-systems.github.io/teaching-material/index.html)
 
   - #### :thought_balloon: [Learn Rust in 30 Minutes Blog Post by Amos](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 
   - #### :globe_with_meridians: [24 Days of Rust Web Site by Zbigniew Siciarz](https://zsiciarz.github.io/24daysofrust/index.html)
 
-  - #### :man_teacher: [Ultimate Rust Crash Course by Nathan Stocks](https://github.com/CleanCut/ultimate_rust_crash_course)
+  - #### :teacher: [Ultimate Rust Crash Course by Nathan Stocks](https://github.com/CleanCut/ultimate_rust_crash_course)
 
   - #### :book: [The Little Book of Rust Macros by Daniel Keep](https://danielkeep.github.io/tlborm/book/index.html)
 
@@ -184,13 +179,13 @@
 
   - #### :globe_with_meridians: [Rust Design Patterns Web Site by Rust Community](https://rust-unofficial.github.io/patterns/)
 
-  - #### :man_technologist: [Rust Ownership and Borrowing Interactive Visualization](https://github.com/rustviz/rustviz)
+  - #### :technologist: [Rust Ownership and Borrowing Interactive Visualization](https://github.com/rustviz/rustviz)
 
   - #### :globe_with_meridians: [A Gentle Introduction To Rust Web Site by Steve Donovan](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
 
   - #### :black_joker: [Rust Ownership and Borrowing Cheatsheet by Phil Ruffwind](https://rufflewind.com/img/rust-move-copy-borrow.png)
 
-  - #### :man_teacher: [Programming in Rust Course by Dongze He and Chase Kanipe](https://www.cs.umd.edu/class/fall2021/cmsc388Z/)
+  - #### :teacher: [Programming in Rust Course by Dongze He and Chase Kanipe](https://www.cs.umd.edu/class/fall2021/cmsc388Z/)
 
   - #### :book: [The Rust Performance Book by Nicholas Nethercote and others](https://nnethercote.github.io/perf-book/)
 
@@ -198,7 +193,11 @@
 
   - #### :book: [The Rust Programming Language Book by Steve Klabnik and Carol Nichols](https://doc.rust-lang.org/stable/book/)
 
-### :lizard: Zig
+</details>
+
+<details>
+
+<summary><h3>🦎 Zig</h3></summary>
 
   - #### :card_file_box: [Zig Community](https://github.com/ziglang/zig/wiki/Community)
 
@@ -218,7 +217,7 @@
 
   - #### :thought_balloon: [Zig Blog Posts by Noah Ryan](https://itscomputersciencetime.netlify.app/)
 
-  - #### :man_technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
+  - #### :technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
 
   - #### :thought_balloon: [Zig Blog Posts by Dave Gauer](http://ratfactor.com/zig/)
 
@@ -297,3 +296,5 @@
   - #### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
   - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Mason Remaley Podcast Episode by Abner Coimbre](https://media.handmade-seattle.com/the-race-to-replace-c-and-cpp-2/)
+
+</details>
