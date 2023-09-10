@@ -10,7 +10,7 @@
 ![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA)
 ![Mojo](https://img.shields.io/badge/mojo-black.svg?style=for-the-badge&logo=fireship&logoColor=FF6522)
 
-### Solutions to annual Advent of Code challenges.
+### Solutions to annual Advent of Code challenges written in modern programming languages.
 
 ### :crab: [Rust](2015-Rust/) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
@@ -19,7 +19,6 @@
 ### :lizard: [Zig](2016-Zig/) — [Advent of Code 2016](https://adventofcode.com/2016) :star:
 
 > #### _Zig was first mentioned in a blog post by Andrew Kelley on February 8, 2016._
-> #### _Uses Zig version 0.11.0_
 
 ### :eagle: [Swift](2017-Swift/) — [Advent of Code 2017](https://adventofcode.com/2017) :star:
 
@@ -49,7 +48,7 @@
 
 > #### _Mojo's codebase was made public on September ???, 2023 — 1 year since the first internal release._
 
-## :teacher: Learning Resources
+## :teacher: Resources
 
 <details>
 
