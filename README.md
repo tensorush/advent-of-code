@@ -224,13 +224,11 @@
 
   - #### :thought_balloon: [Zig Blog Posts by Jakub Konka](http://www.jakubkonka.com/)
 
-  - #### :movie_camera: [Live Streams by Andrew Kelley](https://vimeo.com/andrewrk)
-
-  - #### :globe_with_meridians: [Zig Learn Web Site by Sobeston](https://ziglearn.org/)
-
   - #### :thought_balloon: [Zig Blog Posts by Eric Engheim](https://medium.com/swlh/zig-the-introduction-dcd173a86975)
 
   - #### :globe_with_meridians: [Zig Embedded Group Web Site](https://zeg.random-projects.net/)
+
+  - #### :globe_with_meridians: [Zig Learn Web Site by Sobeston](https://ziglearn.org/)
 
   - #### :thought_balloon: [Zig Blog Posts by Garrett Squire](https://gsquire.github.io/static/)
 
@@ -260,6 +258,8 @@
 
   - #### :globe_with_meridians: [Zig By Example Web Site by Ali Chraghi](https://zig-by-example.github.io/)
 
+  - #### :movie_camera: [Zig Stream Recordings by Andrew Kelley](https://vimeo.com/andrewrk)
+
   - #### :tv: [Zig Roadmap 2023 Talk by Andrew Kelley](https://www.youtube.com/watch?v=AqDdWEiSwMM)
 
   - #### :tv: [The Road to Zig 1.0 Talk by Andrew Kelley](https://www.youtube.com/watch?v=Gv2I7qTux7g)
@@ -278,9 +278,9 @@
 
   - #### :tv: [Create an Android Application with Zig Talk by Felix Queißner](https://archive.fosdem.org/2021/schedule/event/zig_android/)
 
-  - #### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
-
   - #### :thought_balloon: [Implementing a File Pager in Zig Blog Posts by Ayende Rahien](https://ayende.com/blog/posts/series/195587-B/implementing-a-file-pager-in-zig)
+
+  - #### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
 
   - #### :thought_balloon: [How to Write My First Zig Program Blog Post by Sylvain Leroux](https://www.yesik.it/blog/2022/intro-to-zig)
 
@@ -288,7 +288,7 @@
 
   - #### :headphones: [Full-Time Open Source with Andrew Kelley Podcast Episode by Adam Bell](https://corecursive.com/067-zig-with-andrew-kelley/)
 
-  - #### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://media.handmade-seattle.com/practical-data-oriented-design/)
+  - #### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://vimeo.com/649009599)
 
   - #### :headphones: [Taking the Warts Off C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
 
@@ -296,6 +296,6 @@
 
   - #### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
-  - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Mason Remaley Podcast Episode by Abner Coimbre](https://media.handmade-seattle.com/the-race-to-replace-c-and-cpp-2/)
+  - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode by Abner Coimbre](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
 
 </details>
