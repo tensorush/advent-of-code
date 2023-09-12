@@ -272,9 +272,9 @@
 
   - #### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
-  - #### :tv: [TigerBeetle Videos by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/channel/UC3TlyQ3h6lC_jSWust2leGg/playlists)
-
   - #### :thought_balloon: [The Missing Zig Polymorphism Blog Post by Ralph Brorsen](https://revivalizer.xyz/post/the-missing-zig-polymorphism-reference/)
+
+  - #### :tv: [TigerBeetle Sessions by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/playlist?list=PL9eL-xg48OM1TVqSr9SHrTCDfLT5CIcaA)
 
   - #### :tv: [Create an Android Application with Zig Talk by Felix Queißner](https://archive.fosdem.org/2021/schedule/event/zig_android/)
 
@@ -288,14 +288,26 @@
 
   - #### :headphones: [Full-Time Open Source with Andrew Kelley Podcast Episode by Adam Bell](https://corecursive.com/067-zig-with-andrew-kelley/)
 
-  - #### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley](https://vimeo.com/649009599)
+  - #### :tv: [Terminal Click ft. Andrew Kelley Stream Recording from Handmade Cities 2023](https://www.twitch.tv/videos/1883229593)
+
+  - #### :tv: [TigerBeetle - How We Use Zig by King Butcher from TigerBeetle x DuckDB 2023](https://www.youtube.com/watch?v=8k33ZvWYQ20&list=PL9eL-xg48OM3g5Ttu1VFA-7jEYScg__BH&index=3)
+
+  - #### :tv: [Intro to the Zig Programming Language by Andrew Kelley Video from GOTO 2022](https://www.youtube.com/watch?v=YXrb-DqsBNU)
+
+  - #### :tv: [Making Systems Programming Accessible by Andrew Kelley from Systems Distributed 2023](https://www.youtube.com/watch?v=Qncdi-Fg0-I&list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ&index=2)
+
+  - #### :tv: [Zig Build System & How to Build Software From Source by Andrew Kelley Video from GOTO 2023](https://www.youtube.com/watch?v=vKKTMBoxpS8)
 
   - #### :headphones: [Taking the Warts Off C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
 
+  - #### :tv: [Software You Can Love - Rocking The Open Source Boat by Loris Cro from TigerBeetle x DuckDB 2023](https://www.youtube.com/watch?v=t2vg-zWWkCo&list=PL9eL-xg48OM3g5Ttu1VFA-7jEYScg__BH&index=9)
+
   - #### :tv: [Zig – a Programming Language Designed for Robustness, Optimality and Clarity Talk by Andrew Kelley](https://www.youtube.com/watch?v=Z4oYSByyRak&t)
+
+  - #### :tv: [A Practical Guide to Applying Data-Oriented Design Talk by Andrew Kelley from Handmade Seattle 2021](https://vimeo.com/649009599)
 
   - #### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
-  - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode by Abner Coimbre](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
+  - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode from Handmade Seattle 2020](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
 
 </details>
