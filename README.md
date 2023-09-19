@@ -294,6 +294,8 @@
 
   - #### :tv: [Intro to the Zig Programming Language by Andrew Kelley Video from GOTO 2022](https://www.youtube.com/watch?v=YXrb-DqsBNU)
 
+  - #### :thought_balloon: [When Zig Outshines Rust - Memory Efficient Enum Arrays Blog Post by Adrian Alic](https://alic.dev/blog/dense-enums)
+
   - #### :tv: [Making Systems Programming Accessible by Andrew Kelley from Systems Distributed 2023](https://www.youtube.com/watch?v=Qncdi-Fg0-I&list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ&index=2)
 
   - #### :tv: [Zig Build System & How to Build Software From Source by Andrew Kelley Video from GOTO 2023](https://www.youtube.com/watch?v=vKKTMBoxpS8)
