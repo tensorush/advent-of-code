@@ -218,8 +218,6 @@
 
   - #### :thought_balloon: [Zig Blog Posts by Noah Ryan](https://itscomputersciencetime.netlify.app/)
 
-  - #### :technologist: [Ziglings Repo by Dave Gauer](https://github.com/ratfactor/ziglings)
-
   - #### :thought_balloon: [Zig Blog Posts by Dave Gauer](http://ratfactor.com/zig/)
 
   - #### :thought_balloon: [Zig Blog Posts by Jakub Konka](http://www.jakubkonka.com/)
@@ -265,6 +263,8 @@
   - #### :tv: [The Road to Zig 1.0 Talk by Andrew Kelley](https://www.youtube.com/watch?v=Gv2I7qTux7g)
 
   - #### :thought_balloon: [Writing an OS in Zig Blog Posts by knarkzel](https://knarkzel.srht.site/)
+
+  - #### :technologist: [Ziglings Repo by Dave Gauer and Chris Boesch](https://codeberg.org/ziglings)
 
   - #### :thought_balloon: [Zig Common Tasks Blog Post by Renato Athaydes](https://renatoathaydes.github.io/zig-common-tasks/)
 
