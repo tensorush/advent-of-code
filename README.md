@@ -218,6 +218,8 @@
 
   - #### :thought_balloon: [Zig Blog Posts by Noah Ryan](https://itscomputersciencetime.netlify.app/)
 
+  - #### :thought_balloon: [Zig Blog Posts by cryptocode](https://cryptocode.github.io/blog/)
+
   - #### :thought_balloon: [Zig Blog Posts by Dave Gauer](http://ratfactor.com/zig/)
 
   - #### :thought_balloon: [Zig Blog Posts by Jakub Konka](http://www.jakubkonka.com/)
