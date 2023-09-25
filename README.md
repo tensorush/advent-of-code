@@ -280,8 +280,6 @@
 
   - #### :tv: [Create an Android Application with Zig Talk by Felix Queißner](https://archive.fosdem.org/2021/schedule/event/zig_android/)
 
-  - #### :tv: [Case Study: Zig Software Foundation Video by Andrew Kelley](https://archive.org/details/fossy2023_Case_Study_Zig_Software_Founda)
-
   - #### :thought_balloon: [Implementing a File Pager in Zig Blog Posts by Ayende Rahien](https://ayende.com/blog/posts/series/195587-B/implementing-a-file-pager-in-zig)
 
   - #### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
@@ -294,11 +292,15 @@
 
   - #### :tv: [Terminal Click ft. Andrew Kelley Stream Recording from Handmade Cities 2023](https://www.twitch.tv/videos/1883229593)
 
+  - #### :tv: [Case Study: Zig Software Foundation Video by Andrew Kelley from FOSSY 2023](https://archive.org/details/fossy2023_Case_Study_Zig_Software_Founda)
+
   - #### :tv: [TigerBeetle - How We Use Zig by King Butcher from TigerBeetle x DuckDB 2023](https://www.youtube.com/watch?v=8k33ZvWYQ20&list=PL9eL-xg48OM3g5Ttu1VFA-7jEYScg__BH&index=3)
 
   - #### :tv: [Intro to the Zig Programming Language by Andrew Kelley Video from GOTO 2022](https://www.youtube.com/watch?v=YXrb-DqsBNU)
 
   - #### :thought_balloon: [When Zig Outshines Rust - Memory Efficient Enum Arrays Blog Post by Adrian Alic](https://alic.dev/blog/dense-enums)
+
+  - #### :tv: [Panel: How AArch64/ARM64 is taking over the Data Center? Video from FOSSY 2023](https://archive.org/details/fossy2023_Panel_How_AArch64ARM64_is_taki)
 
   - #### :tv: [Making Systems Programming Accessible by Andrew Kelley from Systems Distributed 2023](https://www.youtube.com/watch?v=Qncdi-Fg0-I&list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ&index=2)
 
@@ -316,6 +318,5 @@
 
   - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode from Handmade Seattle 2020](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
 
-  - #### :tv: [Panel: How AArch64/ARM64 is taking over the Data Center? Video by Aaron Williams, Andrew Kelley, Dave Neary, Erik Benner, Lance Albertson](https://archive.org/details/fossy2023_Panel_How_AArch64ARM64_is_taki)
 
 </details>
