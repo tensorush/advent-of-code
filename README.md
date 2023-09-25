@@ -280,6 +280,8 @@
 
   - #### :tv: [Create an Android Application with Zig Talk by Felix Queißner](https://archive.fosdem.org/2021/schedule/event/zig_android/)
 
+  - #### :tv: [Case Study: Zig Software Foundation Video by Andrew Kelley](https://archive.org/details/fossy2023_Case_Study_Zig_Software_Founda)
+
   - #### :thought_balloon: [Implementing a File Pager in Zig Blog Posts by Ayende Rahien](https://ayende.com/blog/posts/series/195587-B/implementing-a-file-pager-in-zig)
 
   - #### :tv: [Zig Language Creator Andrew Kelley Interview by Tom Palmer](https://www.youtube.com/watch?v=ZvskDoP09Ao)
@@ -313,5 +315,7 @@
   - #### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
   - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode from Handmade Seattle 2020](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
+
+  - #### :tv: [Panel: How AArch64/ARM64 is taking over the Data Center? Video by Aaron Williams, Andrew Kelley, Dave Neary, Erik Benner, Lance Albertson](https://archive.org/details/fossy2023_Panel_How_AArch64ARM64_is_taki)
 
 </details>
