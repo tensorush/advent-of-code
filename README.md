@@ -290,6 +290,8 @@
 
   - #### :headphones: [Full-Time Open Source with Andrew Kelley Podcast Episode by Adam Bell](https://corecursive.com/067-zig-with-andrew-kelley/)
 
+  - #### :headphones: [Open-Source Careers with Loris Cro Podcast Episode by Richard Feldman](https://podcasts.apple.com/us/podcast/open-source-careers-with-loris-cro/id1602572955?i=1000569762305)
+
   - #### :tv: [Terminal Click ft. Andrew Kelley Stream Recording from Handmade Cities 2023](https://www.twitch.tv/videos/1883229593)
 
   - #### :tv: [Case Study: Zig Software Foundation Video by Andrew Kelley from FOSSY 2023](https://archive.org/details/fossy2023_Case_Study_Zig_Software_Founda)
@@ -300,11 +302,19 @@
 
   - #### :thought_balloon: [When Zig Outshines Rust - Memory Efficient Enum Arrays Blog Post by Adrian Alic](https://alic.dev/blog/dense-enums)
 
+  - #### :headphones: [Open-Source with Zig creator Andrew Kelley Podcast Episode by Richard Feldman](https://podcasts.apple.com/us/podcast/open-source-with-zig-creator-andrew-kelley/id1602572955?i=1000554066581)
+
   - #### :tv: [Panel: How AArch64/ARM64 is taking over the Data Center? Video from FOSSY 2023](https://archive.org/details/fossy2023_Panel_How_AArch64ARM64_is_taki)
+
+  - #### :headphones: [Bootstrapping a Compiler via WASM with Loris Cro Podcast Episode by Richard Feldman](https://podcasts.apple.com/us/podcast/bootstrapping-a-compiler-via-wasm-with-loris-cro/id1602572955?i=1000591301501)
+
+  - #### :headphones: [Linking & Binary Hot Code Loading with Jakub Konka Podcast Episode by Richard Feldman](https://podcasts.apple.com/us/podcast/linking-binary-hot-code-loading-with-jakub-konka/id1602572955?i=1000612922247)
 
   - #### :tv: [Making Systems Programming Accessible by Andrew Kelley from Systems Distributed 2023](https://www.youtube.com/watch?v=Qncdi-Fg0-I&list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ&index=2)
 
   - #### :tv: [Zig Build System & How to Build Software From Source by Andrew Kelley Video from GOTO 2023](https://www.youtube.com/watch?v=vKKTMBoxpS8)
+
+  - #### :headphones: [Building a Terminal in Zig and Swift with Mitchell Hashimoto Podcast Episode by Richard Feldman](https://podcasts.apple.com/us/podcast/building-a-terminal-in-zig-and-swift/id1602572955?i=1000621587281)
 
   - #### :headphones: [Taking the Warts Off C with Andrew Kelley Podcast Episode by Stephen Gutekanst and Beyang Liu](https://www.youtube.com/watch?v=gn3YsZ6HUHw)
 
@@ -317,6 +327,5 @@
   - #### :thought_balloon: [Why I Rewrote My Rust Keyboard Firmware in Zig: Consistency, Mastery and Fun Blog Post by Kevin Lynagh](https://kevinlynagh.com/rust-zig/)
 
   - #### :headphones: [The Race to Replace C & C++ with Andrew Kelley, Ginger Bill and Josh Huelsman Podcast Episode from Handmade Seattle 2020](https://guide.handmade-seattle.com/c/2020/race-to-replace-c-and-cpp/)
-
 
 </details>
