@@ -274,6 +274,8 @@
 
   - #### :thought_balloon: [Learn Zig in 30 Minutes Blog Post by Isaac Yonemoto](https://gist.github.com/ityonemo/769532c2017ed9143f3571e5ac104e50)
 
+  - #### :globe_with_meridians: [Browseable Zig Standard Library Web Site by Dave Gauer](http://ratfactor.com/zig/stdlib-browseable2/)
+
   - #### :thought_balloon: [The Missing Zig Polymorphism Blog Post by Ralph Brorsen](https://revivalizer.xyz/post/the-missing-zig-polymorphism-reference/)
 
   - #### :tv: [TigerBeetle Sessions by Joran Dirk Greef and Isaac Freund](https://www.youtube.com/playlist?list=PL9eL-xg48OM1TVqSr9SHrTCDfLT5CIcaA)
