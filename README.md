@@ -1,4 +1,4 @@
-## :christmas_tree: :technologist: **Advent of Code**
+## :christmas_tree: :technologist: **advent of code**
 
 ![Rust](https://img.shields.io/badge/rust-black.svg?style=for-the-badge&logo=rust&logoColor=7C5642)
 ![Zig](https://img.shields.io/badge/zig-black.svg?style=for-the-badge&logo=zig&logoColor=F6A516)
@@ -10,7 +10,7 @@
 ![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA)
 ![Mojo](https://img.shields.io/badge/mojo-black.svg?style=for-the-badge&logo=fireship&logoColor=FF6522)
 
-### Solutions to annual Advent of Code challenges written in modern programming languages.
+### Solutions to annual [Advent of Code](https://adventofcode.com/) challenges written in modern programming languages.
 
 ### :crab: [Rust](2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
@@ -46,7 +46,7 @@
 
 ### :fire: Mojo — [Advent of Code 2023](https://adventofcode.com/2023)
 
-> #### _Mojo's codebase was made public on September ???, 2023 — 1 year since the first internal release._
+> #### _Mojo's codebase was made public on December ???, 2023 — 1 year since the first private release._
 
 ## :teacher: Resources
 
