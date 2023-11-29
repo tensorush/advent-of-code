@@ -5,7 +5,7 @@
 ![Swift](https://img.shields.io/badge/swift-black.svg?style=for-the-badge&logo=swift&logoColor=FE7B35)
 ![Julia](https://img.shields.io/badge/julia-black.svg?style=for-the-badge&logo=julia&logoColor=A270BA)
 ![Nim](https://img.shields.io/badge/nim-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401)
-![Haskell](https://img.shields.io/badge/haskell-black.svg?style=for-the-badge&logo=haskell&logoColor=5E5086)
+![Gleam](https://img.shields.io/badge/gleam-black.svg?style=for-the-badge&logo=gitee&logoColor=FFAFF3)
 ![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=FFFFFF)
 ![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA)
 ![Mojo](https://img.shields.io/badge/mojo-black.svg?style=for-the-badge&logo=fireship&logoColor=FF6522)
@@ -32,9 +32,9 @@
 
 > #### _Nim 1.0.0 was released on September 23, 2019 — 11 years since the first public release._
 
-### :crystal_ball: Haskell — [Advent of Code 2020](https://adventofcode.com/2020)
+### :crystal_ball: Gleam — [Advent of Code 2020](https://adventofcode.com/2020)
 
-> #### _Haskell's next formal specification was due in 2020 — 10 years after the last major release._
+> #### Gleam's Erlang-compatible OTP was released on October 31, 2020 — 1 year since the first public release._
 
 ### :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
 
