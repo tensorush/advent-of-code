@@ -1,16 +1,19 @@
 ## :christmas_tree: :technologist: **advent of code**
 
-![Rust](https://img.shields.io/badge/rust-black.svg?style=for-the-badge&logo=rust&logoColor=7C5642)
-![Zig](https://img.shields.io/badge/zig-black.svg?style=for-the-badge&logo=zig&logoColor=F6A516)
-![Swift](https://img.shields.io/badge/swift-black.svg?style=for-the-badge&logo=swift&logoColor=FE7B35)
-![Julia](https://img.shields.io/badge/julia-black.svg?style=for-the-badge&logo=julia&logoColor=A270BA)
-![Nim](https://img.shields.io/badge/nim-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401)
-![Gleam](https://img.shields.io/badge/gleam-black.svg?style=for-the-badge&logo=gitee&logoColor=FFAFF3)
-![Crystal](https://img.shields.io/badge/crystal-black.svg?style=for-the-badge&logo=crystal&logoColor=FFFFFF)
-![Roc](https://img.shields.io/badge/roc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA)
-![Mojo](https://img.shields.io/badge/mojo-black.svg?style=for-the-badge&logo=fireship&logoColor=FF6522)
+[![RS][rs-shd]][rs-url]
+[![ZG][zg-shd]][zg-url]
+[![SW][sw-shd]][sw-url]
+[![JL][jl-shd]][jl-url]
+[![NM][nm-shd]][nm-url]
+[![RK][rk-shd]][rk-url]
+[![CR][cr-shd]][cr-url]
+[![RC][rc-shd]][rc-url]
+[![MJ][mj-shd]][mj-url]
+[![LC][lc-shd]][lc-url]
 
 ### Solutions to annual [Advent of Code](https://adventofcode.com/) challenges written in modern programming languages.
+
+> #### :teacher: [Awesome Language Learning Resources](https://github.com/tensorush/Awesome-Langs-Learning)
 
 ### :crab: [Rust](2015-Rust) — [Advent of Code 2015](https://adventofcode.com/2015) :star:
 
@@ -28,30 +31,45 @@
 
 > #### _Julia 1.0.0 was released on August 9, 2018 — 9 years since the start of development._
 
-### :crown: Nim — [Advent of Code 2019](https://adventofcode.com/2019)
+### :crown: [Nim](2019-Nim) — [Advent of Code 2019](https://adventofcode.com/2019)
 
 > #### _Nim 1.0.0 was released on September 23, 2019 — 11 years since the first public release._
 
-### :crystal_ball: Gleam — [Advent of Code 2020](https://adventofcode.com/2020)
+### :badminton: [Racket](2020-Racket) — [Advent of Code 2020](https://adventofcode.com/2020)
 
-> #### Gleam's Erlang-compatible OTP was released on October 31, 2020 — 1 year since the first public release._
+> #### _Racket first announced that Chez Scheme would become its default implementation on November 1, 2020._
 
-### :white_square_button: Crystal — [Advent of Code 2021](https://adventofcode.com/2021)
+### :white_square_button: [Crystal](2021-Crystal) — [Advent of Code 2021](https://adventofcode.com/2021)
 
 > #### _Crystal 1.0.0 was released on March 22, 2021 — 10 years since the start of development._
 
-### :dove: Roc — [Advent of Code 2022](https://adventofcode.com/2022)
+### :dove: [Roc](2022-Roc) — [Advent of Code 2022](https://adventofcode.com/2022)
 
 > #### _Roc's codebase was made public on October 1, 2022 — 2 years since the start of development._
 
-### :fire: Mojo — [Advent of Code 2023](https://adventofcode.com/2023)
+### :fire: [Mojo](2023-Mojo) — [Advent of Code 2023](https://adventofcode.com/2023)
 
 > #### _Mojo's codebase was made public on December ???, 2023 — 1 year since the first private release._
 
-## :teacher: Resources
+<!-- MARKDOWN LINKS -->
 
-- ### [:lizard: Zig](https://github.com/tensorush/Awesome-Langs-Learning/tree/main#lizard-zig)
-
-- ### [:crab: Rust](https://github.com/tensorush/Awesome-Langs-Learning/tree/main#crab-rust)
-
-- ### [:crystal_ball: Haskell](https://github.com/tensorush/Awesome-Langs-Learning/tree/main#crystal_ball-haskell)
+[rs-shd]: https://img.shields.io/badge/rs-black.svg?style=for-the-badge&logo=rust&logoColor=7C5642
+[rs-url]: https://www.rust-lang.org/
+[zg-shd]: https://img.shields.io/badge/zg-black.svg?style=for-the-badge&logo=zig&logoColor=F6A516
+[zg-url]: https://ziglang.org/
+[sw-shd]: https://img.shields.io/badge/sw-black.svg?style=for-the-badge&logo=swift&logoColor=FE7B35
+[sw-url]: https://www.swift.com/
+[jl-shd]: https://img.shields.io/badge/jl-black.svg?style=for-the-badge&logo=julia&logoColor=A270BA
+[jl-url]: https://julialang.org/
+[nm-shd]: https://img.shields.io/badge/nm-black.svg?style=for-the-badge&logo=nim&logoColor=F2D401
+[nm-url]: https://nim-lang.org/
+[rk-shd]: https://img.shields.io/badge/rk-black.svg?style=for-the-badge&logo=racket&logoColor=3E5BA9
+[rk-url]: https://racket-lang.org/
+[cr-shd]: https://img.shields.io/badge/cr-black.svg?style=for-the-badge&logo=crystal&logoColor=FFFFFF
+[cr-url]: https://crystal-lang.org/
+[rc-shd]: https://img.shields.io/badge/rc-black.svg?style=for-the-badge&logo=fluentd&logoColor=9C7BEA
+[rc-url]: https://www.roc-lang.org/
+[mj-shd]: https://img.shields.io/badge/mj-black.svg?style=for-the-badge&logo=fireship&logoColor=FF6522
+[mj-url]: https://www.modular.com/mojo
+[lc-shd]: https://img.shields.io/github/license/tensorush/advent-of-code.svg?style=for-the-badge&labelColor=black
+[lc-url]: https://github.com/tensorush/advent-of-code/blob/master/LICENSE.md
