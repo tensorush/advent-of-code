@@ -9,7 +9,6 @@ File
     num_incs += 1 if m2 > m1
   end
 
-
 puts "Part 1: #{num_incs}"
 
 num_incs = 0

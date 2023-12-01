@@ -37,7 +37,7 @@
 
 ### :badminton: [Racket](2020-Racket) — [Advent of Code 2020](https://adventofcode.com/2020)
 
-> #### _Racket first announced that Chez Scheme would become its default implementation on November 1, 2020._
+> #### _Racket announced that Chez Scheme may become its default implementation on November 1, 2020._
 
 ### :white_square_button: [Crystal](2021-Crystal) — [Advent of Code 2021](https://adventofcode.com/2021)
 

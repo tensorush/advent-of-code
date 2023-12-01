@@ -1,2 +1,2 @@
-fn main():
-   print("Hello, world!")
+fn main() raises:
+    print("--- Day 1: Trebuchet?! ---")
